@@ -109,5 +109,7 @@ body {
 .box {
     width:33%;
     height: 33%;
-    background-image: url("../images/soil-heap.jpeg");
+    background-image: url("../images/soil-pile.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
 }
