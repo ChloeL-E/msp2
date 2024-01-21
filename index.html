@@ -1,49 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A fast-paced, fun game where you have to bop the moles when they come out of the mole hole">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="A fast-paced, fun game where you have to bop the moles when they come out of the mole hole">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Bop-A-Mole</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Bop-A-Mole</title>
 </head>
+
 <body>
-    <div class="background-image-container">
-        <div class="background-image">
-        <nav class="navbar navbar-expand-lg sticky-top navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img class="logo" src="assets/images/bop-a-mole-logo.png" alt="Bop-A-Mole game logo" />
-            </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="play-game.html">Play</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="how-to-play.html">How To Play</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    <main>
+  <div class="background-image-container">
+    <div class="background-image">
+      <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="assets/images/bop-a-mole-logo.png" alt="Bop-A-Mole game logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="play-game.html">Play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="how-to-play.html">How To Play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
         <h1 class="title">Bop-A-Mole</h1>
-    </main>
-</div>
-</div>
+        <!-- Modal taken from w3schools and adapted to game -->
+        <!-- Trigger/Open The Modal. -->
+        <button id="myBtn">How To Play</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+              The rules are simple - bop the moles when you see them pop up
+              out of their mole hill, but be quick! They don't hang around
+              for long and will quickly hide back down in their hole.
+            </p><br>
+            <p>
+              There are nine mole hills on the grid and moles will pop out
+              of them at random. When you see the mole, quickly move your
+              cursor over the mole and click. If you have managed to bop
+              the mole you will score 10 points. Watch out for the biting
+              Venus Fly Traps though! They pop up too and if you accidentally
+              whack one, you will lose 20 points!
+            </p><br>
+            <p>
+              You have 60 seconds to try to bop the moles and get as many
+              points as you can. When the game is over try and beat your score
+              again!
+            </p><br>
+            <p>
+              Have fun!!!
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
 </body>
+
 </html>
