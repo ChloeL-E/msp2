@@ -58,8 +58,10 @@ body {
     color: var(--bs-nav-link-color);
     text-decoration: none;
     background: 0 0;
-    border: 0;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    border: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    margin: 0 5px;
+    background-color: #FFF3E7;
 }
 
 /* The Modal (background) */
@@ -133,7 +135,7 @@ body {
 .box {
     width: 33%;
     height: 33%;
-    background-image: url("../images/soil-pile.png");
+    background-image: url("../images/soil-pile1.png");
     background-repeat: no-repeat;
     background-position: bottom center;
 }
