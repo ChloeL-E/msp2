@@ -12,7 +12,7 @@ It's a simple, fun, high-energy game which involves concentration, visual percep
 
 A fictional story has been created to support the theme of the game and make the game more engaging with young children. Farmer John is fed up of the all of the moles digging up his fields. He needs to catch as many was he can and move them away from his farm. Can you help by bopping the moles when you spot them popping out from a mole hole? If you're too slow they'll hide back in their mole hole. Oh, and watch out for the Venus Fly Trap plants, they bite and you'll lose points!
 
-This game has been designed for ages 3+ but is super fun for the whole family. The rules are simple - bop the moles when you see them pop up out of their mole hill, but be quick! They don't hang around for long and will quickly hide back down in their hole.
+This game has been designed for ages 5+ but is super fun for the whole family. The rules are simple - bop the moles when you see them pop up out of their mole hill, but be quick! They don't hang around for long and will quickly hide back down in their hole.
            
 Instead of the standard 5 mole holes, this game has 9 mole hills, making it a bit more challenging. A mole will pop out of one of the 9 mole hills at random. When you spot the mole, quickly move your cursor over the mole and left-click. If you have managed to bop the mole you will score 10 points, which you will see added to your score tally. Watch out for the biting Venus Fly Traps though! They pop up too and if you accidentally whack one, you will lose 20 points!
 
@@ -118,7 +118,7 @@ This game has been built using HTML, CSS and Javascript.
 ## Structure
 
 -   ### Features
-    * Responsive on all device sizes from 260px
+    * Responsive on all device sizes from 320px
 
     -   #### Navigation Bar
         * The responsive navigation bar has been applied to each page so that the pages are uniform, which is more visually appealing and improves user experience. It is also 'sticky' so that it is visible at all times no matter where the user is on the webpage. The navigation bar includes clear links to the Home, Play, How to Play modal and About pages.

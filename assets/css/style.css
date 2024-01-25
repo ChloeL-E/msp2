@@ -9,9 +9,13 @@ body {
     font-family: "Fuzzy Bubbles", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .background-image-container {
     width: 100%;
-    height: 100vh;
+    height: 150vh;
 }
 
 .background-image {
@@ -29,6 +33,7 @@ body {
     font-size: 1.5rem;
 }
 
+
 .nav-item {
     margin-right: 15px;
     background-color: #FFF3E7;
@@ -44,24 +49,29 @@ body {
 .title {
     text-align: center;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-top: -35px;
 }
 
 /* Modal taken from w3schools and adapted to this game */
 
 /* How to play button styling*/
-#mybtn {
+#howToPlayBtn {
     display: block;
-    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-    font-size: var(--bs-nav-link-font-size);
-    font-weight: var(--bs-nav-link-font-weight);
-    color: var(--bs-nav-link-color);
+    background-color: #77C13D;
+    font-weight: 700;
+    font-size: 30px;
+    display: block;
+    padding: 5px;
+    color: black;
     text-decoration: none;
-    background: 0 0;
-    border: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-    margin: 0 5px;
-    background-color: #FFF3E7;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 15px auto;
+    box-shadow: 15px 15px 50px black;
+}
+
+.rules {
+    margin: 20% auto;
 }
 
 /* The Modal (background) */
@@ -112,7 +122,20 @@ body {
     cursor: pointer;
 }
 
-/* -- play game page -- */
+#playBtn {
+    background-color: #E52B23;
+    font-weight: 700;
+    font-size: 30px;
+    display: block;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 15px auto;
+    box-shadow: 15px 15px 50px black;
+}
+
+/* -- Play page -- */
 
 .background-image-play {
     width: 100%;
@@ -123,11 +146,16 @@ body {
     background-image: url("../images/farmerfield.jpg");
 }
 
+.scoreBoard {
+    margin : 20px auto;
+    text-align: center;
+}
+
 #board {
-    width: 540px;
-    height: 540px;
-    background-image: url("../images/soil-background.jpeg");
-    margin: 0 auto;
+    width: 70vh;
+    height: 70vh;
+    background-image: url("../images/soil-background1.jpeg");
+    margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -135,17 +163,53 @@ body {
 .box {
     width: 33%;
     height: 33%;
-    background-image: url("../images/soil-pile1.png");
+    background-image: url("../images/soil-pile2.png");
     background-repeat: no-repeat;
     background-position: bottom center;
 }
 
+#playNow {
+    background-color: #E52B23;
+    font-weight: 700;
+    font-size: 30px;
+    display: block;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 15px auto;
+    box-shadow: 15px 15px 50px black;
+}
+
+
+/* -- About page styling -- */
+
 .about-box {
     background-color: #fff3e7;
-    margin: 15% auto;
+    margin: 5% auto;
     padding: 20px;
     border: 1px solid black;
     width: 55%;
     font-size: 18px;
     box-shadow: 15px 15px 50px black;
 }
+
+
+/*--Media Queries--*/
+
+/*-------------------------------------Extra-Small devices (Phones, 600px and down)---------------------------------*/
+@media only screen and (max-width: 600px) {
+    
+
+    }
+
+    /*-----------------------------------Small devices (Tablet, large phone, 600px and up)---------------------------------*/
+    @media only screen and (min-width: 600px) {
+       
+
+    }
+
+    /*-------------------------------------Medium devices (Landscape tablets, 768px and up)---------------------------------*/
+    @media only screen and (min-width: 768px) {
+
+    }
