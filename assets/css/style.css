@@ -66,7 +66,7 @@ a {
     color: black;
     text-decoration: none;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-    margin: 15px auto;
+    margin: 0 auto;
     box-shadow: 15px 15px 50px black;
 }
 
@@ -147,7 +147,7 @@ a {
 }
 
 .scoreBoard {
-    margin : 20px auto;
+    margin : 30px auto;
     text-align: center;
 }
 
@@ -163,7 +163,7 @@ a {
 .box {
     width: 33%;
     height: 33%;
-    background-image: url("../images/soil-pile2.png");
+    background-image: url("../images/soil-pile.png");
     background-repeat: no-repeat;
     background-position: bottom center;
 }
@@ -177,7 +177,7 @@ a {
     color: black;
     text-decoration: none;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-    margin: 15px auto;
+    margin: 20px auto;
     box-shadow: 15px 15px 50px black;
 }
 
