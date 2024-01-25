@@ -2,21 +2,6 @@
 
 // Set the let variables
 
-// Get the hamburger menu and navmenu
-const hamburger = document.querySelector(".navbar-toggler");
-const navMenu = document.querySelector(".navbar");
-
-hamburger.addEventListener("click", () => {
-    console.log("Hamburger click");
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
-
-document.querySelectorAll(".navbar").forEach(n => n.addEventListener("click", () => {
-  console.log("Document click");
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
-}))
 
   // Get the modal
   const modal = document.getElementById("myModal");

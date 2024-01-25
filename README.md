@@ -108,8 +108,8 @@ This game has been built using HTML, CSS and Javascript.
 -   ### Wireframes
 
     * Home Page (desktop) Wireframe - [Balsamiq home page (desktop) wireframe]()
-    * How to Play Modal (open) Wireframe - [Balsamiq How to Play Modal (open) wireframe]()
     * Home Page (mobile device) Wireframe - [Balsamiq Home Page (mobile device) wireframe]()
+    * How to Play Modal (open) Wireframe - [Balsamiq How to Play Modal (open) wireframe]()
     * Play Page Wireframe - [Balsamiq Play Page wireframe]()
     * About Page Wireframe - [Balsamiq About page wireframe]()
 
@@ -121,72 +121,66 @@ This game has been built using HTML, CSS and Javascript.
     * Responsive on all device sizes from 320px
 
     -   #### Navigation Bar
-        * The responsive navigation bar has been applied to each page so that the pages are uniform, which is more visually appealing and improves user experience. It is also 'sticky' so that it is visible at all times no matter where the user is on the webpage. The navigation bar includes clear links to the Home, Play, How to Play modal and About pages.
+        * The responsive navigation bar has been applied to each page so that the pages are uniform, which is more visually appealing and improves user experience. It is also 'sticky' on the home page so that it is visible at all times on this, the main navigation page. It was felt that removing the 'sticky' feature on the Play Game and Abotut pages would improve user experience as it was important that the user have more space to play the game and see the information on these pages. 
+        * The navigation bar includes clear links to the Home, Play and About pages.
         * The navigation section promotes ease of use for the user, allowing the user to move easily between sections and pages.
-        * The navigation bar was created using Bootstrap 5 and was adapted to meet the needs of the site. One adaption was inserting a button into 
+        * The navigation bar was created using Bootstrap 5 and was adapted to meet the needs of the site.  
 
-       ![Navigation Bar]()
+       ![Navigation Bar - desktop]()
 
-       * On a mobile device the navigation bar utilises a hamburger menu to improve appearance and user experience.
+       * On a mobile device the navigation bar utilises a hamburger menu to improve appearance and user experience. The Bootstrap5 nav-bar-toggler class was used to create this.
 
        ![Navigation Bar- mobile device ]()
 
-       * The Hamburger menu uses Javascript to open and close the hamburger menu when it is 'clicked' and when 'open', the navbar links slide across the page and become visible to the user.
+       ![Navigation Bar- mobile device- hamburger menu open]()
 
-       ![Navigation Bar- mobile device- hamburger menu open](documentation/navbar-mobile-open.jpeg)
-
-    -   #### Hero Images
-        * There is a striking hero image on each webpage to attract the attention of the user. 
-        * Each hero image, apart from the hero image on the Booking Page, have a hero zoom animation applied. The zoom animation was removed from the Booking Page as it detracted from the booking enquiry form.
-
-        ![Hero Image example](documentation/hero-example.png)
+    -   #### Background Image
+        * Each page has a colourful image to entice the user and follows the Farm theme of the game. 
+        * The intended primary audience is very young children and according to [designshack:] (https://designshack.net/articles/graphics/website-design-for-kids-tips-and-advice/), this age category respond best to bright colourful imagery, limited text, cute characters and nature themes. Therefore this has been taken into consideration when selecting imagery. 
+    
+       ![Background image](documentation/farm-background.jpg)
 
     -   #### Home page
 
-        * The Our Story section that is found on the Home page will allow the user to see the Spas' ethos and important information, with the aim to show the benefits to the resotative treatments and some self-indulgence. There are 3 images to add visual appeal and interest to the page, whilst also showcasing the Spa.
-        * The user will see the value of a luxury Spa experience and will consider making a booking enquiry via the site. 
+        * 
+        * 
 
-        ![Home page](documentation/home_page.jpeg)
+        ![Home page]()
 
-    -   #### Treatments page
-        * This page will allow the user to see exactly what treatments are available to book. Images are paired with the treatment information to show the user what the treatment may look like. When the user hovers over an image, an overlay appears to show the duration and cost of the treatment they are viewing.
-        * This page will be updated with any new treatments available or seasonal offers.
+    -   #### Play Game page
+        * 
+        *
 
-        ![Treatments Section](documentation/treatments_page.png)
+        ![]()
 
-    -    #### Contact Us Page
+    -    #### About Page
          * The map will provide the user with a visual aid to see the location of the spa.
          * This section is valuable to the user as they will be able to easily identify the the location of the spa and how to contact the spa if they require.
 
-         ![Contact Section](documentation/contact_section.jpeg)
+         ![About page]()
 
-    -    #### Booking Page
-         * This page will allow the user to send a booking enquiry. 
-         * The user will be asked to submit their full name, email address and telephone number. The user will have the option to give some further information with the booking enquiry. 
-         * The user will recieive feedback once they press the submit button to inform them that they will be contacted soon regarding their booking enquiry.
+    -    #### How To Play modal
+         *  
+         * 
+         * 
 
-         ![Booking Form](documentation/bookingpage.jpeg)
+         ![]()
 
     -    #### Footer
-         * The footer section includes links to the social media sites for Hexham Manor Spa. The links will open to a new tab to allow easy navigation for the user.
-         * The footer is valuable to the user as it encourages them to keep connected via social media and gives easy access to interesting information about what is happening at the Spa.
+         * 
+         * 
 
-         ![Footer](documentation/footer.png)
+         ![Footer]()
 
     -    #### 404 Error Page
           * A 404 error page was created to ensure that if, for any reason, the webpage is unavailable, the user is taken to a message page which helps to redirect them back to the website.
 
-         ![404 error page](documentation/404page.png)
+         ![404 error page]()
 
-    -    #### Thank You Page
-          * The user is taken to a Thank you page after submission of the booking enquiry form on the Booking page. This opens in a new browser tab. This improves user experience as they recieve feedback that their enquiry form was sent successfully. The new tab in the browser means the user can easily move back to the website.
-
-         ![Thank you page](documentation/thankyou_page.jpeg)
 
 -   ### Features For The Future
-    * In the future a 'Book Online' feature will be implemented that will allow the user to directly book their treatments online rather than sending a booking enquiry or needing to speak to a member of the spa team. This should improve user experience as they can more efficiently book our services. 
-    * FAQ page- this would be beneficial to the customer to view answers to commonly asked questions for more insight into the spa.
-    * Button taking the user back to the top of the page for easy access back to the top of the page.
+    * 
+    * 
 
 - - - 
 
@@ -208,17 +202,16 @@ This game has been built using HTML, CSS and Javascript.
 
     -    #### First Time Visitor Goals
 
-    * As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
+    * As a First Time Visitor, I want to 
 
-      1. Upon arrival to webpage, the user is greeted with a clean, clear navigation bar with easily identifiable links to each page. 
-      2. The navigation bar is designed so that it is always visible at the top of the page so that the user can easily navigate to another part of the site.
-      3. A 404 error page has been created if, for any reason, a page is not able to load. From this, the user will be able to quickly navigate back to the webpage to continue their enjoyment of the website.
+      1. 
+      
 
-    * As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the spa.
+    * As a First Time Visitor, I want 
 
-      1. The spas' name stands alone to the left of the navigation bar, making it clear and stand out. The hero image provides a visual, to let the use understand that it is immediately clear that they are visiting a spa website.
+      1. 
 
-    * As a First Time Visitor, I want to understand what treatments and facilities are offered by the spa and find out the purpose, duration of treamtment and cost of each. 
+    * As a First Time Visitor, I want to 
 
       1. The navigation bar has a clean and clear link to the Treatments page.
       2. The user can also access the Treatments page by following the link within the 'Quick Links' section of the Footer
@@ -274,16 +267,12 @@ This game has been built using HTML, CSS and Javascript.
       3. Once the user has arrived at the Footer they will be able to clearly see the social media links to the spa under the 'Follow Us' heading.
       4. Each social link opens as a new tab so that the user can easily come back to the website.
 
+   -    #### Parent/Guardian
 
-   -    #### Frequent User Goals
 
-    * As a frequent visitor, I want to check to see if there are any new treatments.
+   -    #### Site administrator
 
-      1. The user can click the link to the Treatments page on the navigation bar at the top of each webpage.
-      2. The user can also access the Treatments page by following the link within the 'Quick Links' section of the Footer
-      3. Once the user has clicked a Treatments link, they are taken to the Treatments page, which has image and text information to inform the user about all of the treatments available at the spa. 
-      4. When the user hovers over a Treatment image, further information about the duration and cost of the treatment is shown.
-      5. The Social links can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook, Instagram, Youtube and Twitter pages. These will also provide the user with upto date information on any new treatments and offers available at Hexham Manor Spa.
+      1. 
   
 - - - 
 
@@ -292,14 +281,12 @@ This game has been built using HTML, CSS and Javascript.
     -    #### Validators
 
          * W3C Markup Validator, W3C CSS Validator Services were used to validate this project to ensure that there were no syntax errors in the project.
-         * Markup Validator ![W3C Markup Validator](documentation/w3cvalidator.jpeg)
-          - Home Page W3C HTML Validation - Pass
-          - Treatments Page W3C HTML Validation - Pass
-          - Contact Page W3C HTML Validation - Pass
-          - Booking Page W3C HTML Validation - Pass
-          - Thank You Page W3C HTML Validation - Pass
+         * Markup Validator ![W3C Markup Validator]()
+          - Home Page
+          - Play Page
+          - About Page
           - 404 Page W3C HTML Validation - Pass
-         * CSS Validator ![W3C CSS Validator](documentation/w3c_css.png)
+         * CSS Validator ![W3C CSS Validator]()
           - style.css CSS Validation - Pass
          * Jshint was used to validate the Javascript
           - main.js Jshint - Pass
@@ -307,11 +294,11 @@ This game has been built using HTML, CSS and Javascript.
     -    #### WAVE accessibility tool
 
     * The website was developed to be as inclusive as possible. The use of semantic HTML, aria-labelling, alt attributes to images and good colour contrast.
-    * The WAVE Web Accessibility Evaluation Tool was used to assess each webpage [wave](https://wave.webaim.org/)
-    * The Home page showed no errors or contrast errors but identified two alerts. An alt attribute to identify the 'Book Now' button. An alt tag was added which fixed the alert. An alert identified with the Hamburger toggle. The function requires a click which would not be accessible to keyboard users. ![Wave tool result](documentation/wave_result.png)
-    * The Treatments page identified no errors or contrast errors.
-    * The Contact Us page identified no errors or contrast errors. One alert was identified which showed a redundant link. Adjacent links go to the same URL (logo and home), therefore the logo link was removed to improve efficiency of movement through the webpage for screenreaders. 
-    * The Booking page showed two errors. For a missing form label and for an empty button. These errors were corrected.
+    * The WAVE Web Accessibility Evaluation Tool was used to assess each webpage [wave]()
+    * The Home page showed no errors or contrast errors but identified two alerts. An alt attribute to identify the 'Book Now' button. An alt tag was added which fixed the alert. An alert identified with the Hamburger toggle. The function requires a click which would not be accessible to keyboard users. ![Wave tool result]()
+    * The Play page identified no errors or contrast errors.
+    * The About page identified no errors or contrast errors. One alert was identified which showed a redundant link. Adjacent links go to the same URL (logo and home), therefore the logo link was removed to improve efficiency of movement through the webpage for screenreaders. 
+    * How To Play Modal 
 
     -    #### Lighthouse 
 
@@ -319,10 +306,10 @@ This game has been built using HTML, CSS and Javascript.
 
     - Performance was the only issue and the majority of this is due to the images slowing the load time therfore the images used within the content on Home and Treaments page were converted from jpeg to png files. This improved the performance. The hero images to each page were not converted as it did not improve the performance rating but the image quality reduced.
   
-  * [See Lighthouse report for Home page](documentation/lighthouse-home.png)
-  * [See Lighthouse report for Treatments page](documentation/lighthouse-treat.jpeg)
-  * [See Lighthouse report for Contact Us page](documentation/lighthouse-contact.png)
-  * [See Lighthouse report for Booking Enquiry page](documentation/lighthouse-book.png)
+  * [See Lighthouse report for Home page]()
+  * [See Lighthouse report for Play page]()
+  * [See Lighthouse report for About page]()
+  * [See Lighthouse report for How To Play Modal]()
 
 - - - 
 
@@ -331,11 +318,11 @@ This game has been built using HTML, CSS and Javascript.
 Github was used as version control. Visual studio code was the IDE used to build the website, code was added and commited in the terminal and then pushed to Github.
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 
-To deploy this page to GitHub Pages from its [GitHub repository:](https://github.com/ChloeL-E/msp1), the following steps were taken: 
+To deploy this page to GitHub Pages from its [GitHub repository:](), the following steps were taken: 
 1. Login or Sign Up to GitHub.
 2. Open the project repository.
 3. From the menu items near the top of the page, select **Settings**.
-![Deployment:](documentation/deployment.png)
+![Deployment:]()
 
 4. Click on "Pages" in the left hand navigation panel.
 5. Under "Source", choose which branch to deploy. This should be Main for newer repositories (older repositories may still use Master).
@@ -348,12 +335,12 @@ It can take some time for the page to be fully deployed.
 
 **Fork**
 1. Login or Sign Up to GitHub.
-2. Open the project [repository](https://github.com/ChloeL-E/msp1).
+2. Open the project [repository]().
 3. Click the Fork button in the top right corner.
 
 **Clone**
 1. Login or Sign Up to GitHub.
-2. Open the project [repository](https://github.com/ChloeL-E/msp1).
+2. Open the project [repository]().
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in the code editor of your choice and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
@@ -392,7 +379,8 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 
     * The Website was tested on Google Chrome, Microsoft Edge, Internet Explorer and Safari browsers.
     * The website was viewed on a variety of devices such as Desktop, Laptop, Tablets and Phones using dev tools and real devices.
-    * The website was sent to friends and family members to review the site and test it from a user perspective.
+    * The website was sent to friends and young family members to review the site and test it from a user perspective.
+    * My 3 year old daughter and nephew both tested the site.
 
 - - - 
 
@@ -410,25 +398,16 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 
 -   ### Content
 
-- Instruction on creating a responsive navigation bar and a google map in a webpage provided by Dani Krossing [YouTube](https://www.youtube.com/watch?v=HkNNyDtm7mg)
 
-- Instruction on creating a responsive footer were taken from TheWebShala [Youtube](https://www.youtube.com/watch?v=YOb67OKw62s&t=333s)
 
-- Information about building responsive content with images and text was provided by Learn Web [Youtube]{https://www.youtube.com/watch?v=Rqo_1TV7wQs}
+- [cloudconvert] (https://cloudconvert.com/) was used to convert images to webp format.
 
-- Instruction on creating a responsive hamburger menu was taken from Web Dev Tutorials [Youtube](https://www.youtube.com/watch?v=flItyHiDm7E&t=361s) 
+- [tiny.png](https://tinypng.com/) was used to compress images.
 
-- [cloudconvert] {https://cloudconvert.com/} was used to convert images to webp format.
+- [w3schools] 
 
-- [tiny.png]{https://tinypng.com/} was used to compress images.
-
-- [w3schools] was utilised for supporting information throughout the project, in particular for the header, footer, images and form.
-
-- [MDNwebdocs] was utilised for supporting information throughout the project, in particular for the header, footer, images and form.
 
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-- The map on the Contact Us page used [Google Maps Api](https://developers.google.com/maps/documentation/javascript/get-api-key ) and the latitude and longtitude were found using [LatLong.net](https://www.latlong.net/)
 
 -  [CodeInstitute] For their content and guidance through the whole process.
 
@@ -438,35 +417,21 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 
 -   ### Media Images
 
-- All images are taken from [Freepik] and are further attributed as follows: 
+- The Mole image was taken from [OpenClipart-Vectors from Pixabay](https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=158236) from (https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=158236)
 
-- The Home hero image is by [Vecstock](https://www.freepik.com/free-ai-image/wet-young-woman-enjoying-luxury-spa-treatment-generated-by-ai_41571817.htm#page=3&query=spa&position=7&from_view=search&track=sph)
+- The Venus Fly trap image was by [Freepik](https://www.freepik.com/free-vector/hand-drawn-venus-flytrap-cartoon-illustration_133782376.htm#page=2&query=plant%20cartoon%20spiky&position=46&from_view=search&track=ais&uuid=85be5b56-7f2b-42f9-8b8e-0d37e2fb07fb)
 
-- The image for Luxury and Tranquility is by [Freepik](https://www.freepik.com/free-photo/woman-relaxing-spa_3508172.htm#query=woman%20relaxing%20spa%20water&position=41&from_view=search&track=ais&uuid=0dc33f71-a56e-414e-bf83-cd18809fb439)
+- The background farm image was by [Freepik](https://www.freepik.com/free-vector/farm-scene-landscape-with-barn_24881621.htm#query=cartoon%20farm%20background&position=1&from_view=search&track=ais&uuid=fe5e3fec-6bdc-4a52-85d3-17733cd4f67d)
 
-- The image for Rest and Unwind is by [cookie_studio](https://www.freepik.com/free-photo/young-woman-having-face-massage-relaxing-spa-salon_8224621.htm#query=spa&position=0&from_view=search&track=sph)
+- The site logo was created using [Canva](https://www.canva.com/design/DAF6ImgoPO0/9UyKH-i4vNCgU-pALSw4pA/edit)
 
-- The image for Reinvigorate and Renew is from [Freepik](https://www.freepik.com/free-photo/spa-concept-with-woman-relaxing-water_3505120.htm#query=spa-concept-with-woman-relaxing-water&position=1&from_view=search&track=sph&uuid=e5cbf2e2-6fbd-40f2-be89-c617498c5485)
+- The soil image was by [Freepik](https://www.freepik.com/free-vector/outer-space-surface-landscape_24060283.htm#query=mud%20cartoon&position=6&from_view=search&track=ais&uuid=7c1748f2-05b7-472a-b167-9066fccc2161)
 
-- The hero image for the Treatments page is by[vecstock](https://www.freepik.com/free-ai-image/scented-candle-burning-bowl-creating-tranquil-scene-generated-by-ai_52297585.htm)
+- [onlinepngtools](https://onlinepngtools.com/remove-png-background ) was utilised to make the mole, soil and veus fly trap backgrounds transparent.
 
-- The image for Work It out is by [gpointstudio](https://www.freepik.com/free-photo/woman-relaxing-spa_12930395.htm#query=spa&position=31&from_view=search&track=sph). 
+- [imageresizer]](https://imageresizer.com/crop-image) was used to crop the soil background image
 
-- The image for Drift Away is by [valuavitaly](https://www.freepik.com/free-photo/handsome-man-having-stone-massage-spa-salon-healthy-lifestyle_11178510.htm#query=hot%20stone%20massage&position=48&from_view=search&track=ais)
-
-- The image for New Beginnings is by [cookie_studio](https://www.freepik.com/free-photo/attractive-african-woman-enjoying-face-massage-spa-salon_9028017.htm#query=spa&position=4&from_view=keyword&track=sph%22%3EImage%20by%20cookie_studio")
-
-- The image for The Ultimate Unwind is by [javi_indy](https://www.freepik.com/free-photo/young-woman-receiving-back-massage-spa-center_1319025.htm#query=swedish%20massage&position=19&from_view=search&track=ais)
-
-- The image for Face Spa is by [FreePik](https://www.freepik.com/free-photo/spa-concept-with-woman-with-creme-face_2279922.htm#query=spa-concept-with-woman-with-creme-face&position=1&from_view=search&track=sph&uuid=ab0ea5ba-b81e-4fb6-88a5-8e3f3a736f42)
-
-- The image for Reflexology and Foot Massage is by [chevanon](https://www.freepik.com/free-photo/woman-getting-foot-massage_999590.htm#query=foot%20spa&position=39&from_view=search&track=ais)
-
-- The hero image on the Contact Us page is by [wirestock](https://www.freepik.com/free-photo/reflection-castle-pond-autumn_16369074.htm#query=manor%20house&position=22&from_view=search&track=ais&uuid=a0a3fa9b-d49f-4472-b027-eae8f4c15daf)
-
-- The hero image on the Book Now page is by [pvproductions] (https://www.freepik.com/free-photo/attractive-young-woman-is-relaxing-spa-complex-with-sauna_30906865.htm#page=4&query=spa&position=0&from_view=search&track=sph)
-
-- The favicon in the browser tab was created using[Favicon](https://favicon.io/logo-generator/) and instruction on implementation from [W3schools](https://www.w3schools.com/html/html_favicon.asp)
+- The favicon in the browser tab was created using[Favicon](https://favicon.io/logo-generator/) and instruction on implementation from [Dee Mc](https://www.youtube.com/watch?v=W809I-d9xTg&t=8s)
 
 - - - 
 
