@@ -9,11 +9,11 @@ body {
     font-family: "Fuzzy Bubbles", sans-serif;
 }
 
-.background-image-container{
+.background-image-container {
     width: 100%;
     height: 100vh;
 }
-   
+
 .background-image {
     width: 100%;
     height: 100%;
@@ -47,44 +47,68 @@ body {
     font-size: 3rem;
 }
 
- /* Modal taken from w3schools and adapted to this game */
+/* Modal taken from w3schools and adapted to this game */
+
+/* How to play button styling*/
+#mybtn {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fff3e7;
+    margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
+    border: 1px solid black;
+    width: 55%;
+    font-size: 18px;
+    box-shadow: 15px 15px 50px black;
+}
+
+/* The Close Button */
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 /* -- play game page -- */
 
@@ -107,7 +131,7 @@ body {
 }
 
 .box {
-    width:33%;
+    width: 33%;
     height: 33%;
     background-image: url("../images/soil-pile.png");
     background-repeat: no-repeat;
