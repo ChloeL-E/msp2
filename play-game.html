@@ -42,58 +42,65 @@
         </div>
       </nav>
       <main>
-        <!-- Modal taken from w3schools and adapted to game -->
-        <!-- Trigger/Open The Modal. -->
-        <button id="howToPlayBtn">How To Play</button>
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>
-              The rules are simple - bop the moles when you see them pop up
-              out of their mole hill, but be quick! They don't hang around
-              for long and will quickly hide back down in their hole.
-            </p><br>
-            <p>
-              There are nine mole hills on the grid and moles will pop out
-              of them at random. When you see the mole, quickly move your
-              cursor over the mole and right-click. If you have managed to bop
-              the mole you will score 10 points. Watch out for the biting
-              Venus Fly Traps though! They pop up too and if you accidentally
-              whack one, you will lose 20 points!
-            </p><br>
-            <p>
-              You have 60 seconds to try to bop as many moles as you can. When the game is over try and beat your score
-              again!
-            </p><br>
-            <p>
-              Have fun!!!
-            </p>
-          </div>
-        </div>
-        <!-- Scoreboard and Play Now button-->
         <div class="mainPlay">
-        <button id="playNow">Play!</button>
-        <h2 class="scoreBoard">Score: <span class="score">0</span></h2>
-        
-        <h2 class="scoreBoard">Time Remaining: <span class="timer">60</span></h2>
-        
+          <div class="controls">
+            <!-- Modal taken from w3schools and adapted to game -->
+            <!-- Trigger/Open The Modal. -->
+            <button id="howToPlayBtn">How To Play</button>
 
-        <!--3x3 board-->
-        <div id="board">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                  The rules are simple - bop the moles when you see them pop up
+                  out of their mole hill, but be quick! They don't hang around
+                  for long and will quickly hide back down in their hole.
+                </p><br>
+                <p>
+                  There are nine mole hills on the grid and moles will pop out
+                  of them at random. When you see the mole, quickly move your
+                  cursor over the mole and right-click. If you have managed to bop
+                  the mole you will score 10 points. Watch out for the biting
+                  Venus Fly Traps though! They pop up too and if you accidentally
+                  whack one, you will lose 20 points!
+                </p><br>
+                <p>
+                  You have 60 seconds to try to bop as many moles as you can. When the game is over try and beat your
+                  score
+                  again!
+                </p><br>
+                <p>
+                  Have fun!!!
+                </p>
+              </div>
+            </div>
+            <!-- Scoreboard and Play Now button-->
+
+            <button id="playNow">Play!</button>
+            <button id="reset">Reset!</button>
+          </div>
+          <h2 class="scoreBoard">Score: <span class="score">0</span></h2>
+
+          <h2 class="scoreBoard">Time Remaining: <span class="timer">60</span></h2>
+
+
+          <!--3x3 board-->
+          <div id="board">
+            <div class="molehill">
+              <img class="mole" src="mole.png" alt="mole">
+            </div>
+            <div class="molehill"></div>
+            <div class="molehill"></div>
+            <div class="molehill"></div>
+            <div class="molehill"></div>
+            <div class="molehill"></div>
+            <div class="molehill"></div>
+            <div class="molehill"></div>
+            <div class="molehill"></div>
+          </div>
         </div>
       </main>
     </div>

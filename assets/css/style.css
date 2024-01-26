@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Fuzzy Bubbles", sans-serif;
+    text-align: center;
 }
 
 a {
@@ -58,7 +59,7 @@ a {
 /* How to play button styling*/
 #howToPlayBtn {
     display: block;
-    background-color: #77C13D;
+    background-color: #fff2e6;
     font-weight: 700;
     font-size: 30px;
     display: block;
@@ -123,7 +124,7 @@ a {
 }
 
 #playBtn {
-    background-color: #E52B23;
+    background-color:#77C13D;
     font-weight: 700;
     font-size: 30px;
     display: block;
@@ -146,8 +147,36 @@ a {
     background-image: url("../images/farmerfield.jpg");
 }
 
+.controls {
+    display: inline-flex;
+}
+
+#playNow {
+    background-color: #77C13D;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 0 10px;
+    box-shadow: 15px 15px 50px black;
+}
+
+#reset {
+    background-color: #E52B23;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 0 10px;
+    box-shadow: 15px 15px 50px black;
+}
+
 .scoreBoard {
-    margin : 30px auto;
+    margin : 25px auto 0;
     text-align: center;
 }
 
@@ -155,31 +184,25 @@ a {
     width: 70vh;
     height: 70vh;
     background-image: url("../images/soil-background1.jpeg");
-    margin: 40px auto;
+    margin: 5px auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.box {
+.molehill {
     width: 33%;
     height: 33%;
     background-image: url("../images/soil-pile.png");
     background-repeat: no-repeat;
     background-position: bottom center;
+    position: relative;
 }
 
-#playNow {
-    background-color: #E52B23;
-    font-weight: 700;
-    font-size: 30px;
-    display: block;
-    padding: 5px;
-    color: black;
-    text-decoration: none;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-    margin: 20px auto;
-    box-shadow: 15px 15px 50px black;
+.molehill .mole {
+    width: 60%;
+    position: absolute;
 }
+
 
 
 /* -- About page styling -- */
