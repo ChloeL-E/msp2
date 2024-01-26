@@ -184,6 +184,8 @@ a {
     width: 70vh;
     height: 70vh;
     background-image: url("../images/soil-background1.jpeg");
+    border: 3px solid #502f12;
+    border-radius: 25px;
     margin: 5px auto;
     display: flex;
     flex-wrap: wrap;
@@ -196,6 +198,7 @@ a {
     background-repeat: no-repeat;
     background-position: bottom center;
     position: relative;
+    overflow: hidden;
 }
 
 .molehill .mole {
@@ -203,7 +206,9 @@ a {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    background-image: url("../images/mole.png");
+    /*transform: translateX(-50%);
+    animation: rise .4s ease-out;*/
 }
 
 .molehill .plant {
@@ -211,8 +216,19 @@ a {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    background-image: url("../images/venus-fly-trap.png");
+    /*transform: translateX(-50%);
+    animation: rise .4s ease-out;*/
 }
+
+/*@keyframes rise {
+    0% {
+        transform: translateX(-50%) translateY(100%);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}*/
 
 
 /* -- About page styling -- */
