@@ -1,0 +1,14 @@
+{
+  "name": "msp2",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Bop-A-Mole</h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
