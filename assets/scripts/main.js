@@ -121,7 +121,12 @@ getRandomHill()
  * moleTimer = setInterval(getRandomHill, 1000)}
  */
 
+function moveMole() {
+  let moleTimer = null;
+  moleTimer - setInterval(getRandomHill, 100000);
+} 
 
+moveMole()
 
 
 /**
