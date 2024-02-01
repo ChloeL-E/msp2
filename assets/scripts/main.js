@@ -9,8 +9,8 @@ const modal = document.getElementById("myModal");
 const btn = document.getElementById("howToPlayBtn");
 const span = document.getElementsByClassName("close")[0];
 //Constants for the scoreboard
-const score = document.getElementsByClassName("score");
-const timer = document.getElementsByClassName("timer");
+const score = document.getElementById("score");
+const timer = document.getElementById("timer");
 const playBtn = document.getElementById("playNow");
 const resetBtn = document.getElementById("reset");
 //Constants in the game
@@ -21,10 +21,11 @@ const plants = document.querySelectorAll(".plant");
 
 // Define the variables
 let result = 0;
-let gameScore = score;
+let gameScore = 0;
 let gameTimer = 60;
 let gameRunning = false;
-
+let moleTimer;
+let plantTimer;
 
 /**
  * How to Play Modal
@@ -45,7 +46,6 @@ window.onclick = function (event) {
 }
 
 
-
 /**
  * Event listeners for:
  * starting the game when play button clicked
@@ -57,8 +57,8 @@ playBtn.addEventListener('click', playGame);
 //resetBtn.addEventListener('click', gameOver)
 
 
-window.onload = function() {
-  playGame();
+/**window.onload = function() {
+  gameOver();
 }
 
 /**
@@ -72,13 +72,18 @@ window.onload = function() {
  */
 
 function playGame() {
+  //check no moles are in play
   gameRunning = true;
   gameScore = 0;
   gameTimer = 60;
-  //moveMole()
-  //movePlant()
+  score.textContent = gameScore;
+  timer.textContent = gameTimer;
+  getRandomHill();
+  moveMole();
+  movePlant();
+  addScore();
+  lossScore();
 }
-
 
 /**
  * function getRandomHill() selects a mole hill at random and places the mole in it
@@ -86,12 +91,6 @@ function playGame() {
  */
 
  function getRandomHill() {
-    //if(gameTimer <=0) {
-     // gameRunning = false;
-      //return;
-      //gameOver();
-   // } 
-
     molehills.forEach(molehill => {
       molehill.classList.remove("mole");
       molehill.classList.remove("plant");
@@ -106,15 +105,12 @@ function playGame() {
     setTimeout(() => {
       if(gameTimer <= 0) {
         gameRunning = false;
-        return; //gameOver();
+        clearInterval(moleTimer);
+        clearInterval(plantTimer);
       }
-    })
-
+    }, 500);
 }
-getRandomHill()
-
-
-
+//getRandomHill()
 
 /**
  * function moveMole(){                
@@ -122,10 +118,11 @@ getRandomHill()
  */
 
 function moveMole() {
-  let moleTimer = null;
-  moleTimer = setInterval(getRandomHill, 1000);   
+  clearInterval(moleTimer);
+  moleTimer = null;
+  moleTimer = setInterval(getRandomHill, 1500);
 } 
-moveMole()
+//moveMole()
 
 
 /**
@@ -134,10 +131,11 @@ moveMole()
  */
 
 function movePlant() {
-  let plantTimer = null;
-  plantTimer = setInterval(getRandomHill, 1500)
+  clearInterval(plantTimer);
+  plantTimer = null;
+  plantTimer = setInterval(getRandomHill, 2000);
 }
-movePlant()
+//movePlant()
 
 /**
  * addScore()
@@ -146,14 +144,16 @@ movePlant()
 
 function addScore() {
   let clickMoles = document.getElementsByClassName("molehill mole");
-  
-  clickMoles.forEach((clickMole) => {
+  Array.from(clickMoles).forEach((clickMole) => {
     clickMole.addEventListener('click', () => {
+      console.log("clicked a mole");
       gameScore += 10;
       score.textContent = gameScore;
+      moveMole();
     });
   });
 }
+//addScore();
 
 
 /**
@@ -161,12 +161,25 @@ function addScore() {
  * removes points when plant is clicked
  */
 
+function lossScore() {
+  let clickPlants = document.getElementsByClassName("molehill plant");
+  Array.from(clickPlants).forEach((clickPlant) => {
+    clickPlant.addEventListener('click', () => {
+      console.log("clicked a plant");
+      gameScore --;
+      score.textContent = gameScore;
+      movePlant();
+    });
+  });
+}
+//lossScore();
+
 /**
  * function checkMoleHillEmpty()  
  * moles and plants can't appear in the same molehill
  */
 
-function checkMoleHillEmpty() {
+/**function checkMoleHillEmpty() {
   if(!moles && !plants)
 }
 
