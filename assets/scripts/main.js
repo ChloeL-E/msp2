@@ -21,7 +21,7 @@ const plants = document.querySelectorAll(".plant");
 
 // Define the variables
 let result = 0;
-let gameScore = 0;
+let gameScore = score;
 let gameTimer = 60;
 let gameRunning = false;
 
@@ -52,16 +52,14 @@ window.onclick = function (event) {
  * Stop and reset the game when reset button is clicked
  */
 
-playBtn.onclick = function(){
-  alert("click");
-  console.log("click");
-}
+playBtn.addEventListener('click', playGame);
 
-resetBtn.onclick = function() {
-  alert("reset");
-  console.log("reset");
-}
+//resetBtn.addEventListener('click', gameOver)
 
+
+window.onload = function() {
+  playGame();
+}
 
 /**
  * playGame() ensure the game is clear for play
@@ -81,17 +79,20 @@ function playGame() {
   //movePlant()
 }
 
+
+
+
 /**
  * function getRandomHill() selects a mole hill at random and places the mole in it
  * only if game running
  */
 
-
  function getRandomHill() {
-    if(gameTimer <=0) {
-      gameRunning = false;
-      return;
-    }
+    //if(gameTimer <=0) {
+     // gameRunning = false;
+      //return;
+      //gameOver();
+   // } 
 
     molehills.forEach(molehill => {
       molehill.classList.remove("mole");
@@ -107,7 +108,7 @@ function playGame() {
     setTimeout(() => {
       if(gameTimer <= 0) {
         gameRunning = false;
-        return;
+        return; //gameOver();
       }
     })
 
@@ -115,37 +116,60 @@ function playGame() {
 getRandomHill()
 
 
+
+
 /**
- * function moveMole(){                sets an interval of 1 second between mole moving between hills using getRandomHill()
- * let moleTimer = null
- * moleTimer = setInterval(getRandomHill, 1000)}
+ * function moveMole(){                
+ * sets an interval of 1 second between mole moving between hills using getRandomHill()
  */
 
 function moveMole() {
   let moleTimer = null;
-  moleTimer - setInterval(getRandomHill, 100000);
+  moleTimer = setInterval(getRandomHill, 1000);   
 } 
-
 moveMole()
 
 
 /**
- * function getRandomPlant() places a plant in a random tile similar to what getRandomHill does for the mole 
- * --??? adding this into function getRandomHill
+ * function movePlant() {             
+ * sets an interval of 1.5 seconds between plant moving using getRandomHill()
  */
 
+function movePlant() {
+  let plantTimer = null;
+  plantTimer = setInterval(getRandomHill, 1500)
+}
+movePlant()
 
 /**
- * function movePlant() {             sets an interval of 1.5 seconds between plant moving using getRandomHill()
- * let plantTimer = null;
- * plantTimer = setInterval(getRandomPlant, 1500)}
+ * addScore()
+ * adds to score when mole is clicked
  */
 
-
+function addScore() {
+  let clickMoles = document.getElementsByClassName("molehill mole");
+  
+  clickMoles.forEach((clickMole) => {
+    clickMole.addEventListener('click', () => {
+    gameScore += 10;
+    gameScore.textContent = gameScore;
+  });
+});
+}
 
 /**
- * function checkMoleHillEmpty()  moles and plants can't appear in the same molehill
+ * lossScore()
+ * removes points when plant is clicked
  */
+
+/**
+ * function checkMoleHillEmpty()  
+ * moles and plants can't appear in the same molehill
+ */
+
+function checkMoleHillEmpty() {
+  if(!moles && !plants)
+}
 
 
 /**
@@ -153,10 +177,6 @@ moveMole()
  * 
  */
 
-/**
- * function reset(){   onclick of reset button runs gameOver()
- * gameOver()}
- */
 
 /**
  * function gameOver()

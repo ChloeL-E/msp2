@@ -179,6 +179,12 @@ a {
     margin : 25px auto 0;
     text-align: center;
 }
+body>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 #board {
     width: 70vh;
@@ -221,14 +227,15 @@ a {
 }*/
 
 .molehill.mole::before {
-    background-image: url(../images/small-mole.png);
-    background-repeat: no-repeat;
-    background-size: 130px;
-    background-position: center;
-    z-index: -1;
-    transform: translateX(-50%);
-    animation: rise .4s ease-out;
-}
+        background-image: url(../images/small-mole.png);
+        background-repeat: no-repeat;
+        background-size: 130px;
+        background-position: bottom center;
+        z-index: 1;
+        transform: translateX(-50%);
+        animation: rise .6s ease-out;
+        margin-left: 5rem;
+    }
 
 /*.plant {
     width: 50%;
@@ -241,14 +248,16 @@ a {
 }*/
 
 .molehill.plant::before {
-    background-image: url(../images/small-mole.png);
-    background-repeat: no-repeat;
-    background-size: 130px;
-    background-position: center;
-    z-index: -1;
-    transform: translateX(-50%);
-    animation: rise .4s ease-out;
-}
+        margin-left: 5rem;
+        background-image: url(../images/small-venus-fly-trap.png);
+        background-repeat: no-repeat;
+        background-size: 130px;
+        background-position: bottom center;
+        z-index: 1;
+        transform: translateX(-50%);
+        animation: rise .6s ease-out;
+    }
+
 
 @keyframes rise {
     0% {
