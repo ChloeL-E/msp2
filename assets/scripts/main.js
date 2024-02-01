@@ -55,12 +55,11 @@ window.onclick = function (event) {
 
 playBtn.addEventListener('click', playGame);
 
-//resetBtn.addEventListener('click', gameOver)
+resetBtn.addEventListener('click', gameOver);
 
-
-/**window.onload = function() {
+//window.onload = function () {
   gameOver();
-}
+//}
 
 /**
  * playGame() ensure the game is clear for play
@@ -92,25 +91,25 @@ function playGame() {
  * only if game running
  */
 
- function getRandomHill() {
-    molehills.forEach(molehill => {
-      molehill.classList.remove("mole");
-      molehill.classList.remove("plant");
-    });
+function getRandomHill() {
+  molehills.forEach(molehill => {
+    molehill.classList.remove("mole");
+    molehill.classList.remove("plant");
+  });
 
-    let randomHill = molehills[Math.floor(Math.random() * 9)];
-    randomHill.classList.add("mole");
+  let randomHill = molehills[Math.floor(Math.random() * 9)];
+  randomHill.classList.add("mole");
 
-    let randomPlant = molehills[Math.floor(Math.random() * 9)]
-    randomPlant.classList.add("plant");
+  let randomPlant = molehills[Math.floor(Math.random() * 9)]
+  randomPlant.classList.add("plant");
 
-    setTimeout(() => {
-      if(gameTimer <= 0) {
-        gameRunning = false;
-        clearInterval(moleTimer);
-        clearInterval(plantTimer);
-      }
-    }, 500);
+  setTimeout(() => {
+    if (gameTimer == 0) {
+      gameRunning = false;
+      clearInterval(moleTimer);
+      clearInterval(plantTimer);
+    }
+  }, 500);
 }
 //getRandomHill()
 
@@ -123,7 +122,7 @@ function moveMole() {
   clearInterval(moleTimer);
   moleTimer = null;
   moleTimer = setInterval(getRandomHill, 1500);
-} 
+}
 //moveMole()
 
 
@@ -196,7 +195,7 @@ function updateTimer() {
   timerId = setInterval(() => {
     gameTimer--;
     timer.textContent = gameTimer;
-    if(gameTimer <= 0) {
+    if (gameTimer == 0) {
       clearInterval(timerId);
       gameRunning = false;
       gameOver();
@@ -212,5 +211,17 @@ function updateTimer() {
  * clears moles and plants from molehills
  * add pop-up with message informing of score
  */
+
+function gameOver() {
+  if (gameTimer == 0) {
+    clearInterval(timerId);
+    clearInterval(moleTimer);
+    clearInterval(plantTimer);
+    gameRunning = false;
+    score.textContent = gameScore;
+    timer.textContent = gameTimer;
+  }
+}
+gameOver()
 
 // module.exports = {}
