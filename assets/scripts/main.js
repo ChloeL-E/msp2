@@ -80,8 +80,6 @@ function playGame() {
 }
 
 
-
-
 /**
  * function getRandomHill() selects a mole hill at random and places the mole in it
  * only if game running
@@ -151,11 +149,12 @@ function addScore() {
   
   clickMoles.forEach((clickMole) => {
     clickMole.addEventListener('click', () => {
-    gameScore += 10;
-    gameScore.textContent = gameScore;
+      gameScore += 10;
+      score.textContent = gameScore;
+    });
   });
-});
 }
+
 
 /**
  * lossScore()
