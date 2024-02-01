@@ -22,7 +22,8 @@ const plants = document.querySelectorAll(".plant");
 // Define the variables
 let result = 0;
 let gameScore = 0;
-let gameTimer = 60;
+let gameTimer;
+let timerId;
 let gameRunning = false;
 let moleTimer;
 let plantTimer;
@@ -83,6 +84,7 @@ function playGame() {
   movePlant();
   addScore();
   lossScore();
+  updateTimer();
 }
 
 /**
@@ -166,7 +168,7 @@ function lossScore() {
   Array.from(clickPlants).forEach((clickPlant) => {
     clickPlant.addEventListener('click', () => {
       console.log("clicked a plant");
-      gameScore --;
+      gameScore -= 10;
       score.textContent = gameScore;
       movePlant();
     });
@@ -188,6 +190,19 @@ function lossScore() {
  * function updateTimer()
  * 
  */
+
+function updateTimer() {
+  clearInterval(timerId);
+  timerId = setInterval(() => {
+    gameTimer--;
+    timer.textContent = gameTimer;
+    if(gameTimer <= 0) {
+      clearInterval(timerId);
+      gameRunning = false;
+      gameOver();
+    }
+  }, 1000);
+}
 
 
 /**
