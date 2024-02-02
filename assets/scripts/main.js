@@ -168,7 +168,7 @@ function addScore() {
         console.log("You got a mole");
         gameScore += 10;
         score.textContent = gameScore;
-        this.parentNode.classList.remove("mole");
+        this.classList.remove("mole");
 
         clearInterval(moleTimer); //clear timer and hitMole variable
         hitMole = null;
