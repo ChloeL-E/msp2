@@ -29,6 +29,9 @@ let gameRunning = false;
 let moleTimer;
 let plantTimer;
 let clickMoles;
+let hitMole = getRandomMoleHill.id;
+let hitPlant = getRandomPlantHill.id;
+
 
 /**
  * How to Play Modal
@@ -162,12 +165,15 @@ function movePlant() {
 function addScore() {
   clickMoles = document.getElementsByClassName("molehill mole");
   Array.from(clickMoles).forEach((clickMole) => {
-    clickMole.addEventListener('click', () => {
-      console.log("clicked a mole");
+    clickMole.addEventListener('mousedown', () => {
+      if(molehills.id == hitMole.id) {
+      console.log("you got a mole");
       gameScore += 10;
       score.textContent = gameScore;
-      moveMole();
+      hitMole = null;
+      }
     });
+    moveMole();
   });
 }
 
@@ -179,12 +185,12 @@ function addScore() {
 function lossScore() {
   let clickPlants = document.getElementsByClassName("molehill plant");
   Array.from(clickPlants).forEach((clickPlant) => {
-    clickPlant.addEventListener('click', () => {
+    clickPlant.addEventListener('mousedown', () => {
       console.log("clicked a plant");
       gameScore -= 10;
       score.textContent = gameScore;
-      movePlant();
     });
+    movePlant();
   });
 }
 //lossScore();
@@ -231,11 +237,15 @@ function resetGame() {
     gameTimer = 60;
     score.textContent = gameScore;
     timer.textContent = gameTimer;
+    clearInterval(timerId);
+    clearInterval(moleTimer);
+    clearInterval(plantTimer);
     //reset game board
     molehills.forEach(molehill => { //if class of mole or plant on board, remove
       molehill.classList.remove("mole");
       molehill.classList.remove("plant");
     });
+    return;
   })
 }
 
@@ -261,7 +271,6 @@ function gameOver() {
     score.textContent = gameScore;
     timer.textContent = gameTimer;
   }
-  reset()
 }
 
 
