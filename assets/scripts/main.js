@@ -163,7 +163,7 @@ function movePlant() {
 function addScore() {
   clickMoles = document.querySelectorAll(".molehill.mole"); //get the molehill with class 'mole' and store in clickMoles
   Array.from(clickMoles).forEach((clickMole) => {  //create an array
-    clickMole.addEventListener('mousedown', () => {    // listen for 'mousedown on a molehill with class of mole
+    clickMole.addEventListener('click', () => {    // listen for 'mousedown on a molehill with class of mole
       if (molehills.id === hitMole) {    //if user has hit a mole, add 10points and update the score correctly, clear hitMole
         console.log("You got a mole");
         gameScore += 10;
@@ -187,14 +187,16 @@ function addScore() {
 function lossScore() {
   clickPlants = document.querySelectorAll(".molehill.plant"); //assign molehill with class of plant to variable clickPlants
   Array.from(clickPlants).forEach((clickPlant) => { //create an array from variable
-    clickPlant.addEventListener('mousedown', () => { //listen for mousedown on a molehill with class of plant
+    clickPlant.addEventListener('click', () => { //listen for mousedown on a molehill with class of plant
       if (molehills.id == hitPlant) { //if user hits plant, console.log, decrement score by 10, update gameScore, clear hitPlant
         console.log("You got a plant");
         gameScore -= 10;
         score.textContent = gameScore;
+        this.classList.remove("plant");
+
+        movePlant(); //call function to move plant again
         hitPlant = null;
       }
-      movePlant(); //call function to move plant again
     })
   })
 }
