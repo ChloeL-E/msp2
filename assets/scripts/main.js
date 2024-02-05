@@ -28,7 +28,8 @@ let timerId;
 let gameRunning = false;
 let moleTimer;
 let plantTimer;
-let clickMoles;
+let clickMoles = [];
+let clickPlants = [];
 let hitMole = getRandomMoleHill.id;
 let hitPlant = getRandomPlantHill.id;
 
@@ -82,8 +83,9 @@ function playGame() {
   getRandomPlantHill();
   moveMole();
   movePlant();
-  addScore();
-  lossScore();
+  scoreCalculator();
+  // addScore();
+  //lossScore();
   updateTimer();
   gameOver();
 }
@@ -108,7 +110,7 @@ function getRandomMoleHill() {
       clearInterval(moleTimer);
       gameOver();
     }
-  }, 100);
+  }, 1000);
 }
 
 /**
@@ -128,7 +130,7 @@ function moveMole() {
 */
 
 function getRandomPlantHill() {
-  molehills.forEach(molehill => { //if class of mole or plant, remove
+  molehills.forEach(molehill => { //if class of plant, remove
     molehill.classList.remove("plant");
   });
 
@@ -141,7 +143,7 @@ function getRandomPlantHill() {
       clearInterval(plantTimer);
       gameOver();
     }
-  }, 500);
+  }, 1000);
 }
 
 /**
@@ -158,135 +160,164 @@ function movePlant() {
 /**
  * function addScore()
  * adds to score when mole is clicked
- */
 
 function addScore() {
-  clickMoles = document.querySelectorAll(".molehill.mole"); //get the molehill with class 'mole' and store in clickMoles
-  Array.from(clickMoles).forEach((clickMole) => {  //create an array
-    clickMole.addEventListener('click', () => {    // listen for 'mousedown on a molehill with class of mole
-      if (molehills.id === hitMole) {    //if user has hit a mole, add 10points and update the score correctly, clear hitMole
-        console.log("You got a mole");
+  molehills.forEach(molehill => {
+    molehill.addEventListener('mousedown', () => {
+      if (this.id == hitMole) {
+        console.log('you got a mole');
         gameScore += 10;
         score.textContent = gameScore;
-        this.classList.remove("mole");
-
         clearInterval(moleTimer); //clear timer and hitMole variable
         hitMole = null;
-
-        moveMole(); //call function for mole to be moved again
-      }
-    });
-  });
-}
-
-/**
- * lossScore()
- * removes points when plant is clicked
- */
-
-function lossScore() {
-  clickPlants = document.querySelectorAll(".molehill.plant"); //assign molehill with class of plant to variable clickPlants
-  Array.from(clickPlants).forEach((clickPlant) => { //create an array from variable
-    clickPlant.addEventListener('click', () => { //listen for mousedown on a molehill with class of plant
-      if (molehills.id == hitPlant) { //if user hits plant, console.log, decrement score by 10, update gameScore, clear hitPlant
-        console.log("You got a plant");
-        gameScore -= 10;
+        moveMole()
+      } /*else if (molehills.id == hitPlant) {
+        console.log("uh oh, you got a plant")
+        gameScore--;
         score.textContent = gameScore;
-        this.classList.remove("plant");
-
-        movePlant(); //call function to move plant again
+        clearInterval(hitPlant);
         hitPlant = null;
-      }
+        movePlant();
+      } 
     })
+  })
+}*/
+
+function scoreCalculator() {
+  molehills.forEach(molehill => {
+    molehill.addEventListener('click', scoreHandler);
   })
 }
 
-/**
- * function checkMoleHillEmpty()  
- * moles and plants can't appear in the same molehill - collision avoidance
- */
+function scoreHandler() {
+  const clickedMoleHillId = this.id;
+  const clickedMoleHill = document.getElementById(clickedMoleHillId);
 
- function checkMoleHillEmpty() {
-      if (molehills.id === hitPlant) { //if the id on molehill matches that of hitPlant then plant is in play, move the mole
-        moveMole();
-      } else if (molehills.id === hitMole) { //if the id on molehill matches hitMole, then a mole is in play, move the plant
-        movePlant();
+  if (clickedMoleHill.classList.contains("plant")) {
+    console.log('you got a plant');
+    gameScore -= 10
+    score.textContent = gameScore;
+    //clearInterval(plantTimer); //clear timer and hitPlant variable
+    //hitPlant = null;
+    getRandomPlantHill();
+  }
+  else if (clickedMoleHill.classList.contains("mole")) {
+    console.log('you got a mole');
+    gameScore += 10;
+    score.textContent = gameScore;
+    //clearInterval(moleTimer); //clear timer and hitMole variable
+   // hitMole = null;
+    getRandomMoleHill();
+  }
+}
+
+
+  /**
+   * lossScore()
+   * removes points when plant is clicked
+  
+  
+  function lossScore() {
+    molehills.forEach(molehill => {
+      molehill.addEventListener('mousedown', () => {
+        if (molehills.id == hitPlant) {
+          console.log('you got a plant');
+          gameScore -= 10
+          score.textContent = gameScore;
+          clearInterval(plantTimer); //clear timer and hitPlant variable
+          hitPlant = null;
+          movePlant();
+        }
+      })
+    })
+  } */
+
+
+  /**
+   * function checkMoleHillEmpty()  
+   * moles and plants can't appear in the same molehill - collision avoidance
+   */
+
+  function checkMoleHillEmpty() {
+    if (molehills.id === hitPlant) { //if the id on molehill matches that of hitPlant then plant is in play, move the mole
+      moveMole();
+    } else if (molehills.id === hitMole) { //if the id on molehill matches hitMole, then a mole is in play, move the plant
+      movePlant();
+    }
+  }
+
+  /**
+   * function updateTimer()
+   * counts down from 60 to 0
+   * game ends when timer reaches 0
+   */
+
+  function updateTimer() {
+    clearInterval(timerId);
+    // timer reduces by 1 in increments of 1s and updates the gameTimer
+    timerId = setInterval(() => {
+      gameTimer--;
+      timer.textContent = gameTimer;
+      //when timer reaches 0 the game ends, gameOver function called
+      if (gameTimer == 0) {
+        clearInterval(timerId); //clears timer to stop it counting down
+        gameRunning = false;
+        gameOver();
       }
+    }, 1000);
+  }
+
+  /**
+   * Reset game
+   * resets game if reset button is clicked
+   * or
+   * when timer reaches 0
+   * resets the game play- score to 0, timer to 60s, clears all intervals and removes moles and plants from game board
+   */
+
+  function resetGame() {
+    resetBtn.addEventListener("click", () => {
+      gameRunning = false;
+      //reset score and timer
+      gameScore = 0;
+      gameTimer = 60;
+      score.textContent = gameScore;
+      timer.textContent = gameTimer;
+      clearInterval(timerId);
+      clearInterval(moleTimer);
+      clearInterval(plantTimer);
+      //reset game board
+      molehills.forEach(molehill => { //if class of mole or plant on board, remove
+        molehill.classList.remove("mole");
+        molehill.classList.remove("plant");
+      });
+      return;
+    })
   }
 
 
-/**
- * function updateTimer()
- * counts down from 60 to 0
- * game ends when timer reaches 0
- */
+  /**
+   * function gameOver()
+   * sets score back to 0
+   * sets timer back to 60
+   * clears moles and plants from molehills
+   * add pop-up with message informing of score
+   */
 
-function updateTimer() {
+  function gameOver() {
+    if (gameTimer == 0) {
       clearInterval(timerId);
-      // timer reduces by 1 in increments of 1s and updates the gameTimer
-      timerId = setInterval(() => {
-        gameTimer--;
-        timer.textContent = gameTimer;
-        //when timer reaches 0 the game ends, gameOver function called
-        if (gameTimer == 0) {
-          clearInterval(timerId); //clears timer to stop it counting down
-          gameRunning = false; 
-          gameOver();
-        }
-      }, 1000);
+      clearInterval(moleTimer);
+      clearInterval(plantTimer);
+      molehills.forEach(molehill => { //if class of mole or plant, remove
+        molehill.classList.remove("mole");
+        molehill.classList.remove("plant");
+      });
+      gameRunning = false;
+      score.textContent = gameScore;
+      timer.textContent = gameTimer;
     }
-
-/**
- * Reset game
- * resets game if reset button is clicked
- * or
- * when timer reaches 0
- * resets the game play- score to 0, timer to 60s, clears all intervals and removes moles and plants from game board
- */
-
-function resetGame() {
-      resetBtn.addEventListener("click", () => {
-        gameRunning = false;
-        //reset score and timer
-        gameScore = 0;
-        gameTimer = 60;
-        score.textContent = gameScore;
-        timer.textContent = gameTimer;
-        clearInterval(timerId);
-        clearInterval(moleTimer);
-        clearInterval(plantTimer);
-        //reset game board
-        molehills.forEach(molehill => { //if class of mole or plant on board, remove
-          molehill.classList.remove("mole");
-          molehill.classList.remove("plant");
-        });
-        return;
-      })
-    }
-
-
-/**
- * function gameOver()
- * sets score back to 0
- * sets timer back to 60
- * clears moles and plants from molehills
- * add pop-up with message informing of score
- */
-
-function gameOver() {
-      if (gameTimer == 0) {
-        clearInterval(timerId);
-        clearInterval(moleTimer);
-        clearInterval(plantTimer);
-        molehills.forEach(molehill => { //if class of mole or plant, remove
-          molehill.classList.remove("mole");
-          molehill.classList.remove("plant");
-        });
-        gameRunning = false;
-        score.textContent = gameScore;
-        timer.textContent = gameTimer;
-      }
-    }
+  }
 
 
 // module.exports = {}
