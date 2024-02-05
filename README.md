@@ -386,11 +386,8 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 
 -   ### Fixed Bugs
 
-    * The header would not align correctly using bootstrap but the footer did, using flexbox. The header was rewritten to use flexbox and the issue was resolved.
-    * The hamburger click functon would not work. On media screens with max-width 600px, the "click" function causes the nav menu to slide out from left to right below the header. Utilising dev tools and console.log to log each click it was clear that the javascript was working but it was the css that was not working as expected. A background-color of red was added to the nav-menu and it was made clear that it needed .nav-menu.active set with left:0. This fixed the problem.
-    * The contact-address and contact-detils were misaligned on smaller screen sizes. This was fixed by giving both classes a width and altering the padding on the media queries.
-    *  A dark line showed on media screen size max-width 600px when using Chrome dev tools. This was fixed by removing the scroll property.
-    * The images had a slow load time, which was highlighted using Lighthouse. This was improved by dowloading the smallest image size, running the images through cloud convert and then using tiny.png to compress it. This improved load times substantially.
+    * The moveMole and movePlant functions move the images around the game board using setInterval. However multiple images were appearing one after another. To fix this, the clearInterval method was used and this worked. Now only one of each image apppeared at any one time.
+    * A similar bug was found in the resetGame function which is linked to the reset button. I found if i again used the clearInterval method after the setInterval it 
 
 - - - 
 
@@ -398,11 +395,9 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 
 -   ### Content
 
-- [cloudconvert] (https://cloudconvert.com/) was used to convert images to webp format.
-
-- [tiny.png](https://tinypng.com/) was used to compress images.
-
 - [Angle Brace](https://www.youtube.com/watch?v=b20YueeXwZg) and [Code with Anna Kubow](https://www.youtube.com/watch?v=rJU3tHLgb_c&list=PLRD1Niz0lz1uR4W3ms6DygWMjXW-6hDB_&index=8) on [youtube](www.youtube.com) were used for guidance when starting to map out the basic functions.
+
+- For information on how to link a add an event listener to a button and linking functions[Coding with Russ](https://www.youtube.com/watch?v=JsErMawwdOw) and [Marsha Badley](https://www.youtube.com/watch?v=BvnPi-7grhk)
 
 - [w3schools] 
 
@@ -425,6 +420,10 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 - The soil image was by [Freepik](https://www.freepik.com/free-vector/outer-space-surface-landscape_24060283.htm#query=mud%20cartoon&position=6&from_view=search&track=ais&uuid=7c1748f2-05b7-472a-b167-9066fccc2161)
 
 - [onlinepngtools](https://onlinepngtools.com/remove-png-background ) was utilised to make the mole, soil and veus fly trap backgrounds transparent.
+
+- [cloudconvert] (https://cloudconvert.com/) was used to convert images to webp format.
+
+- [tiny.png](https://tinypng.com/) was used to compress images.
 
 - [imageresizer]](https://imageresizer.com/crop-image) was used to crop the soil background image
 
