@@ -2,8 +2,6 @@
  * Define the Constants so they can be used in the code
  * */
 
-
-
 //Pull in elements from the DOM
 //Constants for the modal
 const modal = document.getElementById("myModal");
@@ -61,11 +59,26 @@ window.onclick = function (event) {
 playBtn.addEventListener('click', playGame);
 resetBtn.addEventListener('click', resetGame);
 
+/**
+ * Using jQuery to play audio when speaker play icon is clicked
+ * Change icon to speaker off and pause audio when speaker off button is clicked
+ */
 
+$(document).ready(function() { //wait for document to fully load before allowing fucntion to run
+  let audioEl = document.getElementById("audio"); 
+  $('#pause').hide(); // <a> tag with id of pause is hidden
 
-//window.onload = function () {
-//  resetGame();
-//}
+  $('#play').click(function() { //when <a> tag with the id of play is clicked 
+      $('#play').hide(); //the play button is hidden
+      $('#pause').show(); //pause button shows 
+      audioEl.play(); //audio plays
+  });
+  $('#pause').click(function() { //when <a> tag with id of pause is clicked
+      $('#play').show(); //the <a> tag with id of play is shown
+      $('#pause').hide(); //the <a> tag with id pause is hidden
+      audioEl.pause(); //audio is paused until a further click event
+  });
+});
 
 /**
  * playGame() ensure the game is clear for play
