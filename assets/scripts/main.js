@@ -61,6 +61,8 @@ window.onclick = function (event) {
 playBtn.addEventListener('click', playGame);
 resetBtn.addEventListener('click', resetGame);
 
+
+
 //window.onload = function () {
 //  resetGame();
 //}
