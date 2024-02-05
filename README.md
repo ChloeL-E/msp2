@@ -398,18 +398,15 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 
 -   ### Content
 
-
-
 - [cloudconvert] (https://cloudconvert.com/) was used to convert images to webp format.
 
 - [tiny.png](https://tinypng.com/) was used to compress images.
 
+- [Angle Brace](https://www.youtube.com/watch?v=b20YueeXwZg) and [Code with Anna Kubow](https://www.youtube.com/watch?v=rJU3tHLgb_c&list=PLRD1Niz0lz1uR4W3ms6DygWMjXW-6hDB_&index=8) on [youtube](www.youtube.com) were used for guidance when starting to map out the basic functions.
+
 - [w3schools] 
 
-
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
--  [CodeInstitute] For their content and guidance through the whole process.
+- [CodeInstitute] For their content and guidance through the whole process.
 
 - Content was written by Chloe Livingstone-Evans.
 
