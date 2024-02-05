@@ -61,7 +61,7 @@ resetBtn.addEventListener('click', resetGame);
 
 /**
  * Using jQuery to play audio when speaker play icon is clicked
- * Change icon to speaker off and pause audio when speaker off button is clicked
+ * Change icon to speaker off and pause the audio when speaker off icon is clicked
  */
 
 $(document).ready(function() { //wait for document to fully load before allowing fucntion to run
@@ -99,8 +99,6 @@ function playGame() {
   moveMole();
   movePlant();
   scoreCalculator();
-  // addScore();
-  //lossScore();
   updateTimer();
   gameOver();
 }
