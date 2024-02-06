@@ -22,7 +22,7 @@ a {
 .background-image {
     width: 100%;
     height: 100%;
-    background-image: url("../images/farm-background.png");
+    background-image: url("../images/farm-background.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -154,7 +154,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    background-image: url("../images/farmerfield.png");
+    background-image: url("../images/farmerfield.webp");
 }
 
 .controls {
@@ -200,7 +200,7 @@ body>div {
 #board {
     width: 70vh;
     height: 70vh;
-    background-image: url("../images/soil-background.png");
+    background-image: url("../images/soil-background.webp");
     border: 3px solid #502f12;
     border-radius: 25px;
     margin: 5px auto;
@@ -238,7 +238,7 @@ body>div {
 }*/
 
 .molehill.mole::before {
-    background-image: url(../images/small-mole.png);
+    background-image: url("../images/mole.webp");
     background-repeat: no-repeat;
     background-size: 130px;
     background-position: bottom center;
@@ -260,7 +260,7 @@ body>div {
 
 .molehill.plant::before {
     margin-left: 5rem;
-    background-image: url(../images/small-venus-fly-trap.png);
+    background-image: url("../images/venus-fly-trap.webp");
     background-repeat: no-repeat;
     background-size: 130px;
     background-position: bottom center;
