@@ -154,7 +154,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    background-image: url("../images/farmerfield.jpg");
+    background-image: url("../images/farmerfield.png");
 }
 
 .controls {
@@ -200,7 +200,7 @@ body>div {
 #board {
     width: 70vh;
     height: 70vh;
-    background-image: url("../images/soil-background1.jpeg");
+    background-image: url("../images/soil-background.png");
     border: 3px solid #502f12;
     border-radius: 25px;
     margin: 5px auto;

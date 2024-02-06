@@ -43,12 +43,15 @@
       </nav>
       <main>
         <div class="mainPlay">
+          <h1 class="title">Bop-A-Mole</h1>
           <div class="controls">
 
             <!--Audio controls-->
-            <audio id="two" src="assets/css/audio/farm-music2.mp3" autostart="false"></audio>
-            <a id="playTwo" href="#"><i class="fa-solid fa-volume-high"></i></a>
-            <a id="pauseTwo" href="#"><i class="fa-solid fa-volume-xmark"></i></a>
+            <!-- Descriptive label for the audio for screen readers-->
+          <div id="audioDescription" style="display: none;">Upbeat farm music</div>
+            <audio id="two" src="assets/css/audio/farm-music2.mp3" type="audio/mpeg" autostart="false" aria-labelledby="audioDescription"></audio>
+            <a id="playTwo" href="#" aria-label="play"><i class="fa-solid fa-volume-high"></i></a>
+            <a id="pauseTwo" href="#" aria-label="pause"><i class="fa-solid fa-volume-xmark"></i></a>
 
             <!-- Modal taken from w3schools and adapted to game -->
             <!-- Trigger/Open The Modal. -->
