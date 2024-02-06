@@ -45,13 +45,16 @@ a {
     border-radius: 50%;
 }
 
-/* Home page */
+/* audio icons */
 
-.title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 4rem;
-    margin-top: -35px;
+#playOne,
+#pauseOne,
+#playTwo,
+#pauseTwo {
+    color: black;
+    font-size: 50px;
+    margin-right: 20px;
+    display: inline-block;
 }
 
 /* Modal taken from w3schools and adapted to this game */
@@ -122,6 +125,15 @@ a {
     cursor: pointer;
 }
 
+/* Home page */
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: -35px;
+}
+
 #playBtn {
     background-color: #77C13D;
     font-weight: 700;
@@ -149,13 +161,6 @@ a {
     display: inline-flex;
 }
 
-#playOne, #pauseOne, #playTwo, #pauseTwo {
-    color: black;
-    font-size: 50px;
-    margin-right: 20px;
-    display:inline-block;
-}
-
 #playNow {
     background-color: #77C13D;
     font-weight: 700;
@@ -181,9 +186,10 @@ a {
 }
 
 .scoreBoard {
-    margin : 25px auto 0;
+    margin: 25px auto 0;
     text-align: center;
 }
+
 body>div {
     display: flex;
     flex-direction: column;
@@ -232,15 +238,15 @@ body>div {
 }*/
 
 .molehill.mole::before {
-        background-image: url(../images/small-mole.png);
-        background-repeat: no-repeat;
-        background-size: 130px;
-        background-position: bottom center;
-        z-index: 1;
-        transform: translateX(-50%);
-        animation: rise .6s ease-out;
-        margin-left: 5rem;
-    }
+    background-image: url(../images/small-mole.png);
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: bottom center;
+    z-index: 1;
+    transform: translateX(-50%);
+    animation: rise .6s ease-out;
+    margin-left: 5rem;
+}
 
 /*.plant {
     width: 50%;
@@ -253,28 +259,27 @@ body>div {
 }*/
 
 .molehill.plant::before {
-        margin-left: 5rem;
-        background-image: url(../images/small-venus-fly-trap.png);
-        background-repeat: no-repeat;
-        background-size: 130px;
-        background-position: bottom center;
-        z-index: 1;
-        transform: translateX(-50%);
-        animation: rise .6s ease-out;
-    }
-
+    margin-left: 5rem;
+    background-image: url(../images/small-venus-fly-trap.png);
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: bottom center;
+    z-index: 1;
+    transform: translateX(-50%);
+    animation: rise .6s ease-out;
+}
 
 @keyframes rise {
     0% {
         transform: translateX(-50%) translateY(100%);
     }
+
     100% {
         transform: translateX(-50%) translateY(0);
     }
 }
 
-
-/* -- About page styling -- */
+/* -- About page -- */
 
 .about-box {
     background-color: #fff3e7;
@@ -290,18 +295,10 @@ body>div {
 /*--Media Queries--*/
 
 /*-------------------------------------Extra-Small devices (Phones, 600px and down)---------------------------------*/
-@media only screen and (max-width: 600px) {
-    
+@media only screen and (max-width: 600px) {}
 
-    }
+/*-----------------------------------Small devices (Tablet, large phone, 600px and up)---------------------------------*/
+@media only screen and (min-width: 600px) {}
 
-    /*-----------------------------------Small devices (Tablet, large phone, 600px and up)---------------------------------*/
-    @media only screen and (min-width: 600px) {
-       
-
-    }
-
-    /*-------------------------------------Medium devices (Landscape tablets, 768px and up)---------------------------------*/
-    @media only screen and (min-width: 768px) {
-
-    }
+/*-------------------------------------Medium devices (Landscape tablets, 768px and up)---------------------------------*/
+@media only screen and (min-width: 768px) {}
