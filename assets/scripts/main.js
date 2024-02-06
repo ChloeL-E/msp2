@@ -59,13 +59,14 @@ window.onclick = function (event) {
 playBtn.addEventListener('click', playGame);
 resetBtn.addEventListener('click', resetGame);
 
+
 /**
  * Using jQuery to play audio when speaker play icon is clicked
  * Change icon to speaker off and pause the audio when speaker off icon is clicked
  * Home page audio
- * */
+ */
 
-$(document).ready(function () {
+/**$(document).ready(function () {
   let audioOne = document.getElementById("one");
   let audioTwo = document.getElementById("two");
 
@@ -95,20 +96,20 @@ $(document).ready(function () {
     $('#pauseTwo').hide();
     audioTwo.pause();
   });
-});
+});*/
 
-/**$(document).ready(function() { //wait for document to fully load before allowing fucntion to run
+$(document).ready(function() { //wait for document to fully load before allowing fucntion to run
   let audioOne = document.getElementById("one"); 
-  $('#pause').hide(); // <a> tag with id of pause is hidden
+  $('#pauseOne').hide(); // <a> tag with id of pause is hidden
 
-  $('#play').click(function() { //when <a> tag with the id of play is clicked 
-      $('#play').hide(); //the play button is hidden
-      $('#pause').show(); //pause button shows 
+  $('#playOne').click(function() { //when <a> tag with the id of play is clicked 
+      $('#playOne').hide(); //the play button is hidden
+      $('#pauseOne').show(); //pause button shows 
       audioOne.play(); //audio plays
   });
-  $('#pause').click(function() { //when <a> tag with id of pause is clicked
-      $('#play').show(); //the <a> tag with id of play is shown
-      $('#pause').hide(); //the <a> tag with id pause is hidden
+  $('#pauseOne').click(function() { //when <a> tag with id of pause is clicked
+      $('#playOne').show(); //the <a> tag with id of play is shown
+      $('#pauseOne').hide(); //the <a> tag with id pause is hidden
       audioOne.pause(); //audio is paused until a further click event
   });
 });
@@ -117,19 +118,19 @@ $(document).ready(function () {
 
 $(document).ready(function() { //wait for document to fully load before allowing fucntion to run
   let audioTwo = document.getElementById("two"); 
-  $('#pause').hide(); // <a> tag with id of pause is hidden
+  $('#pauseTwo').hide(); // <a> tag with id of pause is hidden
 
-  $('#play').click(function() { //when <a> tag with the id of play is clicked 
-      $('#play').hide(); //the play button is hidden
-      $('#pause').show(); //pause button shows 
+  $('#playTwo').click(function() { //when <a> tag with the id of play is clicked 
+      $('#playTwo').hide(); //the play button is hidden
+      $('#pauseTwo').show(); //pause button shows 
       audioTwo.play(); //audio plays
   });
-  $('#pause').click(function() { //when <a> tag with id of pause is clicked
-      $('#play').show(); //the <a> tag with id of play is shown
-      $('#pause').hide(); //the <a> tag with id pause is hidden
+  $('#pauseTwo').click(function() { //when <a> tag with id of pause is clicked
+      $('#playTwp').show(); //the <a> tag with id of play is shown
+      $('#pauseTwo').hide(); //the <a> tag with id pause is hidden
       audioTwo.pause(); //audio is paused until a further click event
   });
-});*/
+});
 
 /**
  * playGame() ensure the game is clear for play

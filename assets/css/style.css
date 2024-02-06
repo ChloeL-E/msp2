@@ -57,8 +57,7 @@ a {
 /* Modal taken from w3schools and adapted to this game */
 
 /* How to play button styling*/
-#howToPlayBtn {
-    display: block;
+.howToPlayBtn {
     background-color: #fff2e6;
     font-weight: 700;
     font-size: 30px;
@@ -124,15 +123,14 @@ a {
 }
 
 #playBtn {
-    background-color:#77C13D;
+    background-color: #77C13D;
     font-weight: 700;
     font-size: 30px;
-    display: block;
-    padding: 5px;
+    padding: 15px;
     color: black;
     text-decoration: none;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-    margin: 15px auto;
+    margin: 0 10px;
     box-shadow: 15px 15px 50px black;
 }
 
