@@ -80,7 +80,12 @@ board.addEventListener('mousemove', e => {
   cursor.style.top = e.pageY + 'px';
   cursor.style.left = e.pageX + 'px';
 });
-
+board.addEventListener('mousedown', () =>{
+  cursor.classList.add("active");
+});
+board.addEventListener('mouseup', () =>{
+  cursor.classList.remove("active");
+});
 
 
 /**
