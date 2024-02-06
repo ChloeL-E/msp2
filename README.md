@@ -402,6 +402,8 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 
 - [w3schools] 
 
+- [Online Converter](https://www.onlineconverter.com/compress-mp3) used to reduce audio file size.
+
 - [CodeInstitute] For their content and guidance through the whole process.
 
 - Content was written by Chloe Livingstone-Evans.
