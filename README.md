@@ -294,8 +294,8 @@ This game has been built using HTML, CSS and Javascript.
     -    #### WAVE accessibility tool
 
     * The website was developed to be as inclusive as possible. The use of semantic HTML, aria-labelling, alt attributes to images and good colour contrast.
-    * The WAVE Web Accessibility Evaluation Tool was used to assess each webpage [wave]()
-    * The Home page showed no errors or contrast errors but identified two alerts. An alt attribute to identify the 'Book Now' button. An alt tag was added which fixed the alert. An alert identified with the Hamburger toggle. The function requires a click which would not be accessible to keyboard users. ![Wave tool result]()
+    * The WAVE Web Accessibility Evaluation Tool was used to assess each webpage.
+    * The Home page identified 2 errors and 1 alert. All were in relation to the audio. The audio icons required labelling for screen readers, in particular the hidden audio pause which is hidden until the icon is clicked. Using MDN webdocs and W3C i improved the accessibility. When reassessed with the WAVE tool, there were no errors identified. ![Wave tool result]()
     * The Play page identified no errors or contrast errors.
     * The About page identified no errors or contrast errors. One alert was identified which showed a redundant link. Adjacent links go to the same URL (logo and home), therefore the logo link was removed to improve efficiency of movement through the webpage for screenreaders. 
     * How To Play Modal 
@@ -318,11 +318,11 @@ This game has been built using HTML, CSS and Javascript.
 Github was used as version control. Visual studio code was the IDE used to build the website, code was added and commited in the terminal and then pushed to Github.
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 
-To deploy this page to GitHub Pages from its [GitHub repository:](), the following steps were taken: 
+To deploy this page to GitHub Pages from its [GitHub repository:](https://github.com/ChloeL-E/msp2), the following steps were taken: 
 1. Login or Sign Up to GitHub.
 2. Open the project repository.
 3. From the menu items near the top of the page, select **Settings**.
-![Deployment:]()
+![Deployment:](https://chloel-e.github.io/msp2/)
 
 4. Click on "Pages" in the left hand navigation panel.
 5. Under "Source", choose which branch to deploy. This should be Main for newer repositories (older repositories may still use Master).
@@ -349,26 +349,7 @@ It can take some time for the page to be fully deployed.
 
 -   ### Testing site functionality
 
-| **Purpose**                                                                | **Action**                                                                | **Expected**                                                                                                     | **Result** |
-| -------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------- |
-| Ensure website is responsive                                               | Using developer tools and different device sizes, shrink website to 260px | Site is responsive on all devices                                                                                | PASS       |
-| Take to Home page link                                                     | From navigation bar, click Home link                                      | Taken to Home page                                                                                               | PASS       |
-| Take to Treatments page link                                               | From navigation bar, click Treatments                                     | Taken to Treatments page                                                                                         | PASS       |
-| Take to Contact Us page link                                               | From navigation bar, click Contact Us                                     | Taken to Contact Us page                                                                                         | PASS       |
-| Take to Booking page                                                       | From navigation bar, click Book Now                                       | Taken to Booking page                                                                                            | PASS       |
-| Take to Facebook page in new browser tab                                   | From Social links in Footer, click Facebook icon                          | New tab opens in browser with the Facebook website                                                               | PASS       |
-| Take to Instagram page in new browser tab                                  | From Social links in Footer, click Instagram icon                         | New tab opens in browser with the Instagram website                                                              | PASS       |
-| Take to YouTube page in new browser tab                                    | From Social links in Footer, click YouTube icon                           | New tab opens in browser with the YouTube website                                                                | PASS       |
-| Take to Twitter page in new browser tab                                    | From Social links in Footer, click Twitter icon                           | New tab opens in browser with the Twitter website                                                                | PASS       |
-| Take to Booking page                                                       | Click Book Now in Footer                                                  | Taken to Booking page                                                                                            | PASS       |
-| Form Input fields set to 'required'                                        | Click Submit button without correctly completing each of the valid inputs | Form does not send and message asks 'Please fill in this field'                                                  | PASS       |
-| Form Email input is 'required' and must be valid                           | Click Submit button without inserting a correctly formatted email address | Form does not send and message asks 'Please include an '@' in the email address'                                 | PASS       |
-| Booking form calendar input is a 'required field                           | Click Submit button without inserting a valid date                        | Form does not send and message asks 'Please enter a valid value. The field is incomplete or has an invalid date' | PASS       |
-| Booking form calendar input shows calendar/time when field is clicked      | Click calendar input field                                                | Calendar appears and a valid date/time can be picked.                                                            | PASS       |
-| Submit booking enquiry form                                                | Complete the form on the Booking page and click Submit                    | Taken to Thank You page                                                                                          | PASS       |
-| Navigation links change text and background-colour when mouse hovers over  | Hover mouse over Home, Treatment, Contact Us, then Book Now               | Each link independently changes colour when hovering over with mouse                                             | PASS       |
-| Footer links change text and background-colour when mouse hovers over      | Hover mouse over Facebook, Instagram, YouTube, Twitter and Book Now       | Each link independently changes colour when hovered over with mouse                                              | PASS       |
-| Treatment page image overlays show text information when mouse hovers over | Hover mouse over each Treatment page image                                | Each image overlay smoothly transitions with good contrast between text and background-colour                    | PASS       |
+INSERT TABLE HERE
 
 Each action was tested and found to work as expected. 
 Chrome developer tools were used to identify and resolve any issues or bugs throughout the development process. 
@@ -380,7 +361,6 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
     * The Website was tested on Google Chrome, Microsoft Edge, Internet Explorer and Safari browsers.
     * The website was viewed on a variety of devices such as Desktop, Laptop, Tablets and Phones using dev tools and real devices.
     * The website was sent to friends and young family members to review the site and test it from a user perspective.
-    * My 3 year old daughter and nephew both tested the site.
 
 - - - 
 
@@ -389,6 +369,7 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
     * The moveMole and movePlant functions move the images around the game board using setInterval. However multiple images were appearing one after another. To fix this, the clearInterval method was used and this worked. Now only one of each image apppeared at any one time.
     * A similar bug was found in the resetGame function which is linked to the reset button. I found if i again used the clearInterval method after the setInterval it.
     * Logo didnt appear when website was first depolyed. Checked and confirmed it was using the correct file path. Checked the source code in Developer tools and hadn't loaded the logo image. Re-deployed website but this did not work either. Re-added the image to VS code in new format and this worked.
+    * The javascript for the audio/icons worked on the play page but not on the home page. I tried changing the format of the code, moved elements to class from Id but this did not work. Renamed the elements to ensure ids were uniquely named. This did not work either. Troubleshooting done via StackOverflow but this did not provide any correct answers for this particular issue. I rechecked correct file paths and that the jquery script was loading before the main.js file. Blocked out all javascript other than the specific audio function and it worked. I then worked backwards, slowly reintroduced more code. I found that the issue was with the order of execution. Once i had reordered the code correctly, the bug was fixed.
 
 - - - 
 
