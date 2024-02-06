@@ -295,10 +295,10 @@ This game has been built using HTML, CSS and Javascript.
 
     * The website was developed to be as inclusive as possible. The use of semantic HTML, aria-labelling, alt attributes to images and good colour contrast.
     * The WAVE Web Accessibility Evaluation Tool was used to assess each webpage.
-    * The Home page identified 2 errors and 1 alert. All were in relation to the audio. The audio icons required labelling for screen readers, in particular the hidden audio pause which is hidden until the icon is clicked. Using MDN webdocs and W3C i improved the accessibility. When reassessed with the WAVE tool, there were no errors identified. ![Wave tool result]()
-    * The Play page identified no errors or contrast errors.
-    * The About page identified no errors or contrast errors. One alert was identified which showed a redundant link. Adjacent links go to the same URL (logo and home), therefore the logo link was removed to improve efficiency of movement through the webpage for screenreaders. 
-    * How To Play Modal 
+    * The Home page identified 2 errors and 1 alert. All were in relation to the audio. The audio icons required labelling for screen readers, in particular the hidden audio pause which is hidden until the icon is clicked. Using MDN webdocs and W3C i improved the accessibility. When reassessed with the WAVE tool, there were no errors identified. ![Wave tool result - home page](documentation/wave-home.png)
+    * The Play page identified no errors or contrast errors ![Wave tool result - play page](documentation/wave-play.png)
+    * The About page identified no errors or contrast errors. ![Wave tool result - about page](documentation/lighthouse-about.png).
+    * Wave tool also identified a contract error in the 'x' close icon on the How to Play modal, this color was changed to black which fixed the error.
 
     -    #### Lighthouse 
 
@@ -306,10 +306,9 @@ This game has been built using HTML, CSS and Javascript.
 
     - Performance was the only issue and the majority of this is due to the images slowing the load time therfore the images used within the content on Home and Treaments page were converted from jpeg to png files. This improved the performance. The hero images to each page were not converted as it did not improve the performance rating but the image quality reduced.
   
-  * [See Lighthouse report for Home page]()
-  * [See Lighthouse report for Play page]()
-  * [See Lighthouse report for About page]()
-  * [See Lighthouse report for How To Play Modal]()
+  * [See Lighthouse report for Home page](documentation/lighthouse-home.png)
+  * [See Lighthouse report for Play page](documentation/lighthouse-play.png)
+  * [See Lighthouse report for About page](documentation/lighthouse-about.png)
 
 - - - 
 
