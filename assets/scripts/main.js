@@ -13,21 +13,21 @@ const timer = document.getElementById("timer");
 const playBtn = document.getElementById("playNow");
 const resetBtn = document.getElementById("reset");
 //Constants in the game
-const molehills = [...document.querySelectorAll(".molehill")]
-const moles = document.querySelectorAll(".mole");
-const plants = document.querySelectorAll(".plant");
+const molehills = [...document.querySelectorAll(".molehill")];
+//const moles = document.querySelectorAll(".mole");
+//const plants = document.querySelectorAll(".plant");
 
 
 // Globally define the variables
-let result = 0;
+//let result = 0;
 let gameScore = 0;
 let gameTimer;
 let timerId;
 let gameRunning = false;
 let moleTimer;
 let plantTimer;
-let clickMoles = [];
-let clickPlants = [];
+//let clickMoles = [];
+//let clickPlants = [];
 let hitMole = getRandomMoleHill.id;
 let hitPlant = getRandomPlantHill.id;
 
@@ -69,40 +69,6 @@ $(document).ready(function () {
   });
 });
 
-/*
-$(document).ready(function() { //wait for document to fully load before allowing fucntion to run
-  let audioOne = document.getElementById("one"); 
-  $('#pauseOne').hide(); // <a> tag with id of pause is hidden
-
-  $('#playOne').click(function() { //when <a> tag with the id of play is clicked 
-      $('#playOne').hide(); //the play button is hidden
-      $('#pauseOne').show(); //pause button shows 
-      audioOne.play(); //audio plays
-  });
-  $('#pauseOne').click(function() { //when <a> tag with id of pause is clicked
-      $('#playOne').show(); //the <a> tag with id of play is shown
-      $('#pauseOne').hide(); //the <a> tag with id pause is hidden
-      audioOne.pause(); //audio is paused until a further click event
-  });
-});
-
-//Play page audio
-
-$(document).ready(function() { //wait for document to fully load before allowing fucntion to run
-  let audioTwo = document.getElementById("two"); 
-  $('#pauseTwo').hide(); // <a> tag with id of pause is hidden
-
-  $('#playTwo').click(function() { //when <a> tag with the id of play is clicked 
-      $('#playTwo').hide(); //the play button is hidden
-      $('#pauseTwo').show(); //pause button shows 
-      audioTwo.play(); //audio plays
-  });
-  $('#pauseTwo').click(function() { //when <a> tag with id of pause is clicked
-      $('#playTwo').show(); //the <a> tag with id of play is shown
-      $('#pauseTwo').hide(); //the <a> tag with id pause is hidden
-      audioTwo.pause(); //audio is paused until a further click event
-  });
-});*/
 
 
 /**
@@ -112,16 +78,16 @@ $(document).ready(function() { //wait for document to fully load before allowing
 
 btn.onclick = function () {
   modal.style.display = "block";
-}
+};
 // Close the modal by clicking the (x) or anywhere outside the modal
 span.onclick = function () {
   modal.style.display = "none";
-}
+};
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 
 /**
  * Event listeners for:
@@ -149,6 +115,7 @@ function playGame() {
   timer.textContent = gameTimer;
   getRandomMoleHill();
   getRandomPlantHill();
+  checkMoleHillEmpty();
   moveMole();
   movePlant();
   scoreCalculator();
@@ -200,7 +167,7 @@ function getRandomPlantHill() {
     molehill.classList.remove("plant");
   });
 
-  let randomPlant = molehills[Math.floor(Math.random() * 9)] //get random number 0-8 and add class plant
+  let randomPlant = molehills[Math.floor(Math.random() * 9)]; //get random number 0-8 and add class plant
   randomPlant.classList.add("plant");
 
   setTimeout(() => { //when timer reaches 0, game over and clear timers and game over
@@ -252,7 +219,7 @@ function addScore() {
 function scoreCalculator() {
   molehills.forEach(molehill => {
     molehill.addEventListener('click', scoreHandler);
-  })
+  });
 }
 
 function scoreHandler() {
@@ -261,7 +228,7 @@ function scoreHandler() {
 
   if (clickedMoleHill.classList.contains("plant")) {
     console.log('you got a plant');
-    gameScore -= 10
+    gameScore -= 10;
     score.textContent = gameScore;
     //clearInterval(plantTimer); //clear timer and hitPlant variable
     //hitPlant = null;
@@ -358,7 +325,7 @@ function resetGame() {
       molehill.classList.remove("plant");
     });
     return;
-  })
+  });
 }
 
 

@@ -286,7 +286,7 @@ This game has been built using HTML, CSS and Javascript.
           - Play Page
           - About Page
           - 404 Page W3C HTML Validation - Pass
-         * CSS Validator ![W3C CSS Validator]()
+         * CSS Validator ![Jigsaw W3 CSS Validator]()
           - style.css CSS Validation - Pass
          * Jshint was used to validate the Javascript
           - main.js Jshint - Pass
@@ -380,11 +380,13 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 
 - For information on how to link a add an event listener to a button and linking functions[Coding with Russ](https://www.youtube.com/watch?v=JsErMawwdOw) and [Marsha Badley](https://www.youtube.com/watch?v=BvnPi-7grhk)
 
-- [w3schools] 
+- [w3schools](https://www.w3schools.com/) for education and support throughout, in particular, for information regarding accessibility and audio labelling.
 
 - [Online Converter](https://www.onlineconverter.com/compress-mp3) used to reduce audio file size.
 
 - [CodeInstitute] For their content and guidance through the whole process.
+
+- The Hammer cursor styling and functionality was adapted from [SheCodes](https://www.shecodes.io/athena/11459-how-to-make-a-div-clickable-in-javascript#:~:text=Then%2C%20the%20addEventListener()%20method,clicked%20based%20on%20your%20requirements.), [AngleBrace](https://www.youtube.com/watch?v=b20YueeXwZg), and and article by Franklin Okolie on [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-make-a-custom-mouse-cursor-with-css-and-javascript/#:~:text=Now%20how%20do%20I%20use,URL%20using%20the%20url%20value.&text=From%20the%20code%20snippet%20above,no%20matter%20where%20it%20moves.)
 
 - Content was written by Chloe Livingstone-Evans.
 
@@ -402,7 +404,9 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 
 - The soil image was by [Freepik](https://www.freepik.com/free-vector/outer-space-surface-landscape_24060283.htm#query=mud%20cartoon&position=6&from_view=search&track=ais&uuid=7c1748f2-05b7-472a-b167-9066fccc2161)
 
-- [onlinepngtools](https://onlinepngtools.com/remove-png-background ) was utilised to make the mole, soil and veus fly trap backgrounds transparent.
+- The hammer image used for the cursor when in play was taken from [pngtree]("https://pngtree.com/freepng/cartoon-hammer-png-download_4402979.html")
+
+- [onlinepngtools](https://onlinepngtools.com/remove-png-background ) was utilised to make the mole, soil and veus fly trap backgrounds transparent. [Pixelbin.io](https://console.pixelbin.io/organization/3728325/new-playground/erasebg?utm_source=erasebg) used to remove the background from the hammer(cursor) image
 
 - [cloudconvert] (https://cloudconvert.com/) was used to convert images to webp format.
 
