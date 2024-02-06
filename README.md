@@ -387,7 +387,8 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 -   ### Fixed Bugs
 
     * The moveMole and movePlant functions move the images around the game board using setInterval. However multiple images were appearing one after another. To fix this, the clearInterval method was used and this worked. Now only one of each image apppeared at any one time.
-    * A similar bug was found in the resetGame function which is linked to the reset button. I found if i again used the clearInterval method after the setInterval it 
+    * A similar bug was found in the resetGame function which is linked to the reset button. I found if i again used the clearInterval method after the setInterval it.
+    * Logo didnt appear when website was first depolyed. Checked and confirmed it was using the correct file path. Checked the source code in Developer tools and hadn't loaded the logo image. Re-deployed website but this did not work either. Re-added the image to VS code in new format and this worked.
 
 - - - 
 
