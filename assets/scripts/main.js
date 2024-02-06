@@ -69,6 +69,18 @@ $(document).ready(function () {
   });
 });
 
+/**
+ * Alter hammer(cursor) on mousedown to simulate a hit
+ * Adapted from AngleBrace and SheCodes
+ */
+
+const cursor = document.querySelector(".cursor");
+const board = document.querySelector("#board");
+board.addEventListener('mousemove', e => {
+  cursor.style.top = e.pageY + 'px';
+  cursor.style.left = e.pageX + 'px';
+});
+
 
 
 /**

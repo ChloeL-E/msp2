@@ -140,6 +140,7 @@ a {
     font-size: 30px;
     padding: 15px;
     color: black;
+    border: black solid 1px;
     text-decoration: none;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
     margin: 0 10px;
@@ -206,6 +207,23 @@ body>div {
     margin: 5px auto;
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Adapted from AngleBrace on YouTube */
+
+.cursor {
+    background-image: url("../images/mallet.webp");
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transform: translate(-40%, -40%) rotate(65deg);
+    transition: transform .1s;
+    pointer-events: none;
+    z-index: 50;
+}
+
+.cursor.active {
+    transform: translate(-40%, -40%) rotate(-45deg);
 }
 
 .molehill {
