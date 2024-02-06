@@ -57,7 +57,7 @@ a {
 /* Modal taken from w3schools and adapted to this game */
 
 /* How to play button styling*/
-.howToPlayBtn {
+#howToPlayBtn {
     background-color: #fff2e6;
     font-weight: 700;
     font-size: 30px;

@@ -1,6 +1,6 @@
 /** 
  * Define the Constants so they can be used in the code
- * */
+ */
 
 //Pull in elements from the DOM
 //Constants for the modal
@@ -31,42 +31,13 @@ let clickPlants = [];
 let hitMole = getRandomMoleHill.id;
 let hitPlant = getRandomPlantHill.id;
 
-
-/**
- * How to Play Modal
- * Open the modal with button click
- **/
-
-btn.onclick = function () {
-  modal.style.display = "block";
-}
-// Close the modal by clicking the (x) or anywhere outside the modal
-span.onclick = function () {
-  modal.style.display = "none";
-}
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-/**
- * Event listeners for:
- * starting the game when play button clicked
- * Stop and reset the game when reset button is clicked
- */
-
-playBtn.addEventListener('click', playGame);
-resetBtn.addEventListener('click', resetGame);
-
-
 /**
  * Using jQuery to play audio when speaker play icon is clicked
  * Change icon to speaker off and pause the audio when speaker off icon is clicked
  * Home page audio
  */
 
-/**$(document).ready(function () {
+$(document).ready(function () {
   let audioOne = document.getElementById("one");
   let audioTwo = document.getElementById("two");
 
@@ -96,8 +67,9 @@ resetBtn.addEventListener('click', resetGame);
     $('#pauseTwo').hide();
     audioTwo.pause();
   });
-});*/
+});
 
+/*
 $(document).ready(function() { //wait for document to fully load before allowing fucntion to run
   let audioOne = document.getElementById("one"); 
   $('#pauseOne').hide(); // <a> tag with id of pause is hidden
@@ -126,11 +98,40 @@ $(document).ready(function() { //wait for document to fully load before allowing
       audioTwo.play(); //audio plays
   });
   $('#pauseTwo').click(function() { //when <a> tag with id of pause is clicked
-      $('#playTwp').show(); //the <a> tag with id of play is shown
+      $('#playTwo').show(); //the <a> tag with id of play is shown
       $('#pauseTwo').hide(); //the <a> tag with id pause is hidden
       audioTwo.pause(); //audio is paused until a further click event
   });
-});
+});*/
+
+
+/**
+ * How to Play Modal
+ * Open the modal with button click
+ */
+
+btn.onclick = function () {
+  modal.style.display = "block";
+}
+// Close the modal by clicking the (x) or anywhere outside the modal
+span.onclick = function () {
+  modal.style.display = "none";
+}
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+/**
+ * Event listeners for:
+ * starting the game when play button clicked
+ * Stop and reset the game when reset button is clicked
+ */
+
+playBtn.addEventListener('click', playGame);
+resetBtn.addEventListener('click', resetGame);
+
 
 /**
  * playGame() ensure the game is clear for play
