@@ -48,7 +48,7 @@
 
             <!--Audio controls-->
             <!-- Descriptive label for the audio for screen readers-->
-          <div id="audioDescription" style="display: none;">Upbeat farm music</div>
+            <div id="audioDescription" style="display: none;">Upbeat farm music</div>
             <audio id="two" src="assets/css/audio/farm-music2.mp3" aria-labelledby="audioDescription"></audio>
             <a id="playTwo" href="#" aria-label="play"><i class="fa-solid fa-volume-high"></i></a>
             <a id="pauseTwo" href="#" aria-label="pause"><i class="fa-solid fa-volume-xmark"></i></a>
@@ -110,7 +110,26 @@
             <div class="molehill" id="9"></div>
           </div>
           <div class="cursor"></div>
-        </div>
+
+          <!-- The gameOverModal -->
+          <div id="game-over-modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h3 class="game-over-title">Game Over</h3>
+                </div>
+
+                <!-- Modal body -->
+                <div id="modalText"></div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" id="goBack" data-bs-dismiss="modal">Home</button>
+                  <button type="button" id="playAgain">Play Again!</button>
+                </div>
+              </div>
       </main>
     </div>
   </div>

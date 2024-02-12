@@ -125,6 +125,59 @@ a {
     cursor: pointer;
 }
 
+/*-- Game Over modal --*/
+#game-over-modal {
+    /* The Modal (background) */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.game-over-title {
+    margin: 0 auto;
+    text-decoration: underline;
+}
+
+#playAgain {
+    background-color: #77C13D;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 3px;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 0 auto;
+    box-shadow: 15px 15px 50px black;
+}
+
+#goBack {
+    background-color: #4dc0ff;
+    font-weight: 600;
+    font-size: 20px;
+    display: block;
+    padding: 3px;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 10px auto;
+    box-shadow: 15px 15px 50px black;
+}
+
 /* Home page */
 
 .title {
@@ -217,19 +270,24 @@ body>div {
     height: 100px;
     width: 100px;
     transform: translate(-40%, -40%) rotate(65deg);
+    /* positions image beneath cursor*/
     transition: transform .1s;
     pointer-events: none;
-    z-index: 50;
-    cursor: none; 
+    /* to allow cursor to click mole/plant rather than .cursor img */
+    z-index: 1;
+    /* to ensure img on top */
+    cursor: none;
 }
 
 .cursor.active {
     transform: translate(-40%, -40%) rotate(-45deg);
+    /* img rotates to simulate hammer hit */
 }
 
 .molehill {
     width: 33%;
     height: 33%;
+    /* height and width of each molehill- 3x3x3 one third of the size of the board */
     background-image: url("../images/soil-pile.png");
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -237,7 +295,19 @@ body>div {
     overflow: hidden;
 }
 
+.molehill.mole::before {
+    background-image: url("../images/mole.webp");
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: bottom center;
+    z-index: 1;
+    transform: translateX(-50%);
+    animation: rise .6s ease-out;
+    margin-left: 5rem;
+}
+
 .molehill::before {
+    /*to ensure molehill img stays ontop of board */
     content: "";
     position: absolute;
     top: 0;
@@ -256,16 +326,7 @@ body>div {
     animation: rise .4s ease-out;
 }*/
 
-.molehill.mole::before {
-    background-image: url("../images/mole.webp");
-    background-repeat: no-repeat;
-    background-size: 130px;
-    background-position: bottom center;
-    z-index: 1;
-    transform: translateX(-50%);
-    animation: rise .6s ease-out;
-    margin-left: 5rem;
-}
+
 
 /*.plant {
     width: 50%;
@@ -278,6 +339,7 @@ body>div {
 }*/
 
 .molehill.plant::before {
+    /* ensures plants stays between molehill and board */
     margin-left: 5rem;
     background-image: url("../images/venus-fly-trap.webp");
     background-repeat: no-repeat;
@@ -291,12 +353,16 @@ body>div {
 @keyframes rise {
     0% {
         transform: translateX(-50%) translateY(100%);
+        /* mole/plant out of sight */
     }
 
     100% {
         transform: translateX(-50%) translateY(0);
+        /* mole/plant rise from molehill */
     }
 }
+
+
 
 /* -- About page -- */
 

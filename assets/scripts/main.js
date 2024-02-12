@@ -5,6 +5,7 @@
 //Pull in elements from the DOM
 //Constants for the modal
 const modal = document.getElementById("myModal");
+const gameOverModal = document.getElementById("score-modal")
 const btn = document.getElementById("howToPlayBtn");
 const span = document.getElementsByClassName("close")[0];
 //Constants for the scoreboard
@@ -14,6 +15,8 @@ const playBtn = document.getElementById("playNow");
 const resetBtn = document.getElementById("reset");
 //Constants in the game
 const molehills = [...document.querySelectorAll(".molehill")];
+const cursor = document.querySelector(".cursor");
+const board = document.querySelector("#board");
 //const moles = document.querySelectorAll(".mole");
 //const plants = document.querySelectorAll(".plant");
 
@@ -94,8 +97,7 @@ window.onclick = function (event) {
   }
 };
 
-const cursor = document.querySelector(".cursor");
-const board = document.querySelector("#board");
+
 board.addEventListener('mousemove', e => {
   cursor.style.top = e.pageY + 'px';
   cursor.style.left = e.pageX + 'px';
@@ -128,7 +130,7 @@ resetBtn.addEventListener('click', resetGame);
 function playGame() {
   gameRunning = true;
   gameScore = 0;
-  gameTimer = 60;
+  gameTimer = 5;
   score.textContent = gameScore;
   timer.textContent = gameTimer;
   getRandomMoleHill();
@@ -188,7 +190,7 @@ function getRandomPlantHill() {
   let randomPlant = molehills[Math.floor(Math.random() * 9)]; //get random number 0-8 and add class plant
   randomPlant.classList.add("plant");
 
-  setTimeout(() => { //when timer reaches 0, game over and clear timers and game over
+  setTimeout(() => { //when timer reaches 0, clear timers and game over
     if (gameTimer == 0) {
       gameRunning = false;
       clearInterval(plantTimer);
@@ -331,7 +333,7 @@ function resetGame() {
     gameRunning = false;
     //reset score and timer
     gameScore = 0;
-    gameTimer = 60;
+    gameTimer = 5;
     score.textContent = gameScore;
     timer.textContent = gameTimer;
     clearInterval(timerId);
@@ -367,19 +369,25 @@ function gameOver() {
     gameRunning = false;
     score.textContent = gameScore;
     timer.textContent = gameTimer;
-    popUp();
-  }
+    gameOverPopUp();
+  };
 }
 
-function popUp() {
-  let modalText = document.getElementById("modalText");
+/** gameOverModal pops up when game is ended - runs within the gameOver function
+ * there are two different messages depending on the score. Template literals used 
+ * to insert the gameScore into the string.
+ */
+function gameOverPopUp() {
+
+  let gameOverMessage = document.getElementById("modalText");
   if (gameScore > 0) {
-    modalText.textContent = `Well Done! You outsmarted the moles and scored ${gameScore}! Can you try and beat your
+    gameOverMessage.textContent = `Well Done! You outsmarted the moles and scored ${gameScore}! Can you try and beat your
      score to help out Farmer John again?`
   } else if (gameScore <= 0) {
-    modalText.textContent = `Uh Oh. You scored ${gameScore}. Those pesky moles got away from you this time. Farmer 
+    gameOverMessage.textContent = `Uh Oh. You scored ${gameScore}. Those pesky moles got away from you this time. Farmer 
     John still needs your help! Can you try and beat your score? `
-  }
-}
+  };
+  $('#game-over-modal').show();
+};
 
 // module.exports = {}
