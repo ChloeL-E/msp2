@@ -220,6 +220,7 @@ body>div {
     transition: transform .1s;
     pointer-events: none;
     z-index: 50;
+    cursor: none; 
 }
 
 .cursor.active {
