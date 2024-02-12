@@ -369,6 +369,7 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
     * A similar bug was found in the resetGame function which is linked to the reset button. I found if i again used the clearInterval method after the setInterval it.
     * Logo didnt appear when website was first depolyed. Checked and confirmed it was using the correct file path. Checked the source code in Developer tools and hadn't loaded the logo image. Re-deployed website but this did not work either. Re-added the image to VS code in new format and this worked.
     * The javascript for the audio/icons worked on the play page but not on the home page. I tried changing the format of the code, moved elements to class from Id but this did not work. Renamed the elements to ensure ids were uniquely named. This did not work either. Troubleshooting done via StackOverflow but this did not provide any correct answers for this particular issue. I rechecked correct file paths and that the jquery script was loading before the main.js file. Blocked out all javascript other than the specific audio function and it worked. I then worked backwards, slowly reintroduced more code. I found that the issue was with the order of execution. Once i had reordered the code correctly, the bug was fixed.
+    * The modal that appears when the game is over wouldn't show. 
 
 - - - 
 
