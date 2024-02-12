@@ -100,10 +100,10 @@ board.addEventListener('mousemove', e => {
   cursor.style.top = e.pageY + 'px';
   cursor.style.left = e.pageX + 'px';
 });
-board.addEventListener('mousedown', () =>{
+board.addEventListener('mousedown', () => {
   cursor.classList.add("active");
 });
-board.addEventListener('mouseup', () =>{
+board.addEventListener('mouseup', () => {
   cursor.classList.remove("active");
 });
 
@@ -367,8 +367,19 @@ function gameOver() {
     gameRunning = false;
     score.textContent = gameScore;
     timer.textContent = gameTimer;
+    popUp();
   }
 }
 
+function popUp() {
+  let modalText = document.getElementById("modalText");
+  if (gameScore > 0) {
+    modalText.textContent = `Well Done! You outsmarted the moles and scored ${gameScore}! Can you try and beat your
+     score to help out Farmer John again?`
+  } else if (gameScore <= 0) {
+    modalText.textContent = `Uh Oh. You scored ${gameScore}. Those pesky moles got away from you this time. Farmer 
+    John still needs your help! Can you try and beat your score? `
+  }
+}
 
 // module.exports = {}
