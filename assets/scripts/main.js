@@ -74,18 +74,6 @@ $(document).ready(function () {
  * Adapted from AngleBrace and SheCodes
  */
 
-const cursor = document.querySelector(".cursor");
-const board = document.querySelector("#board");
-board.addEventListener('mousemove', e => {
-  cursor.style.top = e.pageY + 'px';
-  cursor.style.left = e.pageX + 'px';
-});
-board.addEventListener('mousedown', () =>{
-  cursor.classList.add("active");
-});
-board.addEventListener('mouseup', () =>{
-  cursor.classList.remove("active");
-});
 
 
 /**
@@ -105,6 +93,19 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+const cursor = document.querySelector(".cursor");
+const board = document.querySelector("#board");
+board.addEventListener('mousemove', e => {
+  cursor.style.top = e.pageY + 'px';
+  cursor.style.left = e.pageX + 'px';
+});
+board.addEventListener('mousedown', () =>{
+  cursor.classList.add("active");
+});
+board.addEventListener('mouseup', () =>{
+  cursor.classList.remove("active");
+});
 
 /**
  * Event listeners for:
