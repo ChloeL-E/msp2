@@ -83,7 +83,7 @@ a {
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 2;
     /* Sit on top */
     left: 0;
     top: 0;
@@ -112,10 +112,18 @@ a {
 
 /* The Close Button */
 .close {
+    display: block;
+    background-color: #4dc0ff;
     color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 5px;
+    height: 40px;
+    width: 70px;
+    border: 1px solid #5e5f60;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
 .close:hover,
@@ -132,7 +140,7 @@ a {
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 2;
     /* Sit on top */
     left: 0;
     top: 0;

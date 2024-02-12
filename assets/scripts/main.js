@@ -128,7 +128,7 @@ playAgainBtn.addEventListener('click', playGame);
 function playGame() {
   gameRunning = true;
   gameScore = 0;
-  gameTimer = 5;
+  gameTimer = 60;
   score.textContent = gameScore;
   timer.textContent = gameTimer;
   getRandomMoleHill();
@@ -332,7 +332,7 @@ function resetGame() {
     gameRunning = false;
     //reset score and timer
     gameScore = 0;
-    gameTimer = 5;
+    gameTimer = 60;
     score.textContent = gameScore;
     timer.textContent = gameTimer;
     clearInterval(timerId);
