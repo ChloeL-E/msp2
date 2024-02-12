@@ -8,6 +8,7 @@ const modal = document.getElementById("myModal");
 const gameOverModal = document.getElementById("score-modal")
 const btn = document.getElementById("howToPlayBtn");
 const span = document.getElementsByClassName("close")[0];
+const playAgainBtn = document.getElementById("playAgain");
 //Constants for the scoreboard
 const score = document.getElementById("score");
 const timer = document.getElementById("timer");
@@ -72,10 +73,7 @@ $(document).ready(function () {
   });
 });
 
-/**
- * Alter hammer(cursor) on mousedown to simulate a hit
- * Adapted from AngleBrace and SheCodes
- */
+
 
 
 
@@ -117,7 +115,7 @@ board.addEventListener('mouseup', () => {
 
 playBtn.addEventListener('click', playGame);
 resetBtn.addEventListener('click', resetGame);
-
+playAgainBtn.addEventListener('click', playGame);
 
 /**
  * playGame() ensure the game is clear for play
@@ -141,6 +139,7 @@ function playGame() {
   scoreCalculator();
   updateTimer();
   gameOver();
+  $('#game-over-modal').hide();
 }
 
 /**
