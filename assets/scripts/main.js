@@ -128,7 +128,7 @@ playAgainBtn.addEventListener('click', playGame);
 function playGame() {
   gameRunning = true;
   gameScore = 0;
-  gameTimer = 60;
+  gameTimer = 30;
   score.textContent = gameScore;
   timer.textContent = gameTimer;
   getRandomMoleHill();
@@ -300,7 +300,7 @@ function checkMoleHillEmpty() {
 
 /**
  * function updateTimer()
- * counts down from 60 to 0
+ * counts down from 30 to 0
  * game ends when timer reaches 0
  */
 
@@ -324,7 +324,7 @@ function updateTimer() {
  * resets game if reset button is clicked
  * or
  * when timer reaches 0
- * resets the game play- score to 0, timer to 60s, clears all intervals and removes moles and plants from game board
+ * resets the game play- score to 0, timer to 30s, clears all intervals and removes moles and plants from game board
  */
 
 function resetGame() {
@@ -332,7 +332,7 @@ function resetGame() {
     gameRunning = false;
     //reset score and timer
     gameScore = 0;
-    gameTimer = 60;
+    gameTimer = 30;
     score.textContent = gameScore;
     timer.textContent = gameTimer;
     clearInterval(timerId);
@@ -351,7 +351,7 @@ function resetGame() {
 /**
  * function gameOver()
  * sets score back to 0
- * sets timer back to 60
+ * sets timer back to 30
  * clears moles and plants from molehills
  * add pop-up with message informing of score
  */
