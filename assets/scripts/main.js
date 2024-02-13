@@ -17,10 +17,9 @@ const playBtn = document.getElementById("playNow");
 const resetBtn = document.getElementById("reset");
 //Constants in the game
 const molehills = [...document.querySelectorAll(".molehill")];
-const cursor = document.querySelector(".cursor");
+const cursor = document.querySelector("#cursor");
 const board = document.querySelector("#board");
-//const moles = document.querySelectorAll(".mole");
-//const plants = document.querySelectorAll(".plant");
+
 
 
 // Globally define the variables
@@ -31,8 +30,6 @@ let timerId;
 let gameRunning = false;
 let moleTimer;
 let plantTimer;
-//let clickMoles = [];
-//let clickPlants = [];
 let hitMole = getRandomMoleHill.id;
 let hitPlant = getRandomPlantHill.id;
 
@@ -78,6 +75,7 @@ $(document).ready(function () {
 /**
  * How to Play Modal
  * Open the modal with button click
+ * Close modal using close button or click anywhere outside the modal within the window
  */
 
 btn.onclick = function () {
@@ -90,28 +88,6 @@ span.onclick = function () {
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
-  }
-};
-
-/**
- * How to Play storyModal
- * Open the modal with button click
- */
-const storyModal = document.getElementById("storyModal");
-const storyBtn = document.getElementById("storyBtn");
-const storyClose = document.getElementId("storyClose");
-
-storyBtn.onclick = function () {
-  storyModal.style.display = "block";
-};
-// Close the modal by clicking the (x) or anywhere outside the modal
-storyClose.onclick = function () {
-  console.log('story button click');
-  storyModal.style.display = "none";
-};
-window.onclick = function (event) {
-  if (event.target == storyModal) {
-    storyModal.style.display = "none";
   }
 };
 
@@ -361,5 +337,28 @@ function gameOverPopUp() {
   };
   $('#game-over-modal').show();
 };
+
+/**
+ * How to Play storyModal
+ * Open the modal with button click
+ * Close modal using the close button or click anywhere outside the modal, within the window
+ */
+
+const storyModal = document.getElementById("storyModal");
+const storyBtn = document.getElementById("storyBtn");
+const storyClose = document.getElementById("storyClose");
+  storyBtn.onclick = function () {
+    storyModal.style.display = "block";
+  };
+  // Close the modal by clicking the (x) or anywhere outside the modal
+  storyClose.onclick = function () {
+    console.log('story button click');
+    storyModal.style.display = "none";
+  };
+  window.onclick = function (event) {
+    if (event.target == storyModal) {
+      storyModal.style.display = "none";
+    };
+  }
 
 // module.exports = {}

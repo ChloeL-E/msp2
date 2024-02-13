@@ -308,7 +308,7 @@ a {
     }
 
     .molehill {
-        width: 33%;ß
+        width: 33%;
         height: 33%;
         /* height and width of each molehill- 3x3x3 one third of the size of the board */
         background-image: url("../images/soil-pile.png");
