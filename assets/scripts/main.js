@@ -5,9 +5,12 @@
 //Pull in elements from the DOM
 //Constants for the modal
 const modal = document.getElementById("myModal");
+const storyModal = document.getElementById("story-modal")
 const gameOverModal = document.getElementById("score-modal")
 const btn = document.getElementById("howToPlayBtn");
+const storyBtn = document.getElementById("storyBtn");
 const span = document.getElementsByClassName("close")[0];
+const storyClose = document.getElementsByClassName("storyClose")
 const playAgainBtn = document.getElementById("playAgain");
 //Constants for the scoreboard
 const score = document.getElementById("score");
@@ -92,6 +95,25 @@ span.onclick = function () {
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+  }
+};
+
+/**
+ * How to Play storyModal
+ * Open the modal with button click
+ */
+
+storyBtn.onclick = function () {
+  storyModal.style.display = "block";
+};
+// Close the modal by clicking the (x) or anywhere outside the modal
+storyClose.onclick = function () {
+  console.log('story button click');
+  storyModal.style.display = "none";
+};
+window.onclick = function (event) {
+  if (event.target == storyModal) {
+    storyModal.style.display = "none";
   }
 };
 

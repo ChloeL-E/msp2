@@ -61,40 +61,65 @@
           <!-- Trigger/Open The Modal. -->
           <button id="howToPlayBtn">How To Play</button>
 
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
 
-              <!-- Modal content -->
-              <div class="modal-content">
-                <p>
-                  The rules are simple - bop the moles when you see them pop up
-                  out of their mole hill, but be quick! They don't hang around
-                  for long and will quickly hide back down in their hole.
-                </p><br>
-                <p>
-                  There are nine mole hills on the grid and moles will pop out
-                  of them at random. When you see the mole, quickly move your
-                  cursor over the mole and right-click. If you have managed to bop
-                  the mole you will score 10 points. Watch out for the biting
-                  Venus Fly Traps though! They pop up too and if you accidentally
-                  whack one, you will lose 20 points!
-                </p><br>
-                <p>
-                  You have 30 seconds to try to bop as many moles as you can. When the game is over try and beat your
-                  score
-                  again!
-                </p><br>
-                <p>
-                  Have fun!!!
-                </p>
-                <span class="close">Close</span>
+            <!-- Modal content -->
+            <div class="modal-content">
+              <p>
+                The rules are simple - bop the moles when you see them pop up
+                out of their mole hill, but be quick! They don't hang around
+                for long and will quickly hide back down in their hole.
+              </p><br>
+              <p>
+                There are nine mole hills on the grid and moles will pop out
+                of them at random. When you see the mole, quickly move your
+                cursor over the mole and right-click. If you have managed to bop
+                the mole you will score 10 points. Watch out for the biting
+                Venus Fly Traps though! They pop up too and if you accidentally
+                whack one, you will lose 20 points!
+              </p><br>
+              <p>
+                You have 30 seconds to try to bop as many moles as you can. When the game is over try and beat your
+                score
+                again!
+              </p><br>
+              <p>
+                Have fun!!!
+              </p>
+              <span class="close">Close</span>
             </div>
           </div>
           <a href="play-game.html" id="playBtn">Play!</a>
         </div>
-       <!----<div class="message-container">
-          <img id="notice" src="assets/images/noticeboard.webp" alt="noticeboard telling the background story"> -->
-        <div class="about-box">
+        <!-- The storyModal -->
+        <button id="storyBtn">The Story</button>
+        <div id="story-modal" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h3 class="story-title">Famer John needs your help!!</h3>
+              </div>
+
+              <!-- Modal body -->
+              <div id="modalText">
+                <p>
+                  He is fed up of the all of the moles digging up his fields. He
+                  needs to catch as many was he can and move them away from his farm. Can you help by bopping the
+                  moles when you spot them popping out from a mole hill? If you're too slow they'll hide back in
+                  their mole hill.
+                  Oh, and watch out for the pesky Venus Fly Trap plants, they bite and you'll lose points!
+                </p>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <span class="storyClose">Close</span>
+              </div>
+            </div>
+            <!--<div class="about-box">
           <p>Farmer John needs your help!!!</p>
           <p>
             He is fed up of the all of the moles digging up his fields. He
@@ -103,8 +128,8 @@
             their mole hill.
             Oh, and watch out for the pesky Venus Fly Trap plants, they bite and you'll lose points!
         </p>
-        </div>
-      <!--</div>-->
+        </div>-->
+          </div>
       </main>
     </div>
   </div>

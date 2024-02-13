@@ -125,7 +125,8 @@ a {
     }
 
     /* The Close Button */
-    .close {
+    .close,
+    .storyClose {
         display: block;
         background-color: #4dc0ff;
         color: black;
@@ -141,34 +142,15 @@ a {
     }
 
     .close:hover,
-    .close:focus {
+    .close:focus,
+    .storyClose:hover,
+    .storyClose:focus {
         color: black;
         text-decoration: none;
         cursor: pointer;
     }
 
-    /*-- Game Over modal --*/
-    #game-over-modal {
-        /* The Modal (background) */
-        display: none;
-        /* Hidden by default */
-        position: fixed;
-        /* Stay in place */
-        z-index: 2;
-        /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%;
-        /* Full width */
-        height: 100%;
-        /* Full height */
-        overflow: auto;
-        /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0);
-        /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4);
-        /* Black w/ opacity */
-    }
+ 
 
     .game-over-title {
         font-weight: 600;
