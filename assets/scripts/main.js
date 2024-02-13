@@ -4,7 +4,7 @@
 
 //Pull in elements from the DOM
 //Constants for the modal
-const modal = document.getElementById("myModal");
+const modal = document.getElementsById("myModal");
 const gameOverModal = document.getElementById("score-modal")
 const btn = document.getElementById("howToPlayBtn");
 const span = document.getElementsByClassName("close")[0];
@@ -30,8 +30,6 @@ let timerId;
 let gameRunning = false;
 let moleTimer;
 let plantTimer;
-//let clickMoles = [];
-//let clickPlants = [];
 let hitMole = getRandomMoleHill.id;
 let hitPlant = getRandomPlantHill.id;
 
@@ -74,9 +72,6 @@ $(document).ready(function () {
 });
 
 
-
-
-
 /**
  * How to Play Modal
  * Open the modal with button click
@@ -95,7 +90,11 @@ window.onclick = function (event) {
   }
 };
 
-
+/** Cursor image on play page
+ * identifies cursor location and sets image beneath on mousemove within the #board
+ * event listener for mousedown and mouseup to apply class which makes image rotate 
+ * 45degrees to simulate a hammer hit
+ */
 board.addEventListener('mousemove', e => {
   cursor.style.top = e.pageY + 'px';
   cursor.style.left = e.pageX + 'px';
@@ -120,7 +119,7 @@ playAgainBtn.addEventListener('click', playGame);
 /**
  * playGame() ensure the game is clear for play
  * set score to 0
- * set timer to 60
+ * set timer to 30
  * starts play when play button is clicked
  * runs game functions
  */
@@ -209,31 +208,6 @@ function movePlant() {
   plantTimer = setInterval(getRandomPlantHill, 2000); //call getRandomHill every 2s
 }
 
-/**
- * function addScore()
- * adds to score when mole is clicked
-
-function addScore() {
-  molehills.forEach(molehill => {
-    molehill.addEventListener('mousedown', () => {
-      if (this.id == hitMole) {
-        console.log('you got a mole');
-        gameScore += 10;
-        score.textContent = gameScore;
-        clearInterval(moleTimer); //clear timer and hitMole variable
-        hitMole = null;
-        moveMole()
-      } /*else if (molehills.id == hitPlant) {
-        console.log("uh oh, you got a plant")
-        gameScore--;
-        score.textContent = gameScore;
-        clearInterval(hitPlant);
-        hitPlant = null;
-        movePlant();
-      } 
-    })
-  })
-}*/
 
 function scoreCalculator() {
   molehills.forEach(molehill => {
@@ -262,28 +236,6 @@ function scoreHandler() {
     getRandomMoleHill();
   }
 }
-
-
-/**
- * lossScore()
- * removes points when plant is clicked
- 
- 
-function lossScore() {
-  molehills.forEach(molehill => {
-    molehill.addEventListener('mousedown', () => {
-      if (molehills.id == hitPlant) {
-        console.log('you got a plant');
-        gameScore -= 10
-        score.textContent = gameScore;
-        clearInterval(plantTimer); //clear timer and hitPlant variable
-        hitPlant = null;
-        movePlant();
-      }
-    })
-  })
-} */
-
 
 /**
  * function checkMoleHillEmpty()  
