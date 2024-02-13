@@ -74,7 +74,8 @@ a {
     /* Modal taken from w3schools and adapted to this game */
 
     /* How to play button styling*/
-    #howToPlayBtn {
+    #howToPlayBtn,
+    #storyBtn {
         background-color: #fff2e6;
         font-weight: 700;
         font-size: 30px;
@@ -134,7 +135,7 @@ a {
 
     /* The Close Button */
     .close,
-    .storyClose {
+    #storyClose {
         display: block;
         background-color: #4dc0ff;
         color: black;
@@ -151,8 +152,8 @@ a {
 
     .close:hover,
     .close:focus,
-    .storyClose:hover,
-    .storyClose:focus {
+    #storyClose:hover,
+    #storyClose:focus {
         color: black;
         text-decoration: none;
         cursor: pointer;
@@ -286,7 +287,7 @@ a {
 
     /* Adapted from AngleBrace on YouTube */
 
-    .cursor {
+    #cursor {
         background-image: url("../images/mallet.webp");
         position: absolute;
         height: 100px;
@@ -301,13 +302,13 @@ a {
         cursor: none;
     }
 
-    .cursor.active {
+    #cursor.active {
         transform: translate(-40%, -40%) rotate(-45deg);
         /* img rotates to simulate hammer hit */
     }
 
     .molehill {
-        width: 33%;
+        width: 33%;ß
         height: 33%;
         /* height and width of each molehill- 3x3x3 one third of the size of the board */
         background-image: url("../images/soil-pile.png");
