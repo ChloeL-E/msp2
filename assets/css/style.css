@@ -113,6 +113,10 @@ a {
         /* Black w/ opacity */
     }
 
+    .modal-header {
+        border: none;
+    }
+
     /* Modal Content/Box */
     .modal-content {
         background-color: #fff3e7;
@@ -122,6 +126,10 @@ a {
         width: 55%;
         font-size: 18px;
         box-shadow: 15px 15px 50px black;
+    }
+
+    .modal-footer {
+        border: none;
     }
 
     /* The Close Button */
@@ -210,8 +218,8 @@ a {
         box-shadow: 15px 15px 50px black;
     }
 
-    .message-container {
-        display: flex;
+    .content-width{
+        width: 90%;
     }
 
     /* -- Play page -- */

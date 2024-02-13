@@ -5,13 +5,11 @@
 //Pull in elements from the DOM
 //Constants for the modal
 const modal = document.getElementById("myModal");
-const storyModal = document.getElementById("story-modal")
-const gameOverModal = document.getElementById("score-modal")
 const btn = document.getElementById("howToPlayBtn");
-const storyBtn = document.getElementById("storyBtn");
 const span = document.getElementsByClassName("close")[0];
-const storyClose = document.getElementsByClassName("storyClose")
-const playAgainBtn = document.getElementById("playAgain");
+const gameOverModal = document.getElementById("game-over-modal");
+const playAgainBtn = document.getElementById("playAgain")
+
 //Constants for the scoreboard
 const score = document.getElementById("score");
 const timer = document.getElementById("timer");
@@ -77,9 +75,6 @@ $(document).ready(function () {
 });
 
 
-
-
-
 /**
  * How to Play Modal
  * Open the modal with button click
@@ -102,6 +97,9 @@ window.onclick = function (event) {
  * How to Play storyModal
  * Open the modal with button click
  */
+const storyModal = document.getElementById("storyModal");
+const storyBtn = document.getElementById("storyBtn");
+const storyClose = document.getElementId("storyClose");
 
 storyBtn.onclick = function () {
   storyModal.style.display = "block";
@@ -142,7 +140,7 @@ playAgainBtn.addEventListener('click', playGame);
 /**
  * playGame() ensure the game is clear for play
  * set score to 0
- * set timer to 60
+ * set timer to 30
  * starts play when play button is clicked
  * runs game functions
  */
@@ -231,32 +229,6 @@ function movePlant() {
   plantTimer = setInterval(getRandomPlantHill, 2000); //call getRandomHill every 2s
 }
 
-/**
- * function addScore()
- * adds to score when mole is clicked
-
-function addScore() {
-  molehills.forEach(molehill => {
-    molehill.addEventListener('mousedown', () => {
-      if (this.id == hitMole) {
-        console.log('you got a mole');
-        gameScore += 10;
-        score.textContent = gameScore;
-        clearInterval(moleTimer); //clear timer and hitMole variable
-        hitMole = null;
-        moveMole()
-      } /*else if (molehills.id == hitPlant) {
-        console.log("uh oh, you got a plant")
-        gameScore--;
-        score.textContent = gameScore;
-        clearInterval(hitPlant);
-        hitPlant = null;
-        movePlant();
-      } 
-    })
-  })
-}*/
-
 function scoreCalculator() {
   molehills.forEach(molehill => {
     molehill.addEventListener('click', scoreHandler);
@@ -284,27 +256,6 @@ function scoreHandler() {
     getRandomMoleHill();
   }
 }
-
-
-/**
- * lossScore()
- * removes points when plant is clicked
- 
- 
-function lossScore() {
-  molehills.forEach(molehill => {
-    molehill.addEventListener('mousedown', () => {
-      if (molehills.id == hitPlant) {
-        console.log('you got a plant');
-        gameScore -= 10
-        score.textContent = gameScore;
-        clearInterval(plantTimer); //clear timer and hitPlant variable
-        hitPlant = null;
-        movePlant();
-      }
-    })
-  })
-} */
 
 
 /**
