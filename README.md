@@ -190,6 +190,7 @@ This game has been built using HTML, CSS and Javascript.
 
     * Google fonts were used to import the 'Noto Sans Serif' font into the style.css file which is used on all pages throughout the project. [Google Fonts:](https://fonts.google.com/)
     * Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes[Font Awesome:]( https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css)
+    * Bootstrap5 is used to create some of the layout of the webpages, mainly to navigation bar and the modals.
     * Visual Studio code was the IDE used and within this Git was used for version control by utilizing the terminal to commit changes and Push to GitHub. [VScode:](documentation/gitdemo.jpeg)
     * GitHub is used to store the projects code after being pushed from Git.[GitHub:](https://github.com/)
     * Balsamiq was used to create the wireframes to support in the design process.[Balsamiq:](https://balsamiq.com/)
@@ -202,78 +203,31 @@ This game has been built using HTML, CSS and Javascript.
 
     -    #### First Time Visitor Goals
 
-    * As a First Time Visitor, I want to 
+    1. As a first time visitor, I want to be able to find out how to play the game so that i understand the rules and can engage in the game effecively.
+        2. As a first time visitor, I want the game to be visually appealing and match the themes of the game so that I feel engaged and excited.
+        3. As a first time visitor, I want to easily navigate to the game so that i can quickly begin playing.
+        4. As a first time visitor, I want to be able to see my score during the game.
+        6. As a first time visitor, I want to be able to see how much time I have left in the game.
+        7. As a first time visitor, I want to easily be able to restart a game after i've finished.
+        8. As a first time visitor, I want to be able to navigate easily around the site without using the back arrow in the browser.
+        9. As a first time visitor, 
 
-      1. 
-      
+    -   #### Returning User Goals
 
-    * As a First Time Visitor, I want 
-
-      1. 
-
-    * As a First Time Visitor, I want to 
-
-      1. The navigation bar has a clean and clear link to the Treatments page.
-      2. The user can also access the Treatments page by following the link within the 'Quick Links' section of the Footer
-      3. Once the user has clicked a Treatments link, they are taken to the Treatments page, which has image and text information to inform the user about all of the treatments available at the spa. 
-      4. When the user hovers over a Treatment image, information about the duration and cost of the treatment is shown.
-
-    * As a first time visitor, I want the website to be visually appealing and give me some insight about the style and aesthetic of the spa
-
-      1. When the user navigates around the site they will find a hero image on each page which showcases the spa aesthetic and some of the facilities available a the spa.
-      2. The user will find further images on both the Home page and the Treatments page. These images are designed to be circular to soften the look of the webpage.
-      3. The colour palette was chosen to feel natural, cool and calming, and the images chosen to compliment these natural tones.
-
-    * As a first time user I want to locate the Spas' social media links to see their followings on social media to determine how trusted and known they are and to see up to date posts of current events and new treatments available at the Spa.
-
-      1. The Footer is located at the bottom of each webpage and is access by scrolling down. 
-      2. Once the user has arrived at the Footer they will be able to clearly see the social media links to the spa under the 'Follow Us' heading.
-      3. Each social link opens as a new tab so that the user can easily come back to the website.
-
-    * As a first time customer,  I want to be able to make a booking enquiry.
-      
-      1. The user will be able to clearly navigate to the Booking page using either the 'Book Now' link in the navigation bar or the call-to-action button in the Footer.
-      2. Either link will take the user to the Book Now page where a form is clearly visible within the pages hero image.
-      3. The user is directed to complete the booking enquiry form by the call to action 'Lets Make A Date!'.
-      4. The form is clearly labelled so that the user will easily understand what information is required from them. A placeholder in the textarea also indicates the information to input in this area.
-      5. Once the user has submitted the form using the Submit button, they are taken to a 'Thank you' page so that they know their enquiry has been successful. The message on this page informs them that they will be contacted shortly.
-
-    * As a first time customer, I want to be able to find out the location of the spa and how to contact the spa if required.
-
-      1. The user can easily navigate to the Contact page by the navigation bar or using the 'Quick Links' link in the Footer. 
-      2. Once the user has clicked on the Contact Us link, the user will be taken to the Contact page. They will be able to scroll down the page to see links to the spas' email and telphone number, along with the spa address and a google map of the location.
-      3. A 'Get in Touch' section within the Footer also shows the user the email and telephone number. 
-
-   -    #### Returning Visitor Goals
-
-    *  As a returning visitor, I want to find information about different treatments, duration and pricing.
-
-      1. The user can click the link to the Treatments page on the navigation bar at the top of each webpage.
-      2. The user can also access the Treatments page by following the link within the 'Quick Links' section of the Footer
-      3. Once the user has clicked a Treatments link, they are taken to the Treatments page, which has image and text information to inform the user about all of the treatments available at the spa. 
-      4. When the user hovers over a Treatment image, further information about the duration and cost of the treatment is shown.
-
-    *  As a returning visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-
-      1. The user can click on the Contact Us link in the navigation bar or within the 'Quick links' in the Footer. 
-      2. On clicking the link, then user will be taken to the Contact Us page.
-      3. This page contains important contact information including the Spas' telephone number, email address as well as the address and location shown on a google map.
-      4. The telephone number and email address are both clickable links to allow the user to directly contact the spa.
+        1. As a returning site user, I want to be able to beat my previous score.
     
-    * As a Returning Visitor, I want to find the socials links so that I can follow and keep upto date with events, offers and new treatments the spa.
-        
-      1. The Social links can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook, Instagram, Youtube and Twitter pages.
-      2. The Footer is located at the bottom of each webpage and is accessed by scrolling down. 
-      3. Once the user has arrived at the Footer they will be able to clearly see the social media links to the spa under the 'Follow Us' heading.
-      4. Each social link opens as a new tab so that the user can easily come back to the website.
+    -   #### Parent/Guardian
 
-   -    #### Parent/Guardian
+        1. As a parent/Guardian, I want to know that my child is safe and playing a safe, fun and educational game.
+        2. As a parent/Guardian, I want my child to be able to easily understand the rules of the game.
+        3. As a parent/Guardian, I want my child to be excited and engaged in the game so that they are entertained.
+        1. As a parent/Guardian, I want my child to be learning new skills that will help to support their development.
 
+    -   #### Site Administrator
 
-   -    #### Site administrator
+        1. As a site administrator, I want the game to work efficiently, managing itself, without bugs so that user visiting the page enjoy playing and want to return.
+        2. As a site administrator, I want to be able to add new features to the game in the future so that I can continue to develop and improve the site.
 
-      1. 
-  
 - - - 
 
 -   ### Accessibility
@@ -282,9 +236,9 @@ This game has been built using HTML, CSS and Javascript.
 
          * W3C Markup Validator, W3C CSS Validator Services were used to validate this project to ensure that there were no syntax errors in the project.
          * Markup Validator ![W3C Markup Validator]()
-          - Home Page
-          - Play Page
-          - About Page
+          - Home Page ![W3C Markup Validator]()
+          - Play Page ![W3C Markup Validator]()
+          - About Page ![W3C Markup Validator]()
           - 404 Page W3C HTML Validation - Pass
          * CSS Validator ![Jigsaw W3 CSS Validator]()
           - style.css CSS Validation - Pass
@@ -334,12 +288,12 @@ It can take some time for the page to be fully deployed.
 
 **Fork**
 1. Login or Sign Up to GitHub.
-2. Open the project [repository]().
+2. Open the project [repository](https://github.com/ChloeL-E/msp1).
 3. Click the Fork button in the top right corner.
 
 **Clone**
 1. Login or Sign Up to GitHub.
-2. Open the project [repository]().
+2. Open the project [repository](https://github.com/ChloeL-E/msp1).
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in the code editor of your choice and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
@@ -348,7 +302,28 @@ It can take some time for the page to be fully deployed.
 
 -   ### Testing site functionality
 
-INSERT TABLE HERE
+| Purpose                                                                                     | Action                                                                     | Expected                                                                                                                                       | Result |
+|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|--------|
+| Ensure website is responsive                                                                | Using developer tools and different device sizes, shrink website to 320px	 | Site is responsive on devices 320px and above                                                                                                  | PASS   |
+| Clicking "Home" link in the navigation bar will take user to Home(index.html) page          | Click "Home" link                                                          | Taken to "Home" page, if already on Home page will stay on this page                                                                           | PASS   |
+| Clicking "Play" link in the navigation bar will take user to "Play" page                    | Click "Play" link                                                          | Taken to "Play" page, if already on Play page will stay on this page                                                                           | PASS   |
+| Clicking "About" link in the navigation bar will take user to "About" page                  | Click "About" link                                                         | Taken to About page, if already on "About" page will stay on this page                                                                         | PASS   |
+| Clicking the speaker icon will change icon to speaker off and play audio                    | Click speaker on icon                                                      | Icon changes to speaker off icon and audio turns on                                                                                            | PASS   |
+| Clicking the speaker icon again will change icon back to playing speaker and turn sound off | Click speaker off icon                                                     | Icon changes to speaker on and audio turns off                                                                                                 | PASS   |
+| Clicking "How To Play" button(within index.html) will open modal                            | Click "How to Play" button on Home page                                    | Modal containing game instructions opens                                                                                                       | PASS   |
+| To close the "How To Play" modal, click the "Close" button                                  | "Close" button clicked                                                     | "How To Play" modal closes                                                                                                                     | PASS   |
+| To close the "How To Play" modal, click the window anywhere outside of the modal            | Click the window, outside of the modal                                     | "How To Play" modal closes                                                                                                                     | PASS   |
+| Clicking the "Play!" button on the Home page will take user to the Play page                | Click "Play!" button                                                       | Taken to "Play" page                                                                                                                           | PASS   |
+| Clicking the "The Story" button on the Home page will of the Story modal                    | Click "The Story" button                                                   | Modal opens containing the story behind the game                                                                                               | PASS   |
+| To close the "The Story" modal, click the "Close" button                                    | "Close" button clicked                                                     | "The Story" modal closes                                                                                                                       | PASS   |
+| To close the "The Story" modal, click the window anywhere outside of the modal              | Click the window, outside of the modal                                     | "The Story" modal closes                                                                                                                       | PASS   |
+| Hammer image moves when cursor is over the game board                                       | Move cursor across game board                                              | Hammer will move with the cursor when cursor is moving around the game board                                                                   | PASS   |
+| Hammer image will simulate a hit                                                            | Left click 'mousedown' and release click for 'mouseup'                     | Hammer image rotates 45degrees on "mousedown" and returns to position on "mouseup"                                                             | PASS   |
+| Clicking the "Play!" button on the "Play" page with start the game playing                  | Click the "Play!" button on the "Play" page                                | Game starts- moles and plants appear randomly                                                                                                  | PASS   |
+| Clicking the "Reset!" button resets the game                                                | Click the "Reset!" button during game play                                 | Game stops, moles and plants cleared from game board, score is reset to zero, time remaining is reset to 30                                    | PASS   |
+| The "Time remaining" counts down from 30 seconds to 0                                       | Click "Play!" button on "Play" page                                        | Game starts and "Time remaining" counts from 30 to 0 at 1 second intervals. When count reaches 0, game ends and no more moles or plants appear | PASS   |
+| The "Score" count adds 10 for each mole clicked during game play                            | Click "Play!" button on "Play" page, click a mole                          | Score is 10                                                                                                                                    | PASS   |
+| The "Score" count is subtracted by 10 when a plant is clicked                               | Click "Play!" button on "Play" page, click a plant                         | Score is -10                                                                                                                                   | PASS   |
 
 Each action was tested and found to work as expected. 
 Chrome developer tools were used to identify and resolve any issues or bugs throughout the development process. 

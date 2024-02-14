@@ -9,7 +9,6 @@ const btn = document.getElementById("howToPlayBtn");
 const span = document.getElementsByClassName("close")[0];
 const gameOverModal = document.getElementById("game-over-modal");
 const playAgainBtn = document.getElementById("playAgain")
-
 //Constants for the scoreboard
 const score = document.getElementById("score");
 const timer = document.getElementById("timer");
@@ -19,8 +18,6 @@ const resetBtn = document.getElementById("reset");
 const molehills = [...document.querySelectorAll(".molehill")];
 const cursor = document.querySelector("#cursor");
 const board = document.querySelector("#board");
-
-
 
 // Globally define the variables
 //let result = 0;
@@ -32,6 +29,7 @@ let moleTimer;
 let plantTimer;
 let hitMole = getRandomMoleHill.id;
 let hitPlant = getRandomPlantHill.id;
+
 
 /**
  * Using jQuery to play audio when speaker play icon is clicked
@@ -77,20 +75,78 @@ $(document).ready(function () {
  * Open the modal with button click
  * Close modal using close button or click anywhere outside the modal within the window
  */
+const storyModal = document.getElementById("storyModal");
+const storyBtn = document.getElementById("storyBtn");
+const storyClose = document.getElementById("storyClose");
 
-btn.onclick = function () {
-  modal.style.display = "block";
-};
-// Close the modal by clicking the (x) or anywhere outside the modal
-span.onclick = function () {
-  modal.style.display = "none";
-};
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+$(document).ready(function(){
+
+$(btn).click(function(){
+  $(modal).show();
+});
+$(span).click(function(){
+  $(modal).hide();
+});
+$(storyBtn).click(function(){
+  $(storyModal).show();
+});
+$(storyClose).click(function() {
+  $(storyModal).hide();
+});
+$(window).click(function(event){
+  if(event.target == modal) {
+    $(modal).hide();
+  } else if (event.target == storyModal) {
+    $(storyModal).hide();
   }
-};
+});
+})
 
+
+//btn.onclick = function () {
+ // modal.style.display = "block";
+
+  //};
+
+// Close the modal by clicking the (x) or anywhere outside the modal
+//span.onclick = function () {
+ // modal.style.display = "none";
+//};
+//close the modal with a click anywhere in windown outside of modal
+//window.onclick = function(event) {
+  //if (event.target == modal) {
+   // modal.style.display = "none";
+  //} else if (event.target == storyModal) {
+   // storyModal.style.display = "none";
+  //}
+//};
+
+/**
+ * To open the Story modal
+ * Open the modal with button click
+ * Close modal using the close button or click anywhere outside the modal, within the window
+
+
+
+  storyBtn.onclick = function () {
+    storyModal.style.display = "block";
+  };
+  // Close the modal by clicking the (x) or anywhere outside the modal
+  storyClose.onclick = function () {
+    console.log('story button click');
+    storyModal.style.display = "none";
+  };
+  //close the modal with a click anywhere in window outside of modal
+  //window.onclick = function (event) {
+   // if (event.target == storyModal) {
+    //  storyModal.style.display = "none";
+    //};*/
+
+
+/**
+ * Add image styling to cursor when in play
+ * Rotate image 45degrees to simulate a hit
+ */
 
 board.addEventListener('mousemove', e => {
   cursor.style.top = e.pageY + 'px';
@@ -103,6 +159,7 @@ board.addEventListener('mouseup', () => {
   cursor.classList.remove("active");
 });
 
+
 /**
  * Event listeners for:
  * starting the game when play button clicked
@@ -112,6 +169,7 @@ board.addEventListener('mouseup', () => {
 playBtn.addEventListener('click', playGame);
 resetBtn.addEventListener('click', resetGame);
 playAgainBtn.addEventListener('click', playGame);
+
 
 /**
  * playGame() ensure the game is clear for play
@@ -138,6 +196,7 @@ function playGame() {
   $('#game-over-modal').hide();
 }
 
+
 /**
  * function getRandomHill() 
  * selects a mole hill at random and places the mole in it
@@ -161,8 +220,9 @@ function getRandomMoleHill() {
   }, 1000);
 }
 
+
 /**
- * function moveMole(){                
+ * clears interval and timer               
  * sets an interval of 1 second between mole moving between hills using getRandomHill()
  */
 
@@ -171,6 +231,7 @@ function moveMole() {
   moleTimer = null; //set timer to null
   moleTimer = setInterval(getRandomMoleHill, 1000); // call getRandomMoleHill every 1s
 }
+
 
 /** 
  * function getRandomPlantHill
@@ -194,8 +255,9 @@ function getRandomPlantHill() {
   }, 1000);
 }
 
+
 /**
- * function movePlant() {             
+ * clears interval and timer        
  * sets an interval of 1.5 seconds between plant moving using getRandomHill()
  */
 
@@ -205,12 +267,21 @@ function movePlant() {
   plantTimer = setInterval(getRandomPlantHill, 2000); //call getRandomHill every 2s
 }
 
+/**
+ * Function to listen for click on molehill and then run scoreHandler function
+ */
 function scoreCalculator() {
   molehills.forEach(molehill => {
     molehill.addEventListener('click', scoreHandler);
   });
 }
 
+
+/**
+ * Function to add/depreciate score depending if plant or mole hit
+ * Click a plant, -10points from gamescore, update scoreboard, initiate a new random plant
+ * Click a mole, +10 points to gamescore, update scoreboard, initiate a new random mole
+ */
 function scoreHandler() {
   const clickedMoleHillId = this.id;
   const clickedMoleHill = document.getElementById(clickedMoleHillId);
@@ -321,10 +392,14 @@ function gameOver() {
   };
 }
 
+
+  
+
 /** gameOverModal pops up when game is ended - runs within the gameOver function
  * there are two different messages depending on the score. Template literals used 
  * to insert the gameScore into the string.
  */
+
 function gameOverPopUp() {
 
   let gameOverMessage = document.getElementById("modalText");
@@ -338,27 +413,6 @@ function gameOverPopUp() {
   $('#game-over-modal').show();
 };
 
-/**
- * How to Play storyModal
- * Open the modal with button click
- * Close modal using the close button or click anywhere outside the modal, within the window
- */
 
-const storyModal = document.getElementById("storyModal");
-const storyBtn = document.getElementById("storyBtn");
-const storyClose = document.getElementById("storyClose");
-  storyBtn.onclick = function () {
-    storyModal.style.display = "block";
-  };
-  // Close the modal by clicking the (x) or anywhere outside the modal
-  storyClose.onclick = function () {
-    console.log('story button click');
-    storyModal.style.display = "none";
-  };
-  window.onclick = function (event) {
-    if (event.target == storyModal) {
-      storyModal.style.display = "none";
-    };
-  }
 
 // module.exports = {}
