@@ -2,7 +2,7 @@
 
 - - - 
 
-![Bop-a-mole](documentation/logo.webp)
+<h2 align="center"><img src="documentation/logo.webp"></h2>
 
 # Bop-A-Mole
 
@@ -20,9 +20,9 @@ You have 60 seconds to try to bop as many moles as you can. When the game is ove
 
 This game has been built using HTML, CSS and Javascript.
 
-![Responsive Mockup]()
+![Responsive Mockup](documentation/mockup.png)
 
-[View the live project here.]()
+[View the live project here.]( https://chloel-e.github.io/msp2/)
 
 ## Contents
 
