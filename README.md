@@ -365,6 +365,8 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 
 - The Hammer cursor styling and functionality was adapted from [SheCodes](https://www.shecodes.io/athena/11459-how-to-make-a-div-clickable-in-javascript#:~:text=Then%2C%20the%20addEventListener()%20method,clicked%20based%20on%20your%20requirements.), [AngleBrace](https://www.youtube.com/watch?v=b20YueeXwZg), and and article by Franklin Okolie on [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-make-a-custom-mouse-cursor-with-css-and-javascript/#:~:text=Now%20how%20do%20I%20use,URL%20using%20the%20url%20value.&text=From%20the%20code%20snippet%20above,no%20matter%20where%20it%20moves.)
 
+- The Mockup generator used was [amiresponsive?](https://ui.dev/amiresponsive?url=%20https://chloel-e.github.io/msp2/)
+
 - Content was written by Chloe Livingstone-Evans.
 
 - - - 
