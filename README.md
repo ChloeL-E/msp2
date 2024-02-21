@@ -191,7 +191,7 @@ This game has been built using HTML, CSS and Javascript.
     * Google fonts were used to import the 'Noto Sans Serif' font into the style.css file which is used on all pages throughout the project. [Google Fonts:](https://fonts.google.com/)
     * Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes[Font Awesome:]( https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css)
     * Bootstrap5 is used to create some of the layout of the webpages, mainly to navigation bar and the modals.
-    * Visual Studio code was the IDE used and within this Git was used for version control by utilizing the terminal to commit changes and Push to GitHub. [VScode:](documentation/gitdemo.jpeg)
+    * Visual Studio code was the IDE used and within this Git was used for version control by utilizing the terminal to commit changes and Push to GitHub. [VScode:]()
     * GitHub is used to store the projects code after being pushed from Git.[GitHub:](https://github.com/)
     * Balsamiq was used to create the wireframes to support in the design process.[Balsamiq:](https://balsamiq.com/)
 
