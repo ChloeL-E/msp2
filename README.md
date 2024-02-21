@@ -288,12 +288,12 @@ It can take some time for the page to be fully deployed.
 
 **Fork**
 1. Login or Sign Up to GitHub.
-2. Open the project [repository](https://github.com/ChloeL-E/msp1).
+2. Open the project [repository](https://github.com/ChloeL-E/msp2).
 3. Click the Fork button in the top right corner.
 
 **Clone**
 1. Login or Sign Up to GitHub.
-2. Open the project [repository](https://github.com/ChloeL-E/msp1).
+2. Open the project [repository](https://github.com/ChloeL-E/msp2).
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in the code editor of your choice and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
