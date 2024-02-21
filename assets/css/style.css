@@ -387,6 +387,17 @@ a {
         box-shadow: 15px 15px 50px black;
         font-weight: 600;*/
 
+    .error-message {
+        background-color: #FFF3E7;
+        margin: 150px auto 0;
+        padding: 20px;
+        border: 1px solid black;
+        width: 45%;
+        font-size: 18px;
+        font-weight: 600;
+        box-shadow: 15px 15px 50px black;
+    }
+
     /*--Media Queries--*/
 
     /*-------------------------------------Extra-Small devices (Phones, 600px and down)---------------------------------*/
