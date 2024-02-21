@@ -145,29 +145,29 @@ This game has been built using HTML, CSS and Javascript.
         * 
         * 
 
-        ![Home page]()
+        ![Home page](https://chloel-e.github.io/msp2/index.html)
 
     -   #### Play Game page
         * 
         *
 
-        ![]()
+        ![Play page](https://chloel-e.github.io/msp2/play-game.html)
 
     -    #### About Page
-         * The map will provide the user with a visual aid to see the location of the spa.
-         * This section is valuable to the user as they will be able to easily identify the the location of the spa and how to contact the spa if they require.
+         * This page diplays information
+         * 
 
-         ![About page]()
+         ![About page](https://chloel-e.github.io/msp2/about.html)
 
     -    #### How To Play modal
-         *  
-         * 
-         * 
+         *  When the How to Play button is clicked on either the Home or the Play page a modal will pop up.
+         *  The modal gives the player clear, concise information about the rules of the game.
+         *  There is a close button within the modal and when clicked the modal will disappear.
 
-         ![]()
+         ![How to Play modal](documentation/how-to-play-modal.png)
 
     -    #### Footer
-         * 
+         *   NEED TO DO!!
          * 
 
          ![Footer]()
@@ -175,12 +175,12 @@ This game has been built using HTML, CSS and Javascript.
     -    #### 404 Error Page
           * A 404 error page was created to ensure that if, for any reason, the webpage is unavailable, the user is taken to a message page which helps to redirect them back to the website.
 
-         ![404 error page]()
+         ![404 error page](https://chloel-e.github.io/msp2/404.html)
 
 
 -   ### Features For The Future
-    * 
-    * 
+    * In the future, a scoreboard would be added to the game so that players can easily remember their score and try to beat their own score or that of their friends/family.
+    * Different levels of play e.g. beginner, intermediate and advanced levels would help to make the game more adaptable depending on the user or age of user.
 
 - - - 
 

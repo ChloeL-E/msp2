@@ -398,6 +398,92 @@ a {
         box-shadow: 15px 15px 50px black;
     }
 
+
+    /*-- Footer --*/
+
+    /*.footer-container {
+        max-width: 1170px;
+        margin: auto;
+      }
+    
+      .footer-col {
+        display: flex;
+        width: 260px;
+        padding: 0 25px;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+    
+      .footer-col h3 {
+        font-family: "Noto Serif Display", sans-serif;
+        font-size: 18px;
+        color: black;
+        text-transform: capitalize;
+        font-weight: 600;
+        position: relative;
+        padding-right: 20px;
+      }
+    
+      .footer h3::before {
+        display: none;
+      }*/
+
+      /*line styling*/
+
+    /*.footer h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: black;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  .footer-col a {
+    color: black;
+  }
+  
+  .footer-col a:hover {
+    color: #FFF3E7;
+    text-decoration: none;
+  }
+  
+  .footer-col ul li {
+    font-family: "", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #FFF3e7;
+  }
+  
+  .footer-col ul li a:hover {
+    transition: all 0.5s ease 0s;
+    font-weight: 500;
+    padding-left: 8px;
+    color: black;
+  }
+  
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    background-color: #4dc0ff;
+  }*/
+  
+  /*social links style change on mouse hover*/
+  /*.footer-col .social-links a:hover {
+    transition: all 0.3s ease 0s;
+    background-color: black;
+    color: #FFF3E7;
+  }*/
+
+
     /*--Media Queries--*/
 
     /*-------------------------------------Extra-Small devices (Phones, 600px and down)---------------------------------*/
