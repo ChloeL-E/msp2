@@ -107,7 +107,7 @@ This game has been built using HTML, CSS and Javascript.
     * Home Page (mobile device) Wireframe - [Balsamiq Home Page (mobile device) wireframe](documentation/wireframe-home-mobile.jpeg)
     * How to Play Modal (open) Wireframe - [Balsamiq How to Play Modal (open) wireframe](documentation/wireframe-how-modal.png)
     * The Story Modal (open) Wireframe - [Balsamiq Story Modal (open) wireframe](documentation/wireframe-story.png)
-    * Play Page Wireframe - [Balsamiq Play Page wireframe](documentation/wireframe-play.png)
+    * Play Page Wireframe (desktop)- [Balsamiq Play Page wireframe](documentation/wireframe-play.png)
     * Play Page Wireframe (mobile device) - [Balsamiq Play Page (mobile device)](documentation/wireframe-mobile-play.jpeg)
     * About Page Wireframe - [Balsamiq About page wireframe](documentation/wireframe-about.png)
 
