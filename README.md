@@ -203,7 +203,7 @@ This game has been built using HTML, CSS and Javascript.
 
     -    #### First Time Visitor Goals
 
-    1. As a first time visitor, I want to be able to find out how to play the game so that i understand the rules and can engage in the game effecively.
+        1. As a first time visitor, I want to be able to find out how to play the game so that i understand the rules and can engage in the game effecively.
         2. As a first time visitor, I want the game to be visually appealing and match the themes of the game so that I feel engaged and excited.
         3. As a first time visitor, I want to easily navigate to the game so that i can quickly begin playing.
         4. As a first time visitor, I want to be able to see my score during the game.
