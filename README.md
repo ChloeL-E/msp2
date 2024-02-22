@@ -72,10 +72,6 @@ This game has been built using HTML, CSS and Javascript.
         7. As a first time visitor, I want to easily be able to restart a game after i've finished.
         8. As a first time visitor, I want to be able to navigate easily around the site without using the back arrow in the browser.
         9. As a first time visitor, 
-
-    -   #### Returning User Goals
-
-        1. As a returning site user, I want to be able to beat my previous score.
     
     -   #### Parent/Guardian
 
@@ -107,11 +103,13 @@ This game has been built using HTML, CSS and Javascript.
 
 -   ### Wireframes
 
-    * Home Page (desktop) Wireframe - [Balsamiq home page (desktop) wireframe]()
-    * Home Page (mobile device) Wireframe - [Balsamiq Home Page (mobile device) wireframe]()
-    * How to Play Modal (open) Wireframe - [Balsamiq How to Play Modal (open) wireframe]()
-    * Play Page Wireframe - [Balsamiq Play Page wireframe]()
-    * About Page Wireframe - [Balsamiq About page wireframe]()
+    * Home Page (desktop) Wireframe - [Balsamiq home page (desktop) wireframe](documentation/wave-home.png)
+    * Home Page (mobile device) Wireframe - [Balsamiq Home Page (mobile device) wireframe](documentation/wireframe-home-mobile.jpeg)
+    * How to Play Modal (open) Wireframe - [Balsamiq How to Play Modal (open) wireframe](documentation/wireframe-how-modal.png)
+    * The Story Modal (open) Wireframe - [Balsamiq Story Modal (open) wireframe](documentation/wireframe-story.png)
+    * Play Page Wireframe - [Balsamiq Play Page wireframe](documentation/wireframe-play.png)
+    * Play Page Wireframe (mobile device) - [Balsamiq Play Page (mobile device)](documentation/wireframe-mobile-play.jpeg)
+    * About Page Wireframe - [Balsamiq About page wireframe](documentation/wireframe-about.png)
 
 - - - 
 
@@ -126,13 +124,13 @@ This game has been built using HTML, CSS and Javascript.
         * The navigation section promotes ease of use for the user, allowing the user to move easily between sections and pages.
         * The navigation bar was created using Bootstrap 5 and was adapted to meet the needs of the site.  
 
-       ![Navigation Bar - desktop]()
+       ![Navigation Bar - desktop](documentation/navigation-desktop.png)
 
        * On a mobile device the navigation bar utilises a hamburger menu to improve appearance and user experience. The Bootstrap5 nav-bar-toggler class was used to create this.
 
-       ![Navigation Bar- mobile device ]()
+       ![Navigation Bar- mobile device ](documentation/hamburger-menu.png)
 
-       ![Navigation Bar- mobile device- hamburger menu open]()
+       ![Navigation Bar- mobile device- hamburger menu open](documentation/hamburger-open.png)
 
     -   #### Background Image
         * Each page has a colourful image to entice the user and follows the Farm theme of the game. 
@@ -188,7 +186,7 @@ This game has been built using HTML, CSS and Javascript.
 
 -   ### Frameworks, Libraries & Programs Used
 
-    * Google fonts were used to import the 'Noto Sans Serif' font into the style.css file which is used on all pages throughout the project. [Google Fonts:](https://fonts.google.com/)
+    * Google fonts were used to import the 'Fuzzy Bubbles' font into the style.css file which is used on all pages throughout the project. [Google Fonts:](https://fonts.google.com/)
     * Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes[Font Awesome:]( https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css)
     * Bootstrap5 is used to create some of the layout of the webpages, mainly to navigation bar and the modals.
     * Visual Studio code was the IDE used and within this Git was used for version control by utilizing the terminal to commit changes and Push to GitHub. [VScode:]()
@@ -203,19 +201,44 @@ This game has been built using HTML, CSS and Javascript.
 
     -    #### First Time Visitor Goals
 
-        1. As a first time visitor, I want to be able to find out how to play the game so that i understand the rules and can engage in the game effecively.
-        2. As a first time visitor, I want the game to be visually appealing and match the themes of the game so that I feel engaged and excited.
-        3. As a first time visitor, I want to easily navigate to the game so that i can quickly begin playing.
-        4. As a first time visitor, I want to be able to see my score during the game.
-        6. As a first time visitor, I want to be able to see how much time I have left in the game.
-        7. As a first time visitor, I want to easily be able to restart a game after i've finished.
-        8. As a first time visitor, I want to be able to navigate easily around the site without using the back arrow in the browser.
-        9. As a first time visitor, 
+        * As a first time visitor, I want to be able to find out how to play the game so that I understand the rules and can engage in the game effecively.
+            1. Clicking the 'How to Play' button on the Home or Play page will open up a modal with instructions on how to play the game.
+            2. Clicking the 'The Story' button opens up a modal which gives a short, fun 
+            3. The About page gives the user some background information about the game.  
+        
+        * As a first time visitor, I want the game to be visually appealing and match the themes of the game so that I feel engaged and excited.
+            1. The Home and About pages have a bright, fun and colourful background images to make the website visually appealing and helps to keep the user, particularly young users, engaged.
+            2. The Play page has a bright colourful 'grass' background and a square 'soil' area with cartoon molehills and cartoon moles and plants appear when the game is in play. This
 
-    -   #### Returning User Goals
+        * As a first time visitor, I want to easily navigate to the game so that I can quickly begin playing.
+            1. The website opens at the Home page. From this page the user will be able to see the 'Play!' button in the top centre of the page.
+            2. When the user clicks the 'Play!' button they will be taken to the Play page.
+            3. From the Play page the user can see another 'Play!' button which will strat the game when clicked.
 
-        1. As a returning site user, I want to be able to beat my previous score.
-    
+        * As a first time visitor, I want to be able to see my score during the game.
+            1. 'Score: 0' is visible once the user is on the Play page. 
+            2. Once the game has begun and points are scored or lost, the user can clearly see their score increment or decrement depending on whether a mole or a plant has been 'hit'.
+            3. At the end of the game a modal appears, which gives one of two messages depending if the score is above 0.
+            4. If the final score is >0 then the modal will give a message of congratulations to the user and will include their final score.
+            5. If the final score is <0 then the modal will show an 'uhoh' message with the score shown. 
+
+        * As a first time visitor, I want to be able to see how much time I have left in the game.
+            1. Once the user is on the Play page they will be able to clearly see 'Timer: 30' just above the 'soil' gameplay area. 
+            2. Once the user presses the 'Play!' button and the game begins, the timer will automatically count down in increments of 1 second.
+            3. The user can see the timer visible throughout game play.
+            4. Once the timer reaches 0, the game will end and the 'Game Over' modal will pop up. 
+            5. The timer is reset to 30 once the user presses the 'Play Again' button on the 'Game Over' modal or if the user presses the 'Reset' button at any point during the game. 
+
+        * As a first time visitor, I want to easily be able to restart a game after i've finished.
+            1. Once the game ends the 'Game Over' modal appears. The modal shows a message the user and asks them to try and beat their score again. 
+            2. There are two buttons with options for the user to either click 'Home' to return to home page or to 'Play Again' which will restart the game.
+            3. At any point during the game, the user can press the 'Reset' button. This will stop the game, reset the score back to 0 and reset the timer back to 30 seconds.
+
+        * As a first time visitor, I want to be able to navigate easily around the site without using the back arrow in the browser.
+            1. The user should never heed to use the browsers 'bac' button to navigate throught the site. 
+            2. Each webpage has navigation links to the other pages in the header, which all work correctly and take the user to the relevant page.
+            3. A 404 page will show if there is an error and this also have navigation links and instructions to the user to click once of the navigation links to return back to the website.
+        
     -   #### Parent/Guardian
 
         1. As a parent/Guardian, I want to know that my child is safe and playing a safe, fun and educational game.
