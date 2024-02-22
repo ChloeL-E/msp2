@@ -47,409 +47,402 @@ a {
 
 /* audio icons */
 
-    /*color: black;
+/*color: black;
     font-size: 50px;
     margin-right: 20px;
     display: inline-block;*/
+#playOne,
+#pauseOne,
+#playTwo,
+#pauseTwo {
+    color: black;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 2.5;
+    margin: 0 auto;
+    background-color: #4dc0ff;
+    font-weight: 700;
+    padding: 5px 18px;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 0 10px;
+    box-shadow: 15px 15px 50px black;
+    border: 1px solid black;
+}
+
+/* Modal taken from w3schools and adapted to this game */
+/* How to play button styling*/
+
+#howToPlayBtn,
+#storyBtn {
+    background-color: #fff2e6;
+    font-weight: 700;
+    font-size: 30px;
+    display: block;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 0 auto;
+    box-shadow: 15px 15px 50px black;
+}
+
+.rules {
+    margin: 20% auto;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width and height*/
+    height: 100%;
+    overflow: auto;
+    /* Enable scroll if needed */
+}
+
+.modal-header {
+    border: none;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fff3e7;
+    margin: 95px auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 55%;
+    font-size: 18px;
+    box-shadow: 15px 15px 50px black;
+}
+
+.modal-footer {
+    border: none;
+}
+
+/* The Close Button */
+.close,
+#storyClose {
+    display: block;
+    background-color: #4dc0ff;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 5px;
+    height: 40px;
+    width: 70px;
+    border: 1px solid #5e5f60;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.close:hover,
+.close:focus,
+#storyClose:hover,
+#storyClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.game-over-title {
+    font-weight: 600;
+    margin: 10px auto;
+    text-decoration: underline;
+}
+
+#playAgain {
+    background-color: #77C13D;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 0 auto;
+    height: 40px;
+    width: 130px;
+    border: 1px solid #5e5f60;
+
+}
+
+#goBack {
+    background-color: #4dc0ff;
+    font-weight: 700;
+    font-size: 20px;
+    display: block;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 10px auto;
+    height: 40px;
+    width: 70px;
+    border: 1px solid #5e5f60;
+}
+
+/* Home page */
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 5px;
+}
+
+#playBtn {
+    background-color: #77C13D;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 15px;
+    color: black;
+    border: black solid 1px;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 0 10px;
+    box-shadow: 15px 15px 50px black;
+}
+
+.content-width {
+    width: 90%;
+}
+
+/* -- Play page -- */
+
+.background-image-play {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url("../images/farmerfield.webp");
+}
+
+.controls {
+    display: inline-flex;
+}
+
+#playNow {
+    background-color: #77C13D;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 0 10px;
+    box-shadow: 15px 15px 50px black;
+}
+
+#reset {
+    background-color: #E52B23;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    margin: 0 10px;
+    box-shadow: 15px 15px 50px black;
+}
+
+.scoreBoard {
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+body>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    width: 70vh;
+    height: 70vh;
+    background-image: url("../images/soil-background.webp");
+    border: 3px solid #502f12;
+    border-radius: 25px;
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Adapted from AngleBrace on YouTube */
+
+#cursor {
+    background-image: url("../images/mallet.webp");
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transform: translate(-40%, -40%) rotate(65deg);
+    /* positions image beneath cursor*/
+    transition: transform .1s;
+    pointer-events: none;
+    /* to allow cursor to click mole/plant rather than .cursor img */
+    z-index: 1;
+    /* to ensure img on top */
+    cursor: none;
+}
+
+#cursor.active {
+    transform: translate(-40%, -40%) rotate(-45deg);
+    /* img rotates to simulate hammer hit */
+}
+
+.molehill {
+    width: 33%;
+    height: 33%;
+    /* height and width of each molehill- 3x3x3 one third of the size of the board */
+    background-image: url("../images/soil-pile.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    position: relative;
+    overflow: hidden;
+}
+
+.molehill.mole::before {
+    background-image: url("../images/mole.webp");
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: bottom center;
+    z-index: 1;
+    transform: translateX(-50%);
+    animation: rise .6s ease-out;
+    margin-left: 5rem;
+}
+
+.molehill::before {
+    /*to ensure molehill img stays ontop of board */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.molehill.plant::before {
+    /* ensures plants stays between molehill and board */
+    margin-left: 5rem;
+    background-image: url("../images/venus-fly-trap.webp");
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: bottom center;
+    z-index: 1;
+    transform: translateX(-50%);
+    animation: rise .6s ease-out;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateX(-50%) translateY(100%);
+        /* mole/plant out of sight */
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0);
+        /* mole/plant rise from molehill */
+    }
+}
+
+
+/* -- About page -- */
+
+.about-box {
+    background-color: #FFF3E7;
+    margin: 150px auto 0;
+    padding: 20px;
+    border: 1px solid black;
+    width: 45%;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 15px 15px 50px black;
+}
+
+.error-message {
+    background-color: #FFF3E7;
+    margin: 150px auto 0;
+    padding: 20px;
+    border: 1px solid black;
+    width: 45%;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 15px 15px 50px black;
+}
+
+.footer {
+    text-align: right;
+    padding-right: 5px;
+    background-color: #77C13D;
+}
+
+.footer h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+/*-------------------------------------Extra-Small devices (Phones, 600px and down)---------------------------------*/
+@media only screen and (max-width: 600px) {
+
     #playOne,
     #pauseOne,
     #playTwo,
     #pauseTwo {
         color: black;
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 2.5;
+        font-size: 25px;
         margin: 0 auto;
-        background-color: #4dc0ff;
-        font-weight: 700;
-        padding: 5px 18px;
-        color: black;
-        text-decoration: none;
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-        margin: 0 10px;
-        box-shadow: 15px 15px 50px black;
         border: 1px solid black;
-    }
-
-    /* Modal taken from w3schools and adapted to this game */
-
-    /* How to play button styling*/
-    #howToPlayBtn,
-    #storyBtn {
-        background-color: #fff2e6;
-        font-weight: 700;
-        font-size: 30px;
-        display: block;
-        padding: 5px;
-        color: black;
-        text-decoration: none;
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-        margin: 0 auto;
-        box-shadow: 15px 15px 50px black;
-    }
-
-    .rules {
-        margin: 20% auto;
-    }
-
-    /* The Modal (background) */
-    .modal {
-        display: none;
-        /* Hidden by default */
-        position: fixed;
-        /* Stay in place */
-        z-index: 2;
-        /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%;
-        /* Full width */
-        height: 100%;
-        /* Full height */
-        overflow: auto;
-        /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0);
-        /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4);
-        /* Black w/ opacity */
-    }
-
-    .modal-header {
-        border: none;
-    }
-
-    /* Modal Content/Box */
-    .modal-content {
-        background-color: #fff3e7;
-        margin: 95px auto;
-        padding: 20px;
-        border: 1px solid black;
-        width: 55%;
-        font-size: 18px;
-        box-shadow: 15px 15px 50px black;
-    }
-
-    .modal-footer {
-        border: none;
-    }
-
-    /* The Close Button */
-    .close,
-    #storyClose {
-        display: block;
         background-color: #4dc0ff;
-        color: black;
-        font-weight: 700;
-        font-size: 20px;
-        margin: 0 auto;
-        padding: 5px;
-        height: 40px;
-        width: 70px;
-        border: 1px solid #5e5f60;
-        text-decoration: none;
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-    }
-
-    .close:hover,
-    .close:focus,
-    #storyClose:hover,
-    #storyClose:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
- 
-
-    .game-over-title {
-        font-weight: 600;
-        margin: 10px auto;
-        text-decoration: underline;
-    }
-
-    #playAgain {
-        background-color: #77C13D;
-        font-weight: 700;
-        font-size: 20px;
-        padding: 5px;
-        color: black;
-        text-decoration: none;
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-        margin: 0 auto;
-        height: 40px;
-        width: 130px;
-        border: 1px solid #5e5f60;
-
-    }
-
-    #goBack {
-        background-color: #4dc0ff;
-        font-weight: 700;
-        font-size: 20px;
-        display: block;
-        padding: 5px;
-        color: black;
-        text-decoration: none;
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-        margin: 10px auto;
-        height: 40px;
-        width: 70px;
-        border: 1px solid #5e5f60;
-    }
-
-    /* Home page */
-
-    .title {
-        text-align: center;
-        font-weight: 700;
-        font-size: 4rem;
-        margin-top: -35px;
     }
 
     #playBtn {
-        background-color: #77C13D;
-        font-weight: 700;
-        font-size: 30px;
-        padding: 15px;
-        color: black;
-        border: black solid 1px;
-        text-decoration: none;
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-        margin: 0 10px;
-        box-shadow: 15px 15px 50px black;
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0 auto;
+        padding-top: 25px;
     }
-
-    .content-width{
-        width: 90%;
-    }
-
-    /* -- Play page -- */
 
     .background-image-play {
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-image: url("../images/farmerfield.webp");
-    }
-
-    .controls {
-        display: inline-flex;
-    }
-
-    #playNow {
-        background-color: #77C13D;
-        font-weight: 700;
-        font-size: 30px;
-        padding: 5px;
-        color: black;
-        text-decoration: none;
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-        margin: 0 10px;
-        box-shadow: 15px 15px 50px black;
-    }
-
-    #reset {
-        background-color: #E52B23;
-        font-weight: 700;
-        font-size: 30px;
-        padding: 5px;
-        color: black;
-        text-decoration: none;
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-        margin: 0 10px;
-        box-shadow: 15px 15px 50px black;
-    }
-
-    .scoreBoard {
-        margin: 25px auto 0;
-        text-align: center;
-    }
-
-    body>div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: fit-content;
     }
 
     #board {
-        width: 70vh;
-        height: 70vh;
-        background-image: url("../images/soil-background.webp");
-        border: 3px solid #502f12;
-        border-radius: 25px;
-        margin: 5px auto;
-        display: flex;
-        flex-wrap: wrap;
+        width: 46vh;
+        height: 46vh;
     }
 
-    /* Adapted from AngleBrace on YouTube */
-
-    #cursor {
-        background-image: url("../images/mallet.webp");
-        position: absolute;
-        height: 100px;
-        width: 100px;
-        transform: translate(-40%, -40%) rotate(65deg);
-        /* positions image beneath cursor*/
-        transition: transform .1s;
-        pointer-events: none;
-        /* to allow cursor to click mole/plant rather than .cursor img */
-        z-index: 1;
-        /* to ensure img on top */
-        cursor: none;
+    #howToPlayBtn,
+    #playNow,
+    #reset,
+    #storyBtn {
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0 auto;
     }
 
-    #cursor.active {
-        transform: translate(-40%, -40%) rotate(-45deg);
-        /* img rotates to simulate hammer hit */
+    .title {
+        font-size: 3rem;
+        margin-top: 5px;
     }
-
-    .molehill {
-        width: 33%;
-        height: 33%;
-        /* height and width of each molehill- 3x3x3 one third of the size of the board */
-        background-image: url("../images/soil-pile.png");
-        background-repeat: no-repeat;
-        background-position: bottom center;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .molehill.mole::before {
-        background-image: url("../images/mole.webp");
-        background-repeat: no-repeat;
-        background-size: 130px;
-        background-position: bottom center;
-        z-index: 1;
-        transform: translateX(-50%);
-        animation: rise .6s ease-out;
-        margin-left: 5rem;
-    }
-
-    .molehill::before {
-        /*to ensure molehill img stays ontop of board */
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .molehill.plant::before {
-        /* ensures plants stays between molehill and board */
-        margin-left: 5rem;
-        background-image: url("../images/venus-fly-trap.webp");
-        background-repeat: no-repeat;
-        background-size: 130px;
-        background-position: bottom center;
-        z-index: 1;
-        transform: translateX(-50%);
-        animation: rise .6s ease-out;
-    }
-
-    @keyframes rise {
-        0% {
-            transform: translateX(-50%) translateY(100%);
-            /* mole/plant out of sight */
-        }
-
-        100% {
-            transform: translateX(-50%) translateY(0);
-            /* mole/plant rise from molehill */
-        }
-    }
-
-
-
-    /* -- About page -- */
 
     .about-box {
-        background-color: #FFF3E7;
-        margin: 150px auto 0;
-        padding: 20px;
-        border: 1px solid black;
-        width: 45%;
-        font-size: 18px;
-        font-weight: 600;
-        box-shadow: 15px 15px 50px black;
+        width: 90%;
     }
-    /*.about-box {
-        background-color: rgba(254, 243, 231, 0.8);
-        margin: 250px auto;
-        padding: 20px;
-        border: 1px solid black;
-        width: 40%;
-        font-size: 20px;
-        box-shadow: 15px 15px 50px black;
-        font-weight: 600;*/
+}
 
-    .error-message {
-        background-color: #FFF3E7;
-        margin: 150px auto 0;
-        padding: 20px;
-        border: 1px solid black;
-        width: 45%;
-        font-size: 18px;
-        font-weight: 600;
-        box-shadow: 15px 15px 50px black;
-    }
+/*-----------------------------------Small devices (Tablet, large phone, 600px and up)---------------------------------*/
+@media only screen and (min-width: 600px) {}
 
-
-    /*-------------------------------------Extra-Small devices (Phones, 600px and down)---------------------------------*/
-    @media only screen and (max-width: 600px) {
-
-        #playOne,
-        #pauseOne,
-        #playTwo,
-        #pauseTwo {
-            color: black;
-            font-size: 25px;
-            margin: 0 auto;
-            border: 1px solid black;
-            background-color: #4dc0ff;
-        }
-
-        #playBtn {
-            font-weight: 600;
-            font-size: 18px;
-            margin: 0 auto;
-            padding-top: 25px;
-        }
-
-        .background-image-play {
-            width: fit-content;
-        }
-
-        #board {
-            width: 46vh;
-            height: 46vh;
-        }
-
-        #howToPlayBtn,
-        #playNow,
-        #reset,
-        #storyBtn {
-            font-weight: 600;
-            font-size: 18px;
-            margin: 0 auto;
-        }
-
-        .title {
-            font-size: 3rem;
-            margin-top: 5px;
-        }
-
-        .about-box {
-            width: 90%;
-        }
-    }
-
-    /*-----------------------------------Small devices (Tablet, large phone, 600px and up)---------------------------------*/
-    @media only screen and (min-width: 600px) {}
-
-    /*-------------------------------------Medium devices (Landscape tablets, 768px and up)---------------------------------*/
-    @media only screen and (min-width: 768px) {}
+/*-------------------------------------Medium devices (Landscape tablets, 768px and up)---------------------------------*/
+@media only screen and (min-width: 768px) {}

@@ -3,112 +3,27 @@
  */
 
 //Pull in elements from the DOM
-//Constants for the modal
-const modal = document.getElementById("myModal");
-const btn = document.getElementById("howToPlayBtn");
-const span = document.getElementsByClassName("close")[0];
-const gameOverModal = document.getElementById("game-over-modal");
-const playAgainBtn = document.getElementById("playAgain")
-//Constants for the scoreboard
-const score = document.getElementById("score");
-const timer = document.getElementById("timer");
-const playBtn = document.getElementById("playNow");
-const resetBtn = document.getElementById("reset");
+//Constants in the game
+const molehills = [...document.querySelectorAll(".molehill")];
+const cursor = document.querySelector("#cursor");
+const board = document.querySelector("#board");
 
-/**
- * Using jQuery to play audio when speaker play icon is clicked
- * Change icon to speaker off and pause the audio when speaker off icon is clicked
- * Home page audio
- */
+// Globally define the variables
+//let result = 0;
+let gameScore = 0;
+let gameTimer;
+let timerId;
+let gameRunning = false;
+let moleTimer;
+let plantTimer;
+let hitMole = getRandomMoleHill.id;
+let hitPlant = getRandomPlantHill.id;
 
-$(document).ready(function () {
-  let audioOne = document.getElementById("one");
-  let audioTwo = document.getElementById("two");
-
-  $('#pauseOne').hide();
-  $('#pauseTwo').hide();
-
-  $('#playOne').click(function () {
-    $('#playOne').hide();
-    $('#pauseOne').show();
-    audioOne.play();
-  });
-
-  $('#pauseOne').click(function () {
-    $('#playOne').show();
-    $('#pauseOne').hide();
-    audioOne.pause();
-  });
-
-  $('#playTwo').click(function () {
-    $('#playTwo').hide();
-    $('#pauseTwo').show();
-    audioTwo.play();
-  });
-
-  $('#pauseTwo').click(function () {
-    $('#playTwo').show();
-    $('#pauseTwo').hide();
-    audioTwo.pause();
-  });
-});
-
-
-/**
- * How to Play Modal
- * Open the modal with button click
- * Close modal using close button or click anywhere outside the modal within the window
- */
-const storyModal = document.getElementById("storyModal");
-const storyBtn = document.getElementById("storyBtn");
-const storyClose = document.getElementById("storyClose");
-
-$(document).ready(function(){
-
-$(btn).click(function(){
-  $(modal).show();
-});
-$(span).click(function(){
-  $(modal).hide();
-});
-$(storyBtn).click(function(){
-  $(storyModal).show();
-});
-$(storyClose).click(function() {
-  $(storyModal).hide();
-});
-$(window).click(function(event){
-  if(event.target == modal) {
-    $(modal).hide();
-  } else if (event.target == storyModal) {
-    $(storyModal).hide();
-  }
-});
-})
-
-
-/**
- * Add image styling to cursor when in play
- * Rotate image 45degrees to simulate a hit
- */
-
-board.addEventListener('mousemove', e => {
-  cursor.style.top = e.pageY + 'px';
-  cursor.style.left = e.pageX + 'px';
-});
-board.addEventListener('mousedown', () => {
-  cursor.classList.add("active");
-});
-board.addEventListener('mouseup', () => {
-  cursor.classList.remove("active");
-});
-
-/**
 /**
  * Event listeners for:
  * starting the game when play button clicked
  * Stop and reset the game when reset button is clicked
-
+ */
 
 playBtn.addEventListener('click', playGame);
 resetBtn.addEventListener('click', resetGame);
@@ -121,7 +36,7 @@ playAgainBtn.addEventListener('click', playGame);
  * set timer to 30
  * starts play when play button is clicked
  * runs game functions
-
+ */
 
 function playGame() {
   gameRunning = true;
@@ -145,7 +60,7 @@ function playGame() {
  * function getRandomHill() 
  * selects a mole hill at random and places the mole in it
  * only if game running
-
+ */
 
 function getRandomMoleHill() {
   molehills.forEach(molehill => { //if class of mole, remove
@@ -168,7 +83,7 @@ function getRandomMoleHill() {
 /**
  * clears interval and timer               
  * sets an interval of 1 second between mole moving between hills using getRandomHill()
-
+ */
 
 function moveMole() {
   clearInterval(moleTimer); //clear timer interval
@@ -180,7 +95,7 @@ function moveMole() {
 /** 
  * function getRandomPlantHill
  * get a random number 0-8 and applies the plants class every 2s
-
+*/
 
 function getRandomPlantHill() {
   molehills.forEach(molehill => { //if class of plant, remove
@@ -203,7 +118,7 @@ function getRandomPlantHill() {
 /**
  * clears interval and timer        
  * sets an interval of 1.5 seconds between plant moving using getRandomHill()
-
+ */
 
 function movePlant() {
   clearInterval(plantTimer); //clear timer interval
@@ -213,7 +128,7 @@ function movePlant() {
 
 /**
  * Function to listen for click on molehill and then run scoreHandler function
-
+ */
 function scoreCalculator() {
   molehills.forEach(molehill => {
     molehill.addEventListener('click', scoreHandler);
@@ -225,7 +140,7 @@ function scoreCalculator() {
  * Function to add/depreciate score depending if plant or mole hit
  * Click a plant, -10points from gamescore, update scoreboard, initiate a new random plant
  * Click a mole, +10 points to gamescore, update scoreboard, initiate a new random mole
-
+ */
 function scoreHandler() {
   const clickedMoleHillId = this.id;
   const clickedMoleHill = document.getElementById(clickedMoleHillId);
@@ -250,7 +165,7 @@ function scoreHandler() {
 /**
  * function checkMoleHillEmpty()  
  * moles and plants can't appear in the same molehill - collision avoidance
-
+ */
 
 function checkMoleHillEmpty() {
   if (molehills.id === hitPlant) { //if the id on molehill matches that of hitPlant then plant is in play, move the mole
@@ -264,7 +179,7 @@ function checkMoleHillEmpty() {
  * function updateTimer()
  * counts down from 30 to 0
  * game ends when timer reaches 0
-
+ */
 
 function updateTimer() {
   clearInterval(timerId);
@@ -287,7 +202,7 @@ function updateTimer() {
  * or
  * when timer reaches 0
  * resets the game play- score to 0, timer to 30s, clears all intervals and removes moles and plants from game board
-
+ */
 
 function resetGame() {
   resetBtn.addEventListener("click", () => {
@@ -316,7 +231,7 @@ function resetGame() {
  * sets timer back to 30
  * clears moles and plants from molehills
  * add pop-up with message informing of score
-
+ */
 
 function gameOver() {
   if (gameTimer == 0) {
@@ -335,12 +250,10 @@ function gameOver() {
 }
 
 
-  
-
 /** gameOverModal pops up when game is ended - runs within the gameOver function
  * there are two different messages depending on the score. Template literals used 
  * to insert the gameScore into the string.
-
+ */
 
 function gameOverPopUp() {
 
@@ -357,4 +270,4 @@ function gameOverPopUp() {
 
 
 
-// module.exports = {} */
+// module.exports = {}
