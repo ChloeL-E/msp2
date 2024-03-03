@@ -459,6 +459,27 @@ body>div {
     .modal-content{
         height: fit-content;
     }
+
+    #cursor {
+        width: 80px;
+        height: 80px;
+    }
+
+    .molehill {
+        background-size: 85%;
+    }
+
+    .molehill.mole::before {
+        background-size: 100px;
+        margin-left: 3rem;
+    }
+
+    .molehill.plant::before {
+        background-size: 100px;
+        margin-left: 3rem;
+    }
+
+
 }
 
 /*-----------------------------------Small devices (Tablet, large phone, 600px and up)---------------------------------*/
