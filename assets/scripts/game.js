@@ -25,9 +25,9 @@ let hitPlant = getRandomPlantHill.id;
  * Stop and reset the game when reset button is clicked
  */
 
-playBtn.addEventListener('click', playGame);
-resetBtn.addEventListener('click', resetGame);
-playAgainBtn.addEventListener('click', playGame);
+playBtn.addEventListener("click", playGame);
+resetBtn.addEventListener("click", resetGame);
+playAgainBtn.addEventListener("click", playGame);
 
 
 /**
@@ -41,7 +41,7 @@ playAgainBtn.addEventListener('click', playGame);
 function playGame() {
   gameRunning = true;
   gameScore = 0;
-  gameTimer = 30;
+  gameTimer = 5;
   score.textContent = gameScore;
   timer.textContent = gameTimer;
   getRandomMoleHill();
@@ -52,7 +52,7 @@ function playGame() {
   scoreCalculator();
   updateTimer();
   gameOver();
-  $('#game-over-modal').hide();
+  $("#game-over-modal").hide();
 }
 
 
@@ -131,7 +131,7 @@ function movePlant() {
  */
 function scoreCalculator() {
   molehills.forEach(molehill => {
-    molehill.addEventListener('click', scoreHandler);
+    molehill.addEventListener("click", scoreHandler);
   });
 }
 
@@ -209,7 +209,7 @@ function resetGame() {
     gameRunning = false;
     //reset score and timer
     gameScore = 0;
-    gameTimer = 30;
+    gameTimer = 5;
     score.textContent = gameScore;
     timer.textContent = gameTimer;
     clearInterval(timerId);
@@ -254,10 +254,17 @@ function gameOver() {
  * there are two different messages depending on the score. Template literals used 
  * to insert the gameScore into the string.
  */
+function storedata() { 
+  let input = username;
+  sessionStorage.setItem("username", input);
+  return true;
+} 
 
 function gameOverPopUp() {
 
   let gameOverMessage = $("#modalText");
+  let username = sessionStorage.getItem("username");
+  console.log(username);
   if (gameScore > 0) {
     gameOverMessage.textContent = `Well Done ${username}! You outsmarted the moles and scored ${gameScore} points! Can you try and beat your
      score to help out Farmer John again?`
@@ -265,7 +272,7 @@ function gameOverPopUp() {
     gameOverMessage.textContent = `Uh Oh ${username}. You scored ${gameScore} points. Those pesky moles got away from you this time. Farmer 
     John still needs your help! Can you try and beat your score? `
   };
-  $('#game-over-modal').show();
+  $("#game-over-modal").show();
 };
 
 

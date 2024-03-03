@@ -26,30 +26,30 @@ $(document).ready(function () {
   let audioOne = document.getElementById("one");
   let audioTwo = document.getElementById("two");
 
-  $('#pauseOne').hide();
-  $('#pauseTwo').hide();
+  $("#pauseOne").hide();
+  $("#pauseTwo").hide();
 
-  $('#playOne').click(function () {
-    $('#playOne').hide();
-    $('#pauseOne').show();
+  $("#playOne").click(function () {
+    $("#playOne").hide();
+    $("#pauseOne").show();
     audioOne.play();
   });
 
-  $('#pauseOne').click(function () {
-    $('#playOne').show();
-    $('#pauseOne').hide();
+  $("#pauseOne").click(function () {
+    $("#playOne").show();
+    $("#pauseOne").hide();
     audioOne.pause();
   });
 
-  $('#playTwo').click(function () {
-    $('#playTwo').hide();
-    $('#pauseTwo').show();
+  $("#playTwo").click(function () {
+    $("#playTwo").hide();
+    $("#pauseTwo").show();
     audioTwo.play();
   });
 
-  $('#pauseTwo').click(function () {
-    $('#playTwo').show();
-    $('#pauseTwo').hide();
+  $("#pauseTwo").click(function () {
+    $("#playTwo").show();
+    $("#pauseTwo").hide();
     audioTwo.pause();
   });
 });
@@ -93,20 +93,21 @@ $(window).click(function(event){
  * Rotate image 45degrees to simulate a hit
  */
 
-board.addEventListener('mousemove', e => {
-  cursor.style.top = e.pageY + 'px';
-  cursor.style.left = e.pageX + 'px';
+board.addEventListener("mousemove", e => {
+  cursor.style.top = e.pageY + "px";
+  cursor.style.left = e.pageX + "px";
 });
-board.addEventListener('mousedown', () => {
+board.addEventListener("mousedown", () => {
   cursor.classList.add("active");
 });
-board.addEventListener('mouseup', () => {
+board.addEventListener("mouseup", () => {
   cursor.classList.remove("active");
 });
 
 function storedata() { 
   let input = username;
-  sessionStorage.setItem("username", input.value);
+  sessionStorage.setItem("username", input);
+  console.log(username);
   return true;
 } 
 
