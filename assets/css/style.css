@@ -404,13 +404,19 @@ body>div {
 /*-------------------------------------Extra-Small devices (Phones, 600px and down)---------------------------------*/
 @media only screen and (max-width: 600px) {
 
-    #playOne,
+    .controls {
+        display: flex;
+        flex-direction: column;
+    }
+
+   #playOne,
     #pauseOne,
     #playTwo,
     #pauseTwo {
         color: black;
-        font-size: 25px;
-        margin: 0 auto;
+        font-size: 18px;
+        margin: 5px auto;
+        font-weight: 600;
         border: 1px solid black;
         background-color: #4dc0ff;
     }
@@ -418,7 +424,7 @@ body>div {
     #playBtn {
         font-weight: 600;
         font-size: 18px;
-        margin: 0 auto;
+        margin: 5px auto;
         padding-top: 25px;
     }
 
@@ -437,7 +443,7 @@ body>div {
     #storyBtn {
         font-weight: 600;
         font-size: 18px;
-        margin: 0 auto;
+        margin: 5px auto;
     }
 
     .title {
