@@ -9,7 +9,7 @@ const btn = document.getElementById("howToPlayBtn");
 const span = document.getElementsByClassName("close")[0];
 const gameOverModal = document.getElementById("game-over-modal");
 const playAgainBtn = document.getElementById("playAgain");
-const username = document.getElementById("username");
+/*const username = document.getElementById("username");*/
 //Constants for the scoreboard
 const score = document.getElementById("score");
 const timer = document.getElementById("timer");
@@ -104,12 +104,7 @@ board.addEventListener("mouseup", () => {
   cursor.classList.remove("active");
 });
 
-function storedata() { 
-  let input = username;
-  sessionStorage.setItem("username", input);
-  console.log(username);
-  return true;
-} 
+
 
 /**
 /**
