@@ -84,7 +84,7 @@ a {
     color: black;
     text-decoration: none;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-    margin: 0 auto;
+    margin: 0 5px;
     box-shadow: 15px 15px 50px black;
 }
 
