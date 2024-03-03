@@ -257,12 +257,12 @@ function gameOver() {
 
 function gameOverPopUp() {
 
-  let gameOverMessage = document.getElementById("modalText");
+  let gameOverMessage = $("#modalText");
   if (gameScore > 0) {
-    gameOverMessage.textContent = `Well Done! You outsmarted the moles and scored ${gameScore} points! Can you try and beat your
+    gameOverMessage.textContent = `Well Done ${username}! You outsmarted the moles and scored ${gameScore} points! Can you try and beat your
      score to help out Farmer John again?`
   } else if (gameScore <= 0) {
-    gameOverMessage.textContent = `Uh Oh. You scored ${gameScore} points. Those pesky moles got away from you this time. Farmer 
+    gameOverMessage.textContent = `Uh Oh ${username}. You scored ${gameScore} points. Those pesky moles got away from you this time. Farmer 
     John still needs your help! Can you try and beat your score? `
   };
   $('#game-over-modal').show();

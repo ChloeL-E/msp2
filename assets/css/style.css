@@ -128,9 +128,10 @@ a {
     border: none;
 }
 
-/* The Close Button */
+/* Close/Submit buttons */
 .close,
-#storyClose {
+#storyClose
+#submit {
     display: block;
     background-color: #4dc0ff;
     color: black;
@@ -213,6 +214,28 @@ a {
 
 .content-width {
     width: 90%;
+}
+
+#form {
+    background-color: #FFF3E7;
+    border: 2px solid black;
+    margin: 40px auto;
+    height: 300px;
+    width: 250px;
+    box-shadow: 15px 15px 50px black;
+}
+
+form h2 {
+    margin: 15px 10px;
+    font-size: 26px;
+    padding: 10px;
+}
+
+#username {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    padding: 5px;
+    width: 100px;
 }
 
 /* -- Play page -- */
@@ -395,7 +418,7 @@ body>div {
     background-color: #77C13D;
 }
 
-.footer h2 {
+.footer h3 {
     font-size: 18px;
     margin: 0;
 }

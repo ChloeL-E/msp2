@@ -107,7 +107,7 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                  <h3 class="story-title">Farmer John needs your help!!</h3>
+                  <h2 class="story-title">Farmer John needs your help!!</h2>
                 </div>
 
                 <!-- Modal body -->
@@ -130,11 +130,20 @@
           <a href="play-game.html" id="playBtn">Play!</a>
 
         </div>
+        <form id="form" action="/" method="get">
+          <h2>Please create a username</h2>
+          <div>
+            <label for="username">Username: </label>
+            <input id="username" name="username" type="text" required>
+          </div>
+          <br>
+          <button id="submit" onclick="return storeData();" type="submit">Submit</button>
+        </form>
       </main>
     </div>
   </div>
   <footer class="footer">
-    <h2> Made for educational purposes</h2>
+    <h3> Made for educational purposes</h3>
   </footer>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
