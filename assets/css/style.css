@@ -449,10 +449,15 @@ body>div {
     .title {
         font-size: 3rem;
         margin-top: 5px;
+        background-color: rgb(255, 243, 229, 0.7);
     }
 
     .about-box {
         width: 90%;
+    }
+
+    .modal-content{
+        height: fit-content;
     }
 }
 
