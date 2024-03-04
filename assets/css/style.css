@@ -509,4 +509,17 @@ body>div {
 @media only screen and (min-width: 600px) {}
 
 /*-------------------------------------Medium devices (Landscape tablets, 768px and up)---------------------------------*/
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .molehill {
+        background-size: 120%;
+    }
+    .molehill.mole::before {
+        background-size: 100px;
+        margin-left: 1rem;
+    }
+
+    .molehill.plant::before {
+        background-size: 100px;
+        margin-left: 1rem;
+    }
+}
