@@ -255,8 +255,9 @@ function gameOver() {
  * to insert the gameScore into the string.
  */
 function storedata() { 
-  let input = username;
+  let input = document.getElementById("username");
   sessionStorage.setItem("username", input);
+  console.log(input);
   return true;
 } 
 
