@@ -41,7 +41,7 @@ playAgainBtn.addEventListener("click", playGame);
 function playGame() {
   gameRunning = true;
   gameScore = 0;
-  gameTimer = 5;
+  gameTimer = 30;
   score.textContent = gameScore;
   timer.textContent = gameTimer;
   getRandomMoleHill();
@@ -59,7 +59,7 @@ function playGame() {
 /**
  * function getRandomHill() 
  * selects a mole hill at random and places the mole in it
- * only if game running
+ * only if game is running
  */
 
 function getRandomMoleHill() {
@@ -88,7 +88,7 @@ function getRandomMoleHill() {
 function moveMole() {
   clearInterval(moleTimer); //clear timer interval
   moleTimer = null; //set timer to null
-  moleTimer = setInterval(getRandomMoleHill, 1000); // call getRandomMoleHill every 1s
+  moleTimer = setInterval(getRandomMoleHill, 1500); // call getRandomMoleHill every 1s
 }
 
 
@@ -209,7 +209,7 @@ function resetGame() {
     gameRunning = false;
     //reset score and timer
     gameScore = 0;
-    gameTimer = 5;
+    gameTimer = 30;
     score.textContent = gameScore;
     timer.textContent = gameTimer;
     clearInterval(timerId);
