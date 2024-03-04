@@ -9,13 +9,15 @@ const btn = document.getElementById("howToPlayBtn");
 const span = document.getElementsByClassName("close")[0];
 const gameOverModal = document.getElementById("game-over-modal");
 const playAgainBtn = document.getElementById("playAgain");
+
+const board = document.querySelector("#board");
+const cursor = document.querySelector("#cursor");
 /*const username = document.getElementById("username");*/
 //Constants for the scoreboard
 const score = document.getElementById("score");
 const timer = document.getElementById("timer");
 const playBtn = document.getElementById("playNow");
 const resetBtn = document.getElementById("reset");
-const board = document.querySelector("#board");
 
 /**
  * Using jQuery to play audio when speaker play icon is clicked
@@ -57,6 +59,18 @@ $(document).ready(function () {
 
 
 /**
+ * Function to store the username inout by the user. 
+ * Stored as sessionStorage
+ * Used to call back username in gameover modal content message in game.js
+ */
+function storedata() { 
+  let input = document.getElementById("username").value; // Retrieve the value of the input field
+  sessionStorage.setItem("username", input); // Store the username in sessionStorage
+  console.log(input); // Log the input to verify it's being stored correctly
+  return true;
+}
+
+/**
  * How to Play Modal
  * Open the modal with button click
  * Close modal using close button or click anywhere outside the modal within the window
@@ -88,7 +102,6 @@ $(window).click(function(event){
 });
 })
 
-
 /**
  * Add image styling to cursor when in play
  * Rotate image 45degrees to simulate a hit
@@ -104,7 +117,6 @@ board.addEventListener("mousedown", () => {
 board.addEventListener("mouseup", () => {
   cursor.classList.remove("active");
 });
-
 
 
 /**
