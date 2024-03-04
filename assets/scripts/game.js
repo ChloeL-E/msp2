@@ -6,7 +6,6 @@
 //Constants in the game
 const molehills = [...document.querySelectorAll(".molehill")];
 const cursor = document.querySelector("#cursor");
-const board = document.querySelector("#board");
 
 // Globally define the variables
 //let result = 0;
@@ -255,11 +254,12 @@ function gameOver() {
  * to insert the gameScore into the string.
  */
 function storedata() { 
-  let input = document.getElementById("username");
-  sessionStorage.setItem("username", input);
-  console.log(input);
+  let input = document.getElementById("username").value; // Retrieve the value of the input field
+  sessionStorage.setItem("username", input); // Store the username in sessionStorage
+  console.log(input); // Log the input to verify it's being stored correctly
   return true;
-} 
+}
+
 
 function gameOverPopUp() {
 

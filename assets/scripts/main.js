@@ -15,6 +15,7 @@ const score = document.getElementById("score");
 const timer = document.getElementById("timer");
 const playBtn = document.getElementById("playNow");
 const resetBtn = document.getElementById("reset");
+const board = document.querySelector("#board");
 
 /**
  * Using jQuery to play audio when speaker play icon is clicked
