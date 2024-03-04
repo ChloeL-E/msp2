@@ -59,16 +59,16 @@ $(document).ready(function () {
 
 
 /**
- * Function to store the username inout by the user. 
+ * Function to store the username input by the user. 
  * Stored as sessionStorage
  * Used to call back username in gameover modal content message in game.js
  */
-function storedata() { 
-  let input = document.getElementById("username").value; // Retrieve the value of the input field
-  sessionStorage.setItem("username", input); // Store the username in sessionStorage
-  console.log(input); // Log the input to verify it's being stored correctly
-  return true;
-}
+$(document).ready(function() {
+    $("#username").click(function() {
+      let username = document.getElementById("username").value();
+      sessionStorage.setItem("username", username);
+    });
+  });
 
 /**
  * How to Play Modal
@@ -79,27 +79,27 @@ const storyModal = document.getElementById("storyModal");
 const storyBtn = document.getElementById("storyBtn");
 const storyClose = document.getElementById("storyClose");
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-$(btn).click(function(){
-  $(modal).show();
-});
-$(span).click(function(){
-  $(modal).hide();
-});
-$(storyBtn).click(function(){
-  $(storyModal).show();
-});
-$(storyClose).click(function() {
-  $(storyModal).hide();
-});
-$(window).click(function(event){
-  if(event.target == modal) {
+  $(btn).click(function () {
+    $(modal).show();
+  });
+  $(span).click(function () {
     $(modal).hide();
-  } else if (event.target == storyModal) {
+  });
+  $(storyBtn).click(function () {
+    $(storyModal).show();
+  });
+  $(storyClose).click(function () {
     $(storyModal).hide();
-  }
-});
+  });
+  $(window).click(function (event) {
+    if (event.target == modal) {
+      $(modal).hide();
+    } else if (event.target == storyModal) {
+      $(storyModal).hide();
+    }
+  });
 })
 
 /**
