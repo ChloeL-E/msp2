@@ -380,6 +380,7 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
     * The javascript for the audio/icons worked on the play page but not on the home page. I tried changing the format of the code, moved elements to class from Id but this did not work. Renamed the elements to ensure ids were uniquely named. This did not work either. Troubleshooting done via StackOverflow but this did not provide any correct answers for this particular issue. I rechecked correct file paths and that the jquery script was loading before the main.js file. Blocked out all javascript other than the specific audio function and it worked. I then worked backwards, slowly reintroduced more code. I found that the issue was with the order of execution. Once i had reordered the code correctly, the bug was fixed.
     * The modal that appears when the game is over wouldn't show. 
     * The javascript stopped working after i have written the storyModal. The code i'd written used the same format as the Modal. I checked for errors in the code but couldn't find anything obvious. The code worked in isolation and the rest of my code worked when the StoryModal code was removed. I tried moving the storyModal to the bottom of my code, which fixed the rest of the sites functionality but the storyModal wouldn't open. I did some research and was assited by a post on [Stack Overflow](https://stackoverflow.com/questions/11516346/error-in-one-javascript-function-causes-others-to-stop-working). I found that the modal and storyModal were using such similar functions that I could combine them using an if else statements and not only did this streamline my code but it fixed the bug. I also simplified the code using jquery.
+    * When adding a form to submit username data to sessioStorage then retrieve data to insert into the game over message, the game over modal text content would not show. I altered to structure of the jquery and found that i had used the property name (textContent) when i should have used text(). This appeared to work but then the data returned as null. I then found a useful post on Stack Overflow. I set item into sessionStorage and then i retrieved it within the same jQuery function. This fixed the bug so the game over modal message shows correctly and the username input in the form on the home page is retireved correctly and inserted into the game over modal message.
 
 - - - 
 
@@ -391,11 +392,15 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 
 - For information on how to link a add an event listener to a button and linking functions[Coding with Russ](https://www.youtube.com/watch?v=JsErMawwdOw) and [Marsha Badley](https://www.youtube.com/watch?v=BvnPi-7grhk)
 
-- [w3schools](https://www.w3schools.com/) for education and support throughout, in particular, for information regarding accessibility and audio labelling.
+- [w3schools](https://www.w3schools.com/) for education and support throughout, in particular, for information regarding accessibility and audio labelling and when adding code for the home page form.
 
 - [Online Converter](https://www.onlineconverter.com/compress-mp3) used to reduce audio file size.
 
 - [CodeInstitute] For their content and guidance through the whole process.
+
+- [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) and [Cybrosys](https://www.cybrosys.com/blog/an-overview-session-storage-in-javascript#:~:text=To%20retrieve%20data%20from%20session,associated%20with%20the%20given%20key.) gave useful information when deciding upon how to store the username data from the form input on the home age.
+
+- [Stack Overflow](https://stackoverflow.com/questions/12831634/take-value-from-on-input-to-an-input-on-the-next-page?rq=4) was used for support when fixing a bug related to retrieving username data from sessionStorage.
 
 - The Hammer cursor styling and functionality was adapted from [SheCodes](https://www.shecodes.io/athena/11459-how-to-make-a-div-clickable-in-javascript#:~:text=Then%2C%20the%20addEventListener()%20method,clicked%20based%20on%20your%20requirements.), [AngleBrace](https://www.youtube.com/watch?v=b20YueeXwZg), and and article by Franklin Okolie on [FreeCodeCamp](https://www.freecodecamp.org/news/how-to-make-a-custom-mouse-cursor-with-css-and-javascript/#:~:text=Now%20how%20do%20I%20use,URL%20using%20the%20url%20value.&text=From%20the%20code%20snippet%20above,no%20matter%20where%20it%20moves.)
 

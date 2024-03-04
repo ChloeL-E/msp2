@@ -250,20 +250,26 @@ function gameOver() {
 }
 
 
-/** gameOverModal pops up when game is ended - runs within the gameOver function
- * there are two different messages depending on the score. Template literals used 
- * to insert the gameScore into the string.
+/** gameOverModal shows when game is ended - runs within the gameOver function
+ * there are two different messages depending on the score. Placeholders within template literals used to
+ * put the username and gameScore into the message.
  */
 
 
 function gameOverPopUp() {
-
+  //storing message into variable, to be shown in game-over-modal
   let gameOverMessage = $("#modalText");
+
+  //get the username data stores in sessionStorage
   let username = sessionStorage.getItem("username");
-  console.log(username);
   if (gameScore > 0) {
+
+    //placeholders for username and gamescore included in game over message
+    //gameover message if score >0
     gameOverMessage.text(`Well Done ${username}! You outsmarted the moles and scored ${gameScore} points! Can you try and beat your
      score to help out Farmer John again?`)
+
+    //game over message if score <0
   } else if (gameScore <= 0) {
     gameOverMessage.text(`Uh Oh ${username}. You scored ${gameScore} points. Those pesky moles got away from you this time. Farmer 
     John still needs your help! Can you try and beat your score? `)

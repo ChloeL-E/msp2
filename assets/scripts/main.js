@@ -57,18 +57,17 @@ $(document).ready(function () {
   });
 });
 
-
-/**
- * Function to store the username input by the user. 
- * Stored as sessionStorage
- * Used to call back username in gameover modal content message in game.js
- */
 $(document).ready(function() {
-    $("#username").click(function() {
-      let username = document.getElementById("username").value();
-      sessionStorage.setItem("username", username);
-    });
+  // Listen for click event on the username input field
+  $("#submit").click(function() {
+    // Get the value of the username input
+    let username = $("#username").val();
+    // Store username in sessionStorage
+    sessionStorage.setItem("username", username);
   });
+  // get username from sessionStorage when the document is ready for use later in gameOverPopUp()
+  let username = sessionStorage.getItem("username");
+});
 
 /**
  * How to Play Modal
