@@ -262,6 +262,11 @@ function gameOverPopUp() {
 
   //get the username data stores in sessionStorage
   let username = sessionStorage.getItem("username");
+  if (!username) {
+    // Set username to "friend" if it's empty
+    username = "friend";
+  }
+  
   if (gameScore > 0) {
 
     //placeholders for username and gamescore included in game over message
