@@ -485,6 +485,10 @@ body>div {
         margin-left: 3rem;
     }
 
+    .background-image-container {
+        height: fit-content;
+    }
+
 
 }
 
