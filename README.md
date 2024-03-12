@@ -322,8 +322,9 @@ This site is hosted using GitHub pages, deployed directly from the master branch
 To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/ChloeL-E/msp2), the following steps were taken: 
 1. Login or Sign Up to GitHub.
 2. Open the project repository.
-3. From the menu items near the top of the page, select **Settings**. [Deployment](https://github.com/ChloeL-E/msp2/settings/pages)
+3. From the menu items near the top of the page, select **Settings**. 
 4. Click on "Pages" in the left hand navigation panel.
+[Deployment](https://github.com/ChloeL-E/msp2/settings/pages)
 5. Under "Source", choose which branch to deploy. This should be Main for newer repositories (older repositories may still use Master).
 6. Choose which folder to deploy from, usually "/root".
 7. Click "Save", then wait for it to be deployed. 
