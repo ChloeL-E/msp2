@@ -322,9 +322,7 @@ This site is hosted using GitHub pages, deployed directly from the master branch
 To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/ChloeL-E/msp2), the following steps were taken: 
 1. Login or Sign Up to GitHub.
 2. Open the project repository.
-3. From the menu items near the top of the page, select **Settings**.
-![Deployment](https://github.com/ChloeL-E/msp2/settings/pages)
-
+3. From the menu items near the top of the page, select **Settings**. [Deployment](https://github.com/ChloeL-E/msp2/settings/pages)
 4. Click on "Pages" in the left hand navigation panel.
 5. Under "Source", choose which branch to deploy. This should be Main for newer repositories (older repositories may still use Master).
 6. Choose which folder to deploy from, usually "/root".
@@ -417,7 +415,7 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
     * The javascript for the audio/icons worked on the play page but not on the home page. I tried changing the format of the code, moved elements to class from ID but this did not work. Renamed the elements to ensure IDs were uniquely named. This did not work either. Troubleshooting done via StackOverflow but this did not provide any correct answers for this particular issue. I rechecked correct file paths and that the jquery script was loading before the main.js file. Blocked out all javascript other than the specific audio function and it worked. I then worked backwards, slowly reintroduced more code. I found that the issue was with the order of execution. Once i had reordered the code correctly, the bug was fixed. 
 
     * The javascript stopped working after i had written the storyModal. The code i'd written used the same format as the Modal. I checked for errors in the code but couldn't find anything obvious. The code worked in isolation and the rest of my code worked when the StoryModal code was removed. I tried moving the storyModal to the bottom of my code, which fixed the rest of the sites functionality but the storyModal wouldn't open. I did some research and was assited by a post on [Stack Overflow](https://stackoverflow.com/questions/11516346/error-in-one-javascript-function-causes-others-to-stop-working). I found that the modal and storyModal were using such similar functions that I could combine them using an if else statements and not only did this streamline my code but it fixed the bug. I also simplified the code using jquery.
-    
+
     * When adding a form to submit username data to sessionStorage then retrieve data to insert into the game over message, the game over modal text content would not show. I altered to structure of the jquery and found that i had used the property name (textContent) when i should have used text(). This appeared to work but then the data returned as null. I wasn't retrieving the data correctly from session storage. I then found a useful post on [Stack Overflow](https://stackoverflow.com/questions/73873929/how-to-access-values-stored-on-a-browser-from-a-code-file-using-sessionstorage). I found that the issue had arisen after i had introduced the code to get data from session storage in the gameOverPopUp function. This took some time to figure out but was helped with the information from Stack on retrieving session data. I had to define a variable within the function which retrieves the session data and then use that variable within the template literal within the string. This fixed the bug so the game over modal message shows correctly and the username input in the form on the home page is retireved correctly and inserted into the game over modal message.
 
 - - - 
