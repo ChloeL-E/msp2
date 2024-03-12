@@ -449,7 +449,7 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 
 -   ### Media Images
 
-- The Mole image was taken from [OpenClipart-Vectors from Pixabay](https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=158236) from (https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=158236)
+- The Mole image was taken from [OpenClipart-Vectors on Pixabay](https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=158236)
 
 - The Venus Fly trap image was by [Freepik](https://www.freepik.com/free-vector/hand-drawn-venus-flytrap-cartoon-illustration_133782376.htm#page=2&query=plant%20cartoon%20spiky&position=46&from_view=search&track=ais&uuid=85be5b56-7f2b-42f9-8b8e-0d37e2fb07fb)
 
@@ -463,11 +463,11 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 
 - [onlinepngtools](https://onlinepngtools.com/remove-png-background ) was utilised to make the mole, soil and veus fly trap backgrounds transparent. [Pixelbin.io](https://console.pixelbin.io/organization/3728325/new-playground/erasebg?utm_source=erasebg) used to remove the background from the hammer(cursor) image
 
-- [cloudconvert] (https://cloudconvert.com/) was used to convert images to webp format.
+- [cloudconvert](https://cloudconvert.com/) was used to convert images to webp format.
 
 - [tiny.png](https://tinypng.com/) was used to compress images.
 
-- [imageresizer]](https://imageresizer.com/crop-image) was used to crop the soil background image
+- [imageresizer](https://imageresizer.com/crop-image) was used to crop the soil background image
 
 - The favicon in the browser tab was created using[Favicon](https://favicon.io/logo-generator/) and instruction on implementation from [Dee Mc](https://www.youtube.com/watch?v=W809I-d9xTg&t=8s)
 
