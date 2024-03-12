@@ -3,9 +3,12 @@
  */
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("howToPlayBtn");
-const span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")/*[0]*/;
 const gameOverModal = document.getElementById("game-over-modal");
 const playAgainBtn = document.getElementById("playAgain");
+const storyModal = document.getElementById("storyModal");
+const storyBtn = document.getElementById("storyBtn");
+/*const storyClose = document.getElementById("storyClose");*/
 const board = document.querySelector("#board");
 const cursor = document.querySelector("#cursor");
 const username = document.getElementById("username");
@@ -71,14 +74,10 @@ $(document).ready(function () {
 });
 
 /**
- * How to Play Modal
+ * How to Play and Story Modal
  * Open the modal with button click
  * Close modal using close button or click anywhere outside the modal within the window
  */
-const storyModal = document.getElementById("storyModal");
-const storyBtn = document.getElementById("storyBtn");
-const storyClose = document.getElementById("storyClose");
-
 $(document).ready(function () {
 
   $(btn).click(function () {
@@ -90,7 +89,7 @@ $(document).ready(function () {
   $(storyBtn).click(function () {
     $(storyModal).show();
   });
-  $(storyClose).click(function () {
+  $(span).click(function () {
     $(storyModal).hide();
   });
   $(window).click(function (event) {
