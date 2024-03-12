@@ -188,7 +188,7 @@ This game has been built using HTML, CSS and Javascript.
     * Google fonts were used to import the 'Fuzzy Bubbles' font into the style.css file which is used on all pages throughout the project. [Google Fonts:](https://fonts.google.com/)
     * Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes[Font Awesome:]( https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css)
     * Bootstrap5 is used to create some of the layout of the webpages, mainly to navigation bar and the modals.
-    * Visual Studio code was the IDE used and within this Git was used for version control by utilizing the terminal to commit changes and Push to GitHub. [VScode:]()
+    * Visual Studio code was the IDE used and within this Git was used for version control by utilizing the terminal to commit changes and Push to GitHub. [VScode:](https://code.visualstudio.com/)
     * GitHub is used to store the projects code after being pushed from Git.[GitHub:](https://github.com/)
     * Balsamiq was used to create the wireframes to support in the design process.[Balsamiq:](https://balsamiq.com/)
 
@@ -256,14 +256,14 @@ This game has been built using HTML, CSS and Javascript.
 
     -    #### Validators
 
-         * W3C Markup Validator, W3C CSS Validator Services were used to validate this project to ensure that there were no syntax errors in the project.
-         * Markup Validator ![W3C Markup Validator]()
-          - Home Page ![W3C Markup Validator]()
-          - Play Page ![W3C Markup Validator]()
-          - About Page ![W3C Markup Validator]()
-          - 404 Page W3C HTML Validation - Pass
-         * CSS Validator ![Jigsaw W3 CSS Validator]()
-          - style.css CSS Validation - Pass
+         * W3C Markup Validator, W3C CSS Validator Services were used to validate this project to ensure that there were no syntax errors in the project. Each file was tested through the relevant Validator.
+         * Markup Validator ![W3C Markup Validator](documentation/w3c_index.png)
+          - Home Page - Pass, no errors
+          - Play Page - Pass, no errors
+          - About Page - Pass, no errors
+          - 404 Page - Pass, no errors
+         * CSS Validator ![Jigsaw W3 CSS Validator](documentation/w3cvalidator.png)
+          - style.css CSS Validation - Pass, no errors
          * Jshint was used to validate the Javascript
           - main.js Jshint - Pass
 
