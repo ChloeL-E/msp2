@@ -1,4 +1,5 @@
 /** 
+ * use "esversion:6"
  * Define the Constants so they can be used in the code
  */
 const modal = document.getElementById("myModal");
@@ -99,13 +100,13 @@ $(document).ready(function () {
       $(storyModal).hide();
     }
   });
-})
+});
 
 /**
  * Add image styling to cursor when in play
  * Rotate image 45degrees to simulate a hit
  */
-if(board && cursor){
+if (board && cursor) {
   board.addEventListener("mousemove", e => {
     cursor.style.top = e.pageY + "px";
     cursor.style.left = e.pageX + "px";
@@ -115,6 +116,7 @@ if(board && cursor){
   });
   board.addEventListener("mouseup", () => {
     cursor.classList.remove("active");
-  })};
+  });
+}
 
 

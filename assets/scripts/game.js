@@ -235,7 +235,7 @@ function gameOver() {
       score.textContent = gameScore;
       timer.textContent = gameTimer;
       gameOverPopUp();
-    };
+    }
   }
 
 /** gameOverModal shows when game is ended - runs within the gameOver function
@@ -257,14 +257,14 @@ function gameOverPopUp() {
       //placeholders for username and gamescore included in game over message
       //gameover message if score >0
       gameOverMessage.text(`Well Done ${username}! You outsmarted the moles and scored ${gameScore} points! Can you try and beat your
-     score to help out Farmer John again?`)
+     score to help out Farmer John again?`);
 
       //game over message if score <0
     } else if (gameScore <= 0) {
       gameOverMessage.text(`Uh Oh ${username}. You scored ${gameScore} points. Those pesky moles got away from you this time. Farmer 
-    John still needs your help! Can you try and beat your score? `)
-    };
+    John still needs your help! Can you try and beat your score? `);
+    }
     $("#game-over-modal").show();
-  };
+  }
 
 // module.exports = {}

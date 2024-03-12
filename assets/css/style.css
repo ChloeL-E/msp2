@@ -244,15 +244,6 @@ form h2 {
     background-position: top center;
 }
 
-/*.background-image-play {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-image: url("../images/farmerfield.webp");
-}*/
-
 .controls {
     display: inline-flex;
 }
@@ -322,8 +313,8 @@ body>div {
 }
 
 #cursor.active {
-    transform: translate(-40%, -40%) rotate(-45deg);
     /* img rotates to simulate hammer hit */
+    transform: translate(-40%, -40%) rotate(-45deg);
 }
 
 .molehill {
@@ -428,7 +419,7 @@ body>div {
         flex-direction: column;
     }
 
-   #playOne,
+    #playOne,
     #pauseOne,
     #playTwo,
     #pauseTwo {
@@ -446,10 +437,6 @@ body>div {
         margin: 5px auto;
         padding-top: 25px;
     }
-
-    /*.background-image-play {
-        width: fit-content;
-    }*/
 
     #board {
         width: 46vh;
@@ -475,7 +462,7 @@ body>div {
         width: 90%;
     }
 
-    .modal-content{
+    .modal-content {
         height: fit-content;
     }
 
@@ -505,6 +492,4 @@ body>div {
 @media only screen and (min-width: 600px) {}
 
 /*-------------------------------------Medium devices (Landscape tablets, 768px and up)---------------------------------*/
-@media only screen and (min-width: 768px) {
-  
-}
+@media only screen and (min-width: 768px) {}
