@@ -139,23 +139,30 @@ This game has been built using HTML, CSS and Javascript.
        ![Background image](documentation/farm-background.jpg)
 
     -   #### Home page
+        * The Home page features a navigation bar at the top of the page with a logo and links to the other webpages(Play and About)
+        * Below the title 'Bop-a-Mole' are a series of buttons which control the audio, open a 'How to Play' modal and a 'Story' modal and finally a button called Play which takes the user to the Play page.
+        * The 'How to Play' button opens up a modal that contains text that gives the user instructions about how to play the game. The text and colour sceme are in keeping with the websites' styling
+        * The 'The Story' button opens up a modal that contains text that gives the user a fun background story about a fictional charater called Farmer John. The text and colour scheme are in keeping with the websites' styling.
+        * The audio control button plays cheerful, upbeat coutry style music to match the farm-theme of the game
 
-        * 
-        * 
-
-        ![Home page](https://chloel-e.github.io/msp2/index.html)
+        ![Home page](documentation/home_page.jpeg)
 
     -   #### Play Game page
-        * 
-        *
+        * The Play game page features a navigation bar at the top of the page and a bright, colourful farm-themed background image.
+        * Below the title are a series of buttons which control the audio, an instruction modal and the Play/Reset buttons for game play
+        * There is a score and timer below these controls. During game play the score will increment by 10 when a mole has been hit or decrement 10 if a plant his been hit
+        * The timer starts at 30 and will count down to 0. Once it reaches 0 the game will stop.
+        * Once the game has stopped a modal will pop up to inform the user of their score within a message. the message differes depending if the score is above 0 or below. The message includes the username that the user has inout into the form on th home page. If no username had been input, the word "friend" will be used instead.
+        * The audio control button plays different music to the Home page although is still cheerful, upbeat country style music to match the farm-theme of the game
 
-        ![Play page](https://chloel-e.github.io/msp2/play-game.html)
+        ![Play page](documentation/play_page.jpeg)
 
     -    #### About Page
-         * This page diplays information
-         * 
+         * This page displays information about the gane objective and about who the game has been designed for.
+         * A clear message box with this information displayed which is in keeping with the color palette and font style of the rest of the website.
+         * The page has a bright and colourful background in keeping with the game theme.
 
-         ![About page](https://chloel-e.github.io/msp2/about.html)
+         ![About page](documentation/play_page.jpeg)
 
     -    #### How To Play modal
          *  When the How to Play button is clicked on either the Home or the Play page a modal will pop up.
@@ -163,6 +170,13 @@ This game has been built using HTML, CSS and Javascript.
          *  There is a close button within the modal and when clicked the modal will disappear.
 
          ![How to Play modal](documentation/how-to-play-modal.png)
+
+     -    #### The Story modal
+         *  When the The Story button is clicked on the Home page a modal will pop up.
+         *  The modal gives the player clear, concise information about the rules of the game.
+         *  There is a close button within the modal and when clicked the modal will disappear.
+
+         ![The Story Modal](documentation/the_story_modal.png)
 
     -    #### Footer
          *   A simple footer that explains that the game has been made for educational purposes.
@@ -239,17 +253,30 @@ This game has been built using HTML, CSS and Javascript.
             3. A 404 page will show if there is an error and this also have navigation links and instructions to the user to click once of the navigation links to return back to the website.
         
     -   #### Parent/Guardian
+        * As a parent/Guardian, I want to know that my child is safe and playing a safe, fun and educational game.
+            1. The Website has been designed for children so the language, styling and game play is all safe for children. 
+            2. The website does not have any links to other players or social media so parents can be assured their child is safe within the site. 
 
-        1. As a parent/Guardian, I want to know that my child is safe and playing a safe, fun and educational game.
-        2. As a parent/Guardian, I want my child to be able to easily understand the rules of the game.
-        3. As a parent/Guardian, I want my child to be excited and engaged in the game so that they are entertained.
-        1. As a parent/Guardian, I want my child to be learning new skills that will help to support their development.
+        * As a parent/Guardian, I want my child to be able to easily understand the rules of the game.
+            1. The 'How to play' button is clearly visible on both the Home and Play page so at any time the user can open up the instructions and understand the rules of the game. The rules are clearly written with children in mind so they can be easily understood. 
+            2. The game is simple with very few rules so that it is easily understood by the target audience.
+
+        * As a parent/Guardian, I want my child to be excited and engaged in the game so that they are entertained.
+            1. The website is bright and engaging.
+            2. The audio control button adds some fun music to the site to increase engagement.
+            3. The Story button is clearly visible on the home page of the website and when clicked, a modal appears with a fun background story for the game. It introduces the child/user to a character called Farmer John and asks them to help him on his farm.
+
+        * As a parent/Guardian, I want my child to be learning new skills that will help to support their development.
+            1. The About Page explains that 'This game has been designed for ages 5+ but is super fun for the whole family. It's a simple, addictive, high-energy game involving concentration, visual perception, hand-eye-coordination and reaction time. All great skills for young children to practice and develop in this exciting, interactive online game.' 
 
     -   #### Site Administrator
 
-        1. As a site administrator, I want the game to work efficiently, managing itself, without bugs so that user visiting the page enjoy playing and want to return.
-        2. As a site administrator, I want to be able to add new features to the game in the future so that I can continue to develop and improve the site.
+        * As a site administrator, I want the game to work efficiently, managing itself, without bugs so that user visiting the page enjoy playing and want to return.
+            1. The site has been extensively tested on different screen sizes and browsers. Any bugs identified have been fixed. 
 
+        * As a site administrator, I want to be able to add new features to the game in the future so that I can continue to develop and improve the site.
+            1. There have already been ideas laid out within this file to futhre develop the site. For example, a scoreboard would be added to the game so that players can easily remember their score and try to beat their own score or that of their friends/family. Also to add different levels of play e.g. beginner, intermediate and advanced levels to make the game more adaptable depending on the user or age of user.
+            2. The site has been deployed and is accesible via github respository.
 - - - 
 
 -   ### Accessibility
@@ -298,7 +325,7 @@ To deploy this page to GitHub Pages from its [GitHub repository:](https://github
 1. Login or Sign Up to GitHub.
 2. Open the project repository.
 3. From the menu items near the top of the page, select **Settings**.
-![Deployment:](https://chloel-e.github.io/msp2/)
+![Deployment:]](https://github.com/ChloeL-E/msp2/settings/pages)
 
 4. Click on "Pages" in the left hand navigation panel.
 5. Under "Source", choose which branch to deploy. This should be Main for newer repositories (older repositories may still use Master).
