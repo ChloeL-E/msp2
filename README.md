@@ -165,15 +165,14 @@ This game has been built using HTML, CSS and Javascript.
          ![How to Play modal](documentation/how-to-play-modal.png)
 
     -    #### Footer
-         *   NEED TO DO!!
-         * 
-
-         ![Footer]()
+         *   A simple footer that explains that the game has been made for educational purposes.
+         
+         ![Footer](documentation/footer.png)
 
     -    #### 404 Error Page
           * A 404 error page was created to ensure that if, for any reason, the webpage is unavailable, the user is taken to a message page which helps to redirect them back to the website.
 
-         ![404 error page](https://chloel-e.github.io/msp2/404.html)
+         ![404 error page](documentation/404page.png)
 
 
 -   ### Features For The Future

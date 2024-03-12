@@ -139,7 +139,6 @@ a {
     margin: 0 auto;
     padding: 5px;
     height: 40px;
-    width: 70px;
     border: 1px solid #5e5f60;
     text-decoration: none;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
