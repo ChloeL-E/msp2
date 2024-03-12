@@ -1,4 +1,5 @@
 /** 
+ * use "esversion:6"
  * Define the Constants so they can be used in the code
  */
 
