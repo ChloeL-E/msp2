@@ -31,7 +31,7 @@ This game has been built using HTML, CSS and Javascript.
 * [Design](#design)
   * [Color Scheme](#color-scheme)
   * [Typography](#typography)
-  * [Imagery](#icons)
+  * [Imagery](#imagery)
   * [Wireframes](#wireframes)
 * [Structure](#design)
   * [Features](#features)
