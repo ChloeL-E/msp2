@@ -6,6 +6,7 @@
 //Pull in elements from the DOM
 //Constants in the game
 const molehills = [...document.querySelectorAll(".molehill")];
+const playBtn = document.getElementById("playNow");
 
 // Globally define the variables
 
