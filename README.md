@@ -16,7 +16,7 @@ This game has been designed for ages 5+ but is super fun for the whole family. T
            
 Instead of the standard 5 mole holes, this game has 9 mole hills, making it a bit more challenging. A mole will pop out of one of the 9 mole hills at random. When you spot the mole, quickly move your cursor over the mole and left-click. If you have managed to bop the mole you will score 10 points, which you will see added to your score tally. Watch out for the biting Venus Fly Traps though! They pop up too and if you accidentally whack one, you will lose 20 points!
 
-You have 60 seconds to try to bop as many moles as you can. When the game is over try and beat your score again! Have fun!!!
+You have 30 seconds to try to bop as many moles as you can. When the game is over try and beat your score again! Have fun!!!
 
 This game has been built using HTML, CSS and Javascript.
 
@@ -70,15 +70,14 @@ This game has been built using HTML, CSS and Javascript.
         4. As a first time visitor, I want to be able to see my score during the game.
         6. As a first time visitor, I want to be able to see how much time I have left in the game.
         7. As a first time visitor, I want to easily be able to restart a game after i've finished.
-        8. As a first time visitor, I want to be able to navigate easily around the site without using the back arrow in the browser.
-        9. As a first time visitor, 
+        8. As a first time visitor, I want to be able to navigate easily around the site without using the back arrow in the browser. 
     
     -   #### Parent/Guardian
 
         1. As a parent/Guardian, I want to know that my child is safe and playing a safe, fun and educational game.
         2. As a parent/Guardian, I want my child to be able to easily understand the rules of the game.
         3. As a parent/Guardian, I want my child to be excited and engaged in the game so that they are entertained.
-        1. As a parent/Guardian, I want my child to be learning new skills that will help to support their development.
+        4. As a parent/Guardian, I want my child to be learning new skills that will help to support their development.
 
     -   #### Site Administrator
 
@@ -116,7 +115,7 @@ This game has been built using HTML, CSS and Javascript.
 ## Structure
 
 -   ### Features
-    * Responsive on all device sizes from 320px
+    * Responsive on all device sizes from 260px
 
     -   #### Navigation Bar
         * The responsive navigation bar has been applied to each page so that the pages are uniform, which is more visually appealing and improves user experience. It is also 'sticky' on the home page so that it is visible at all times on this, the main navigation page. It was felt that removing the 'sticky' feature on the Play Game and Abotut pages would improve user experience as it was important that the user have more space to play the game and see the information on these pages. 
@@ -160,9 +159,9 @@ This game has been built using HTML, CSS and Javascript.
     -    #### About Page
          * This page displays information about the gane objective and about who the game has been designed for.
          * A clear message box with this information displayed which is in keeping with the color palette and font style of the rest of the website.
-         * The page has a bright and colourful background in keeping with the game theme.
+         * The page has a bright and colourful background in keeping with the websites' theme.
 
-         ![About page](documentation/play_page.jpeg)
+         ![About page](documentation/about_page.png)
 
     -    #### How To Play modal
          *  When the How to Play button is clicked on either the Home or the Play page a modal will pop up.
@@ -171,7 +170,7 @@ This game has been built using HTML, CSS and Javascript.
 
          ![How to Play modal](documentation/how-to-play-modal.png)
 
-     -    #### The Story modal
+    -    #### The Story modal
          *  When the The Story button is clicked on the Home page a modal will pop up.
          *  The modal gives the player clear, concise information about the rules of the game.
          *  There is a close button within the modal and when clicked the modal will disappear.
@@ -179,7 +178,7 @@ This game has been built using HTML, CSS and Javascript.
          ![The Story Modal](documentation/the_story_modal.png)
 
     -    #### Footer
-         *   A simple footer that explains that the game has been made for educational purposes.
+         *   A simple footer that explains that the game has been 'made for educational purposes'.
          
          ![Footer](documentation/footer.png)
 
@@ -199,12 +198,12 @@ This game has been built using HTML, CSS and Javascript.
 
 -   ### Frameworks, Libraries & Programs Used
 
-    * Google fonts were used to import the 'Fuzzy Bubbles' font into the style.css file which is used on all pages throughout the project. [Google Fonts:](https://fonts.google.com/)
-    * Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes[Font Awesome:]( https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css)
+    * Google fonts were used to import the 'Fuzzy Bubbles' font into the style.css file which is used on all pages throughout the project. [Google Fonts](https://fonts.google.com/)
+    * Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes[Font Awesome]( https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css)
     * Bootstrap5 is used to create some of the layout of the webpages, mainly to navigation bar and the modals.
-    * Visual Studio code was the IDE used and within this Git was used for version control by utilizing the terminal to commit changes and Push to GitHub. [VScode:](https://code.visualstudio.com/)
-    * GitHub is used to store the projects code after being pushed from Git.[GitHub:](https://github.com/)
-    * Balsamiq was used to create the wireframes to support in the design process.[Balsamiq:](https://balsamiq.com/)
+    * Visual Studio code was the IDE used and within this Git was used for version control by utilizing the terminal to commit changes and Push to GitHub. [VScode](https://code.visualstudio.com/)
+    * GitHub is used to store the projects code after being pushed from Git.[GitHub](https://github.com/)
+    * Balsamiq was used to create the wireframes to support in the design process.[Balsamiq](https://balsamiq.com/)
 
 - - - 
 
@@ -212,8 +211,7 @@ This game has been built using HTML, CSS and Javascript.
 
 -   ### Testing User Stories from User Experience (UX) Section
 
-    -    #### First Time Visitor Goals
-
+    -   #### First Time Visitor Goals
         * As a first time visitor, I want to be able to find out how to play the game so that I understand the rules and can engage in the game effecively.
             1. Clicking the 'How to Play' button on the Home or Play page will open up a modal with instructions on how to play the game.
             2. Clicking the 'The Story' button opens up a modal which gives a short, fun 
@@ -251,7 +249,7 @@ This game has been built using HTML, CSS and Javascript.
             1. The user should never heed to use the browsers 'bac' button to navigate throught the site. 
             2. Each webpage has navigation links to the other pages in the header, which all work correctly and take the user to the relevant page.
             3. A 404 page will show if there is an error and this also have navigation links and instructions to the user to click once of the navigation links to return back to the website.
-        
+
     -   #### Parent/Guardian
         * As a parent/Guardian, I want to know that my child is safe and playing a safe, fun and educational game.
             1. The Website has been designed for children so the language, styling and game play is all safe for children. 
@@ -285,15 +283,15 @@ This game has been built using HTML, CSS and Javascript.
 
          * W3C Markup Validator, W3C CSS Validator Services were used to validate this project to ensure that there were no syntax errors in the project. Each file was tested through the relevant Validator.
          * Markup Validator ![W3C Markup Validator](documentation/w3c_index.png)
-          - Home Page - Pass, no errors
-          - Play Page - Pass, no errors
-          - About Page - Pass, no errors
-          - 404 Page - Pass, no errors
+            1. Home Page - Pass, no errors
+            2. Play Page - Pass, no errors
+            3. About Page - Pass, no errors
+            4. 404 Page - Pass, no errors
          * CSS Validator ![Jigsaw W3 CSS Validator](documentation/w3cvalidator.png)
-          - style.css CSS Validation - Pass, no errors
+            1. style.css CSS Validation - Pass, no errors
          * Jshint was used to validate the Javascript
-          - main.js Jshint - Pass, no errors
-          - game.js - Pass, no errors
+            1. main.js Jshint - Pass, no errors
+            2. game.js - Pass, no errors
 
     -    #### WAVE accessibility tool
 
@@ -301,12 +299,12 @@ This game has been built using HTML, CSS and Javascript.
     * The WAVE Web Accessibility Evaluation Tool was used to assess each webpage.
     * The Home page identified 2 errors and 1 alert. All were in relation to the audio. The audio icons required labelling for screen readers, in particular the hidden audio pause which is hidden until the icon is clicked. Using MDN webdocs and W3C i improved the accessibility. When reassessed with the WAVE tool, there were no errors identified. ![Wave tool result - home page](documentation/wave-home.png)
     * The Play page identified no errors or contrast errors ![Wave tool result - play page](documentation/wave-play.png)
-    * The About page identified no errors or contrast errors. ![Wave tool result - about page](documentation/lighthouse-about.png).
-    * Wave tool also identified a contract error in the 'x' close icon on the How to Play modal, this color was changed to black which fixed the error.
+    * The About page identified no errors or contrast errors. ![Wave tool result - about page](documentation/wave-about.png).
+    * Wave tool identified a contrast error in the 'x' close icon on the How to Play modal, this color was changed to black which fixed the error and then changes to a blue 'close' button to make it clear for children.
 
     -    #### Lighthouse 
 
-  Lighthouse within the Chrome Developer Tools are used to test performance, accessibility, best practices and SEO of the spa Website.
+    Lighthouse within the Chrome Developer Tools are used to test performance, accessibility, best practices and SEO of the spa Website.
 
     - Performance was the only issue and the majority of this is due to the images slowing the load time therfore the images used within the content on Home and Treaments page were converted from jpeg to png files. This improved the performance. The hero images to each page were not converted as it did not improve the performance rating but the image quality reduced.
   
@@ -321,11 +319,11 @@ This game has been built using HTML, CSS and Javascript.
 Github was used as version control. Visual studio code was the IDE used to build the website, code was added and commited in the terminal and then pushed to Github.
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 
-To deploy this page to GitHub Pages from its [GitHub repository:](https://github.com/ChloeL-E/msp2), the following steps were taken: 
+To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/ChloeL-E/msp2), the following steps were taken: 
 1. Login or Sign Up to GitHub.
 2. Open the project repository.
 3. From the menu items near the top of the page, select **Settings**.
-![Deployment:]](https://github.com/ChloeL-E/msp2/settings/pages)
+![Deployment](https://github.com/ChloeL-E/msp2/settings/pages)
 
 4. Click on "Pages" in the left hand navigation panel.
 5. Under "Source", choose which branch to deploy. This should be Main for newer repositories (older repositories may still use Master).
@@ -338,12 +336,12 @@ It can take some time for the page to be fully deployed.
 
 **Fork**
 1. Login or Sign Up to GitHub.
-2. Open the project [repository](https://github.com/ChloeL-E/msp2).
+2. Open the project [Repository](https://github.com/ChloeL-E/msp2).
 3. Click the Fork button in the top right corner.
 
 **Clone**
 1. Login or Sign Up to GitHub.
-2. Open the project [repository](https://github.com/ChloeL-E/msp2).
+2. Open the project [Repository](https://github.com/ChloeL-E/msp2).
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in the code editor of your choice and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
@@ -411,10 +409,15 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
 -   ### Fixed Bugs
 
     * The moveMole and movePlant functions move the images around the game board using setInterval. However multiple images were appearing one after another. To fix this, the clearInterval method was used and this worked. Now only one of each image apppeared at any one time.
+
     * A similar bug was found in the resetGame function which is linked to the reset button. I found if i again used the clearInterval method after the setInterval it fixed the issue.
+
     * Logo didnt appear when website was first depolyed. Checked and confirmed it was using the correct file path. Checked the source code in Developer tools and hadn't loaded the logo image. Re-deployed website but this did not work either. Re-added the image to VS code in new format(png) and this worked.
+
     * The javascript for the audio/icons worked on the play page but not on the home page. I tried changing the format of the code, moved elements to class from ID but this did not work. Renamed the elements to ensure IDs were uniquely named. This did not work either. Troubleshooting done via StackOverflow but this did not provide any correct answers for this particular issue. I rechecked correct file paths and that the jquery script was loading before the main.js file. Blocked out all javascript other than the specific audio function and it worked. I then worked backwards, slowly reintroduced more code. I found that the issue was with the order of execution. Once i had reordered the code correctly, the bug was fixed. 
+
     * The javascript stopped working after i had written the storyModal. The code i'd written used the same format as the Modal. I checked for errors in the code but couldn't find anything obvious. The code worked in isolation and the rest of my code worked when the StoryModal code was removed. I tried moving the storyModal to the bottom of my code, which fixed the rest of the sites functionality but the storyModal wouldn't open. I did some research and was assited by a post on [Stack Overflow](https://stackoverflow.com/questions/11516346/error-in-one-javascript-function-causes-others-to-stop-working). I found that the modal and storyModal were using such similar functions that I could combine them using an if else statements and not only did this streamline my code but it fixed the bug. I also simplified the code using jquery.
+    
     * When adding a form to submit username data to sessionStorage then retrieve data to insert into the game over message, the game over modal text content would not show. I altered to structure of the jquery and found that i had used the property name (textContent) when i should have used text(). This appeared to work but then the data returned as null. I wasn't retrieving the data correctly from session storage. I then found a useful post on [Stack Overflow](https://stackoverflow.com/questions/73873929/how-to-access-values-stored-on-a-browser-from-a-code-file-using-sessionstorage). I found that the issue had arisen after i had introduced the code to get data from session storage in the gameOverPopUp function. This took some time to figure out but was helped with the information from Stack on retrieving session data. I had to define a variable within the function which retrieves the session data and then use that variable within the template literal within the string. This fixed the bug so the game over modal message shows correctly and the username input in the form on the home page is retireved correctly and inserted into the game over modal message.
 
 - - - 
