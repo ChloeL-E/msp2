@@ -84,7 +84,7 @@ function getRandomMoleHill() {
 function moveMole() {
     clearInterval(moleTimer); //clear timer interval
     moleTimer = null; //set timer to null
-    moleTimer = setInterval(getRandomMoleHill, 1500); // call getRandomMoleHill every 1s
+    moleTimer = setInterval(getRandomMoleHill, 2000); // call getRandomMoleHill every 2s
   }
 
 
@@ -117,7 +117,7 @@ function getRandomPlantHill() {
 function movePlant() {
     clearInterval(plantTimer); //clear timer interval
     plantTimer = null; //sets timer to null
-    plantTimer = setInterval(getRandomPlantHill, 2000); //call getRandomHill every 2s
+    plantTimer = setInterval(getRandomPlantHill, 2500); //call getRandomHill every 2.5s
   }
 
 /**
