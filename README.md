@@ -115,7 +115,7 @@ This game has been built using HTML, CSS and Javascript.
 ## Structure
 
 -   ### Features
-    * Responsive on all device sizes from 260px
+    * Responsive on device sizes with media screen size >280px
 
     -   #### Navigation Bar
         * The responsive navigation bar has been applied to each page so that the pages are uniform, which is more visually appealing and improves user experience. It is also 'sticky' on the home page so that it is visible at all times on this, the main navigation page. It was felt that removing the 'sticky' feature on the Play Game and Abotut pages would improve user experience as it was important that the user have more space to play the game and see the information on these pages. 

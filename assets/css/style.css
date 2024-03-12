@@ -441,6 +441,7 @@ body>div {
     #board {
         width: 42vh;
         height: 42vh;
+        margin-bottom: 15px;
     }
 
     #howToPlayBtn,
