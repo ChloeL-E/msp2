@@ -4,12 +4,11 @@
  */
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("howToPlayBtn");
-const span = document.getElementsByClassName("close")/*[0]*/;
+const span = document.getElementsByClassName("close");
 const gameOverModal = document.getElementById("game-over-modal");
 const playAgainBtn = document.getElementById("playAgain");
 const storyModal = document.getElementById("storyModal");
 const storyBtn = document.getElementById("storyBtn");
-/*const storyClose = document.getElementById("storyClose");*/
 const board = document.querySelector("#board");
 const cursor = document.querySelector("#cursor");
 const username = document.getElementById("username");
