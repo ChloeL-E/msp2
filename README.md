@@ -134,8 +134,8 @@ This game has been built using HTML, CSS and Javascript.
     -   #### Background Image
         * Each page has a colourful image to entice the user and follows the Farm theme of the game. 
         * The intended primary audience is very young children and according to [designshack:] (https://designshack.net/articles/graphics/website-design-for-kids-tips-and-advice/), this age category respond best to bright colourful imagery, limited text, cute characters and nature themes. Therefore this has been taken into consideration when selecting imagery. 
-    
-       ![Background image](documentation/farm-background.jpg)
+        
+        ![Background image](documentation/farm-background.jpg)
 
     -   #### Home page
         * The Home page features a navigation bar at the top of the page with a logo and links to the other webpages(Play and About)
@@ -273,7 +273,7 @@ This game has been built using HTML, CSS and Javascript.
             1. The site has been extensively tested on different screen sizes and browsers. Any bugs identified have been fixed. 
 
         * As a site administrator, I want to be able to add new features to the game in the future so that I can continue to develop and improve the site.
-            1. There have already been ideas laid out within this file to futhre develop the site. For example, a scoreboard would be added to the game so that players can easily remember their score and try to beat their own score or that of their friends/family. Also to add different levels of play e.g. beginner, intermediate and advanced levels to make the game more adaptable depending on the user or age of user.
+            1. There are opportunities to futher develop the site. For example, a scoreboard could be added to the game so that players can easily remember their score and try to beat their own score or that of their friends/family. Also to add different levels of play e.g. beginner, intermediate and advanced levels to make the game more adaptable depending on the user or age of user.
             2. The site has been deployed and is accesible via github respository.
 - - - 
 

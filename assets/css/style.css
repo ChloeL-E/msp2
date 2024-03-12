@@ -489,6 +489,10 @@ body>div {
         height: fit-content;
     }
 
+    .about-box {
+        margin: 100px auto 0;
+    }
+
 
 }
 
