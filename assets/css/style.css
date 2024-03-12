@@ -130,7 +130,6 @@ a {
 
 /* Close/Submit buttons */
 .close,
-#storyClose
 #submit {
     display: block;
     background-color: #4dc0ff;
@@ -147,9 +146,7 @@ a {
 }
 
 .close:hover,
-.close:focus,
-#storyClose:hover,
-#storyClose:focus {
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;

@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <!--Navigation Bar-->
   <div class="background-image-container">
     <div class="background-image-play">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -44,9 +45,8 @@
       <main>
         <div class="mainPlay">
           <h1 class="title">Bop-A-Mole</h1>
-          <div class="controls">
-
             <!--Audio controls-->
+          <div class="controls">
             <!-- Descriptive label for the audio for screen readers-->
             <div id="audioDescription" style="display: none;">Upbeat farm music</div>
             <audio id="two" src="assets/css/audio/farm-music2.mp3" aria-labelledby="audioDescription"></audio>
@@ -54,12 +54,10 @@
             <a id="pauseTwo" href="#" aria-label="pause"><i class="fa-solid fa-volume-xmark"></i></a>
 
             <!-- Modal taken from w3schools and adapted to game -->
-            <!-- Trigger/Open The Modal. -->
+            <!-- To open The Modal. -->
             <button id="howToPlayBtn">How To Play</button>
-
             <!-- The Modal -->
             <div id="myModal" class="modal">
-
               <!-- Modal content -->
               <div class="modal-content">
                 <p>
@@ -77,28 +75,25 @@
                   whack one, you will lose 20 points!
                 </p>
                 <p>
-                  You have 30 seconds to try to bop as many moles as you can. When the game is over try and beat your
-                  score
-                  again!
+                  You have 30 seconds to try to bop as many moles as you can. When the
+                  game is over try and beat your score again!
                 </p>
                 <p>
                   Have fun!!!
                 </p>
+                <!--Close the modal-->
                 <span class="close">Close</span>
               </div>
             </div>
-            <!-- Scoreboard and Play Now button-->
 
+            <!-- Scoreboard with timer, PlayNow and Reset buttons-->
             <button type="button" id="playNow">Play!</button>
             <button type="button" id="reset">Reset!</button>
-
           </div>
           <h2 class="scoreBoard">Score: <span id="score">0</span></h2>
-
           <h2 class="scoreBoard">Time Remaining: <span id="timer">30</span></h2>
 
-
-          <!--3x3 board-->
+          <!--3x3 gameboard-->
           <div id="board">
             <div class="molehill" id="1"></div>
             <div class="molehill" id="2"></div>
@@ -110,23 +105,19 @@
             <div class="molehill" id="8"></div>
             <div class="molehill" id="9"></div>
           </div>
+          <!--To apply Hammer styling on cursor-->
           <div id="cursor"></div>
 
-          <!-- The gameOverModal -->
+          <!-- The gameOverModal displays message at end of game-->
           <div id="game-over-modal" class="modal">
             <div class="modal-dialog">
               <div class="modal-content">
-
-                <!-- Modal Header -->
                 <div class="modal-header">
                   <h3 class="game-over-title">Game Over</h3>
                 </div>
-
-                <!-- Modal body -->
                 <div id="modalText"></div>
-
-                <!-- Modal footer -->
                 <div class="modal-footer">
+                  <!--Modal buttons: Home or Play Again-->
                   <a id="goBack" href="index.html">Home</a>
                   <button type="button" id="playAgain">Play Again!</button>
                 </div>
@@ -146,4 +137,5 @@
   <script src="assets/scripts/main.js"></script>
   <script src="assets/scripts/game.js"></script>
 </body>
+
 </html>
