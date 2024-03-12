@@ -106,15 +106,16 @@ $(document).ready(function () {
  * Add image styling to cursor when in play
  * Rotate image 45degrees to simulate a hit
  */
-board.addEventListener("mousemove", e => {
-  cursor.style.top = e.pageY + "px";
-  cursor.style.left = e.pageX + "px";
-});
-board.addEventListener("mousedown", () => {
-  cursor.classList.add("active");
-});
-board.addEventListener("mouseup", () => {
-  cursor.classList.remove("active");
-});
+if(board && cursor){
+  board.addEventListener("mousemove", e => {
+    cursor.style.top = e.pageY + "px";
+    cursor.style.left = e.pageX + "px";
+  });
+  board.addEventListener("mousedown", () => {
+    cursor.classList.add("active");
+  });
+  board.addEventListener("mouseup", () => {
+    cursor.classList.remove("active");
+  })};
 
 
