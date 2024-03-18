@@ -131,11 +131,11 @@
 
         </div>
         <!--Form for user to input a username-->
-        <form id="form" action="#" method="GET">
+        <form id="form" action="#" onsubmit="return validateForm()" method="GET">
           <h2>Please create a username</h2>
           <div>
             <label for="username">Username: </label>
-            <input id="username" name="username" type="text" required>
+            <input id="username" name="username" type="text" placeholder="write a username here..." min="3" max="15" required>
           </div>
           <br>
           <!--Button to submit username-->
