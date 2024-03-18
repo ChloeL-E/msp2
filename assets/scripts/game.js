@@ -3,10 +3,12 @@
  * Define the Constants so they can be used in the code
  */
 
+import { playBtn } from './main.js';
+
+
 //Pull in elements from the DOM
 //Constants in the game
 const molehills = [...document.querySelectorAll(".molehill")];
-const playBtn = document.getElementById("playNow");
 
 // Globally define the variables
 
