@@ -2,6 +2,9 @@
  * use "esversion:6"
  * Define the Constants so they can be used in the code
  */
+
+export const playBtn = document.getElementById("playNow");
+
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("howToPlayBtn");
 const span = document.getElementsByClassName("close");
