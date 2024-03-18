@@ -118,4 +118,10 @@ if (board && cursor) {
   });
 }
 
-
+function validateForm(){
+  let x = document.forms["form"]["username"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
