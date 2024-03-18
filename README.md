@@ -27,7 +27,8 @@ This game has been built using HTML, CSS and Javascript.
 ## Contents
 
 * [Languages Used](#languages-used)
-* [User Experience](#user-stories)
+* [User-Experience-Design]
+    * [User Stories](#user-stories)
 * [Design](#design)
   * [Color Scheme](#color-scheme)
   * [Typography](#typography)
@@ -35,13 +36,17 @@ This game has been built using HTML, CSS and Javascript.
   * [Wireframes](#wireframes)
 * [Structure](#design)
   * [Features](#features)
-  * [Features For The Future](#features-for-the-future)
+  * [Features For Future Implementation](#features-for-future-implementation)
 * [Technologies Used](#technologies-used)
   * [ Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 * [Testing](#testing)
   * [User Experience](#user-experience-ux)
+  * [Testing Site Functionality](#testing-site-functionality)
+  * [Further Testing](#further-testing)
+  * [Fixed Bugs](#fixed-bugs)
   * [Accessibility](#accessibility)
-  * [Deployment](#deployment)
+* [Deployment](#deployment)
+  * [Version Control](#version-control)
   * [Run locally](#run-locally)
 * [Credits](#credits)
 * [Acknowledgements](#acknowledgements)
@@ -58,7 +63,7 @@ This game has been built using HTML, CSS and Javascript.
 
 - - - 
 
-## User Experience (UX)
+## User-Experience-Design
 
 -   ### User stories
 
@@ -188,8 +193,8 @@ This game has been built using HTML, CSS and Javascript.
          ![404 error page](documentation/404page.png)
 
 
--   ### Features For The Future
-    * In the future, a scoreboard would be added to the game so that players can easily remember their score and try to beat their own score or that of their friends/family.
+-   ### Features For Future Implementation
+    * In a future release, a scoreboard would be added to the game so that players can easily remember their score and try to beat their own score or that of their friends/family.
     * Different levels of play e.g. beginner, intermediate and advanced levels would help to make the game more adaptable depending on the user or age of user.
 
 - - - 
@@ -207,7 +212,7 @@ This game has been built using HTML, CSS and Javascript.
 
 - - - 
 
-# Testing
+## Testing
 
 -   ### Testing User Stories from User Experience (UX) Section
 
@@ -276,77 +281,6 @@ This game has been built using HTML, CSS and Javascript.
             1. There are opportunities to futher develop the site. For example, a scoreboard could be added to the game so that players can easily remember their score and try to beat their own score or that of their friends/family. Also to add different levels of play e.g. beginner, intermediate and advanced levels to make the game more adaptable depending on the user or age of user.
             2. The site has been deployed and is accesible via github respository.
 - - - 
-
--   ### Accessibility
-
-    -    #### Validators
-
-         * W3C Markup Validator, W3C CSS Validator Services were used to validate this project to ensure that there were no syntax errors in the project. Each file was tested through the relevant Validator.
-         * Markup Validator ![W3C Markup Validator](documentation/w3c_index.png)
-            1. Home Page - Pass, no errors
-            2. Play Page - Pass, no errors
-            3. About Page - Pass, no errors
-            4. 404 Page - Pass, no errors
-         * CSS Validator ![Jigsaw W3 CSS Validator](documentation/w3cvalidator.png)
-            1. style.css CSS Validation - Pass, no errors
-         * Jshint was used to validate the Javascript
-            1. main.js Jshint - Pass, no errors
-            2. game.js - Pass, no errors
-
-    -    #### WAVE accessibility tool
-
-    * The website was developed to be as inclusive as possible. The use of semantic HTML, aria-labelling, alt attributes to images and good colour contrast.
-    * The WAVE Web Accessibility Evaluation Tool was used to assess each webpage.
-    * The Home page identified 2 errors and 1 alert. All were in relation to the audio. The audio icons required labelling for screen readers, in particular the hidden audio pause which is hidden until the icon is clicked. Using MDN webdocs and W3C i improved the accessibility. When reassessed with the WAVE tool, there were no errors identified. ![Wave tool result - home page](documentation/wave-home.png)
-    * The Play page identified no errors or contrast errors ![Wave tool result - play page](documentation/wave-play.png)
-    * The About page identified no errors or contrast errors. ![Wave tool result - about page](documentation/wave-about.png).
-    * Wave tool identified a contrast error in the 'x' close icon on the How to Play modal, this color was changed to black which fixed the error and then changes to a blue 'close' button to make it clear for children.
-
-    -    #### Lighthouse 
-
-    Lighthouse within the Chrome Developer Tools are used to test performance, accessibility, best practices and SEO of the spa Website.
-
-    - Performance was the only issue and the majority of this is due to the images slowing the load time therfore the images used within the content on Home and Treaments page were converted from jpeg to png files. This improved the performance. The hero images to each page were not converted as it did not improve the performance rating but the image quality reduced.
-  
-  * [See Lighthouse report for Home page](documentation/lighthouse-home.png)
-  * [See Lighthouse report for Play page](documentation/lighthouse-play.png)
-  * [See Lighthouse report for About page](documentation/lighthouse-about.png)
-
-- - - 
-
--   ### Deployment
-
-Github was used as version control. Visual studio code was the IDE used to build the website, code was added and commited in the terminal and then pushed to Github.
-This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
-
-To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/ChloeL-E/msp2), the following steps were taken: 
-1. Login or Sign Up to GitHub.
-2. Open the project repository.
-3. From the menu items near the top of the page, select **Settings**. 
-4. Click on "Pages" in the left hand navigation panel.
-[Deployment](https://github.com/ChloeL-E/msp2/settings/pages)
-5. Under "Source", choose which branch to deploy. This should be Main for newer repositories (older repositories may still use Master).
-6. Choose which folder to deploy from, usually "/root".
-7. Click "Save", then wait for it to be deployed. 
-It can take some time for the page to be fully deployed.
-8. Your URL will be displayed above "Source"
-
--   ### Run locally
-
-**Fork**
-1. Login or Sign Up to GitHub.
-2. Open the project [Repository](https://github.com/ChloeL-E/msp2).
-3. Click the Fork button in the top right corner.
-
-**Clone**
-1. Login or Sign Up to GitHub.
-2. Open the project [Repository](https://github.com/ChloeL-E/msp2).
-3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
-4. Open the terminal in the code editor of your choice and change the current working directory to the location you want to use for the cloned directory.
-5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
-
-- - - 
-
 -   ### Testing site functionality
 
 | Purpose                                                                                                         | Action                                                                     | Expected                                                                                                                                                                    | Result |
@@ -418,6 +352,85 @@ Chrome developer tools were used to identify and resolve any issues or bugs thro
     * The javascript stopped working after i had written the storyModal. The code i'd written used the same format as the Modal. I checked for errors in the code but couldn't find anything obvious. The code worked in isolation and the rest of my code worked when the StoryModal code was removed. I tried moving the storyModal to the bottom of my code, which fixed the rest of the sites functionality but the storyModal wouldn't open. I did some research and was assited by a post on [Stack Overflow](https://stackoverflow.com/questions/11516346/error-in-one-javascript-function-causes-others-to-stop-working). I found that the modal and storyModal were using such similar functions that I could combine them using an if else statements and not only did this streamline my code but it fixed the bug. I also simplified the code using jquery.
 
     * When adding a form to submit username data to sessionStorage then retrieve data to insert into the game over message, the game over modal text content would not show. I altered to structure of the jquery and found that i had used the property name (textContent) when i should have used text(). This appeared to work but then the data returned as null. I wasn't retrieving the data correctly from session storage. I then found a useful post on [Stack Overflow](https://stackoverflow.com/questions/73873929/how-to-access-values-stored-on-a-browser-from-a-code-file-using-sessionstorage). I found that the issue had arisen after i had introduced the code to get data from session storage in the gameOverPopUp function. This took some time to figure out but was helped with the information from Stack on retrieving session data. I had to define a variable within the function which retrieves the session data and then use that variable within the template literal within the string. This fixed the bug so the game over modal message shows correctly and the username input in the form on the home page is retireved correctly and inserted into the game over modal message.
+
+- - - 
+-   ### Accessibility
+
+    -    #### Validators
+
+         * W3C Markup Validator, W3C CSS Validator Services were used to validate this project to ensure that there were no syntax errors in the project. Each file was tested through the relevant Validator.
+         * Markup Validator ![W3C Markup Validator](documentation/w3c_index.png)
+            1. Home Page - Pass, no errors
+            2. Play Page - Pass, no errors
+            3. About Page - Pass, no errors
+            4. 404 Page - Pass, no errors
+         * CSS Validator ![Jigsaw W3 CSS Validator](documentation/w3cvalidator.png)
+            1. style.css CSS Validation - Pass, no errors
+         * Jshint was used to validate the Javascript
+            1. main.js Jshint - Pass, no errors
+            2. game.js - Pass, no errors
+
+    -    #### WAVE accessibility tool
+
+    * The website was developed to be as inclusive as possible. The use of semantic HTML, aria-labelling, alt attributes to images and good colour contrast.
+    * The WAVE Web Accessibility Evaluation Tool was used to assess each webpage.
+    * The Home page identified 2 errors and 1 alert. All were in relation to the audio. The audio icons required labelling for screen readers, in particular the hidden audio pause which is hidden until the icon is clicked. Using MDN webdocs and W3C i improved the accessibility. When reassessed with the WAVE tool, there were no errors identified. ![Wave tool result - home page](documentation/wave-home.png)
+    * The Play page identified no errors or contrast errors ![Wave tool result - play page](documentation/wave-play.png)
+    * The About page identified no errors or contrast errors. ![Wave tool result - about page](documentation/wave-about.png).
+    * Wave tool identified a contrast error in the 'x' close icon on the How to Play modal, this color was changed to black which fixed the error and then changes to a blue 'close' button to make it clear for children.
+
+    -    #### Lighthouse 
+
+    Lighthouse within the Chrome Developer Tools are used to test performance, accessibility, best practices and SEO of the spa Website.
+
+    - Performance was the only issue and the majority of this is due to the images slowing the load time therfore the images used within the content on Home and Treaments page were converted from jpeg to png files. This improved the performance. The hero images to each page were not converted as it did not improve the performance rating but the image quality reduced.
+  
+  * [See Lighthouse report for Home page](documentation/lighthouse-home.png)
+  * [See Lighthouse report for Play page](documentation/lighthouse-play.png)
+  * [See Lighthouse report for About page](documentation/lighthouse-about.png)
+
+- - - 
+## Deployment
+
+-   ### Version Control
+
+The site was created using Visual studio code. The code was added and commited in the terminal and then pushed to the remote repository named 'msp2'.
+
+The git commands below were used throughout development to push code to 'msp2':
+
+git add <file> - This command was used to add the file(s) to the staging area before they are committed.
+
+git commit -m “commit message” - This command was used to commit changes to the local repository queue ready for the final step.
+
+git push - This command was used to push all committed code to the remote repository on github.
+
+-   ### Deployment
+
+To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/ChloeL-E/msp2), the following steps were taken: 
+1. Login or Sign Up to GitHub.
+2. Open the project repository.
+3. From the menu items near the top of the page, select **Settings**. 
+4. Click on "Pages" in the left hand navigation panel.
+[Deployment](https://github.com/ChloeL-E/msp2/settings/pages)
+5. Under "Source", choose which branch to deploy. This should be Main for newer repositories (older repositories may still use Master).
+6. Choose which folder to deploy from, usually "/root".
+7. Click "Save", then wait for it to be deployed. 
+It can take some time for the page to be fully deployed.
+8. Your URL will be displayed above "Source"
+
+-   ### Run locally
+
+**Fork**
+1. Login or Sign Up to GitHub.
+2. Open the project [Repository](https://github.com/ChloeL-E/msp2).
+3. Click the Fork button in the top right corner.
+
+**Clone**
+1. Login or Sign Up to GitHub.
+2. Open the project [Repository](https://github.com/ChloeL-E/msp2).
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in the code editor of your choice and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
 - - - 
 
