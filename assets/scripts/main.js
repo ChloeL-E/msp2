@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   // Check if resetBtn exists before adding event listener
   if (resetBtn) {
-  resetBtn.addEventListener("click", resetGame);
+    resetBtn.addEventListener("click", resetGame);
   }
   // Check if playAgainBtn exists before adding event listener
   if (playAgainBtn) {
@@ -97,14 +97,13 @@ $(document).ready(function () {
 });
 
 function validateForm() {
-  console.log("validateForm() called");
   let x = document.forms["form"]["username"].value;
   if (x == "") {
     //get elements needed to show alert message
     document.getElementById("alert-text").textContent = "Please provide a username!";
-    document.getElementById("alertModal").style.display = "block";
+    alertModal.style.display = "block";
     return false; //prevent form submission
-  }
+  };
 }
 
 /**

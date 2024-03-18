@@ -63,13 +63,11 @@
           <a id="playOne" href="#" aria-label="play"><i class="fa-solid fa-volume-high"></i></a>
           <a id="pauseOne" href="#" aria-label="pause"><i class="fa-solid fa-volume-xmark"></i></a>
 
-          <!-- Modal taken from w3schools and adapted to game -->
+          <!-- Modals taken from w3schools and adapted to game -->
           <!-- Button click to open The Modal. -->
           <button id="howToPlayBtn">How To Play</button>
-
           <!-- The Modal -->
           <div id="myModal" class="modal">
-
             <!-- Modal content to explain rules of the game-->
             <div class="modal-content">
               <p>
@@ -93,17 +91,14 @@
               <p>
                 Have fun!!!
               </p>
-
               <!--Button to close the modal-->
               <span class="close">Close</span>
             </div>
           </div>
 
-
-          <!-- The storyModal -->
-          <!-- Button click to open modal-->
+          <!-- Button to open storyModal-->
           <button id="storyBtn">The Story</button>
-
+           <!-- The storyModal -->
           <div id="storyModal" class="modal">
             <div class="modal-dialog">
               <div class="modal-content content-width">
@@ -135,19 +130,22 @@
           <h2>Please create a username</h2>
           <div>
             <label for="username">Username: </label>
-            <input id="username" name="username" type="text" placeholder="write here..." min="3" max="15">
+            <input id="username" name="username" type="text" placeholder="write here..." minlength="3" maxlength="15">
           </div>
           <br>
           <!--Button to submit username-->
           <button id="submit" type="submit">Submit</button>
         </form>
+        <!--Form validation alert box-->
         <div class="modal-alert" id="alertModal">
           <div class="modal-content">
+            <!--Alert box message-->
             <p id="alert-text"></p>
+            <!--Alert box Close button-->
             <span class="close">Close</span>
           </div>
         </div>
-        
+
       </main>
     </div>
   </div>
