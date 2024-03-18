@@ -3,9 +3,6 @@
  * Define the Constants so they can be used in the code
  */
 
-import { playBtn } from './main.js';
-
-
 //Pull in elements from the DOM
 //Constants in the game
 const molehills = [...document.querySelectorAll(".molehill")];
@@ -21,16 +18,6 @@ let plantTimer;
 let hitMole = getRandomMoleHill.id;
 let hitPlant = getRandomPlantHill.id;
 
-/**
- * Event listeners for:
- * starting the game when play button clicked
- * Stop and reset the game when reset button is clicked
- */
-document.addEventListener("DOMContentLoaded", function () {
-  playBtn.addEventListener("click", playGame);
-  resetBtn.addEventListener("click", resetGame);
-  playAgainBtn.addEventListener("click", playGame);
-});
 
 /**
  * playGame() ensure the game is clear for play
