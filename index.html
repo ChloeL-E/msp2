@@ -135,12 +135,19 @@
           <h2>Please create a username</h2>
           <div>
             <label for="username">Username: </label>
-            <input id="username" name="username" type="text" placeholder="write here..." min="3" max="15" required>
+            <input id="username" name="username" type="text" placeholder="write here..." min="3" max="15">
           </div>
           <br>
           <!--Button to submit username-->
           <button id="submit" type="submit">Submit</button>
         </form>
+        <div id="alert" class="modal-alert" id="alertModal">
+          <div class="modal-content">
+            <p id="alert-text"></p>
+            <span class="close">Close</span>
+          </div>
+        </div>
+        
       </main>
     </div>
   </div>

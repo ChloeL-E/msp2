@@ -9,6 +9,7 @@ const span = document.getElementsByClassName("close");
 const gameOverModal = document.getElementById("game-over-modal");
 const playAgainBtn = document.getElementById("playAgain");
 const storyModal = document.getElementById("storyModal");
+const alertModal = document.getElementById("alertModal");
 const storyBtn = document.getElementById("storyBtn");
 const board = document.querySelector("#board");
 const cursor = document.querySelector("#cursor");
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (playBtn) {
     playBtn.addEventListener("click", playGame);
   }
-  //check if reset button exists before adding event listener
+  // Check if resetBtn exists before adding event listener
   if (resetBtn) {
   resetBtn.addEventListener("click", resetGame);
   }
@@ -96,12 +97,16 @@ $(document).ready(function () {
 });
 
 function validateForm() {
+  console.log("validateForm() called");
   let x = document.forms["form"]["username"].value;
   if (x == "") {
-    alert("Name must be filled out");
-    return false;
+    //get elements needed to show alert message
+    document.getElementById("alert-text").textContent = "Please provide a username!";
+    document.getElementById("alert").style.display = "block";
+    return false; //prevent form submission
   }
 }
+
 /**
  * How to Play and Story Modal
  * Open the modal with button click
@@ -120,6 +125,9 @@ $(document).ready(function () {
   });
   $(span).click(function () {
     $(storyModal).hide();
+  });
+  $(span).click(function () {
+    $(alertModal).hide();
   });
   $(window).click(function (event) {
     if (event.target == modal) {

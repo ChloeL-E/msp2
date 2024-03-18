@@ -105,6 +105,22 @@ a {
     /* Enable scroll if needed */
 }
 
+.modal-alert {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    left: 0;
+    top: 50vh;
+    width: 100%;
+    /* Full width and height*/
+    height: 100%;
+    overflow: auto;
+    /* Enable scroll if needed */
+}
+
 .modal-header {
     border: none;
 }
