@@ -3,8 +3,6 @@
  * Define the Constants so they can be used in the code
  */
 
-export const playBtn = document.getElementById("playNow");
-
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("howToPlayBtn");
 const span = document.getElementsByClassName("close");
@@ -20,6 +18,27 @@ const score = document.getElementById("score");
 const timer = document.getElementById("timer");
 const playBtn = document.getElementById("playNow");
 const resetBtn = document.getElementById("reset");
+
+
+/**
+ * Event listeners for:
+ * starting the game when play button clicked
+ * Stop and reset the game when reset button is clicked
+ */
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if playBtn exists before adding event listener
+  if (playBtn) {
+    playBtn.addEventListener("click", playGame);
+  }
+  //check if reset button exists before adding event listener
+  if (resetBtn) {
+  resetBtn.addEventListener("click", resetGame);
+  }
+  // Check if playAgainBtn exists before adding event listener
+  if (playAgainBtn) {
+    playAgainBtn.addEventListener("click", playGame);
+  }
+});
 
 /**
  * Using jQuery to play audio when speaker play icon is clicked
@@ -76,6 +95,13 @@ $(document).ready(function () {
   let username = sessionStorage.getItem("username");
 });
 
+function validateForm() {
+  let x = document.forms["form"]["username"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
 /**
  * How to Play and Story Modal
  * Open the modal with button click
@@ -121,10 +147,4 @@ if (board && cursor) {
   });
 }
 
-function validateForm(){
-  let x = document.forms["form"]["username"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-}
+
