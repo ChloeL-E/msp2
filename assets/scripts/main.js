@@ -102,7 +102,7 @@ function validateForm() {
   if (x == "") {
     //get elements needed to show alert message
     document.getElementById("alert-text").textContent = "Please provide a username!";
-    document.getElementById("alert").style.display = "block";
+    document.getElementById("alertModal").style.display = "block";
     return false; //prevent form submission
   }
 }
