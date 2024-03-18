@@ -14,7 +14,7 @@ A fictional story has been created to support the theme of the game and make the
 
 This game has been designed for ages 5+ but is super fun for the whole family. The rules are simple - bop the moles when you see them pop up out of their mole hill, but be quick! They don't hang around for long and will quickly hide back down in their hole.
            
-Instead of the standard 5 mole holes, this game has 9 mole hills, making it a bit more challenging. A mole will pop out of one of the 9 mole hills at random. When you spot the mole, quickly move your cursor over the mole and left-click. If you have managed to bop the mole you will score 10 points, which you will see added to your score tally. Watch out for the biting Venus Fly Traps though! They pop up too and if you accidentally whack one, you will lose 20 points!
+Instead of the standard 5 mole holes, this game has 9 mole hills, making it a bit more challenging. A mole will pop out of one of the 9 mole hills at random. When you spot the mole, quickly move your cursor over the mole and left-click. If you have managed to bop the mole you will score 10 points, which you will see added to your score tally. Watch out for the biting Venus Fly Traps though! They pop up too and if you accidentally whack one, you will lose 20 points! If you are playing this game on a tablet or mobile then simply tap instead of left-clicking.
 
 You have 30 seconds to try to bop as many moles as you can. When the game is over try and beat your score again! Have fun!!!
 

@@ -392,10 +392,10 @@ body>div {
 
 .about-box {
     background-color: #FFF3E7;
-    margin: 150px auto 0;
+    margin: 100px auto 0;
     padding: 20px;
     border: 1px solid black;
-    width: 45%;
+    width: 50%;
     font-size: 18px;
     box-shadow: 15px 15px 50px black;
 }
