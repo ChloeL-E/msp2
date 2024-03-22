@@ -254,4 +254,4 @@ function gameOverPopUp() {
   $("#game-over-modal").show();
 }
 
-// module.exports = {}
+
